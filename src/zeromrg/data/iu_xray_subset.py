@@ -12,6 +12,7 @@ from typing import Any, Mapping, Sequence
 
 from zeromrg.utils.seed import derive_seed
 
+from .archive_io import open_dataset_source, unique_member_by_basename
 from .prepare_text import _manifest_records, _report_statistics
 from .report_text import NORMALIZATION_VERSION
 from .schemas import canonical_json_bytes, sha256_bytes, write_json, write_jsonl
@@ -34,6 +35,7 @@ PROFILE_LABEL = "RESOURCE-CONSTRAINED"
 
 @dataclass(frozen=True)
 class IuXraySubsetArtifacts:
+    dataset: str
     subset_ids: Path
     directory: Path
     split: Path
@@ -45,6 +47,11 @@ class IuXraySubsetArtifacts:
     preparation_summary: Path
     selected_records: tuple[dict[str, Any], ...]
     counts: dict[str, int]
+    paired_10_count: int
+    prompt_count: int
+    vocabulary_size: int
+    max_sequence_length: int
+    reports_over_configured_max: int
     hashes: dict[str, str]
     reused: dict[str, bool]
 
@@ -127,8 +134,82 @@ def build_or_reuse_iu_subset(
     return artifact, selected, False, artifact_file_hash
 
 
+def _load_packaged_subset(
+    records: Sequence[Mapping[str, Any]],
+    *,
+    source_path: str | Path,
+    destination: Path,
+    config: Mapping[str, Any],
+) -> tuple[dict[str, Any], tuple[dict[str, Any], ...], bool, str]:
+    """Load the authoritative selection artifact shipped inside IU-Xray-500."""
+
+    with open_dataset_source(source_path, ["subset_500_ids.json"]) as source:
+        member = unique_member_by_basename(source, "subset_500_ids.json")
+        artifact = json.loads(source.read_bytes(member).decode("utf-8"))
+    if artifact.get("artifact_hash") != _artifact_hash(artifact):
+        raise SplitIntegrityError("Packaged subset_500_ids.json has an invalid artifact hash")
+    expected_profile = {"name": PROFILE_NAME, "label": PROFILE_LABEL}
+    requirements = {
+        "artifact_version": SUBSET_VERSION,
+        "dataset": "iu_xray",
+        "execution_profile": expected_profile,
+        "selection_level": "uid",
+        "source_population_count": int(config["subset"]["source_population"]),
+        "selected_uid_count": int(config["subset"]["population_size"]),
+        "base_seed": int(config["subset"]["base_seed"]),
+        "all_views_retained": True,
+    }
+    mismatches = {
+        key: {"expected": expected, "actual": artifact.get(key)}
+        for key, expected in requirements.items()
+        if artifact.get(key) != expected
+    }
+    if mismatches:
+        raise SplitIntegrityError(f"Packaged subset provenance is incompatible: {mismatches}")
+
+    by_uid = {membership_id(record, "iu_xray"): dict(record) for record in records}
+    if len(by_uid) != len(records):
+        raise SplitIntegrityError("Reduced validated population contains duplicate UIDs")
+    selected_ids = [str(uid) for uid in artifact["selected_uids"]]
+    if len(selected_ids) != len(set(selected_ids)):
+        raise SplitIntegrityError("Packaged subset artifact contains duplicate UIDs")
+    if set(selected_ids) != set(by_uid):
+        missing = sorted(set(selected_ids) - set(by_uid), key=_uid_order)[:10]
+        extra = sorted(set(by_uid) - set(selected_ids), key=_uid_order)[:10]
+        raise SplitIntegrityError(
+            f"Validated reduced package does not match subset artifact; missing={missing}, extra={extra}"
+        )
+    selected = tuple(by_uid[uid] for uid in selected_ids)
+    actual_images = sum(len(record["image_ids"]) for record in selected)
+    actual_distribution = _view_distribution(selected)
+    if actual_images != int(artifact["physical_image_count"]):
+        raise SplitIntegrityError(
+            f"Reduced package has {actual_images} mapped images; subset artifact records {artifact['physical_image_count']}"
+        )
+    if actual_distribution != artifact["views_per_uid"]:
+        raise SplitIntegrityError(
+            f"Reduced package view distribution {actual_distribution} differs from subset artifact {artifact['views_per_uid']}"
+        )
+
+    reused = False
+    if destination.exists():
+        existing = json.loads(destination.read_text(encoding="utf-8"))
+        if existing.get("artifact_hash") != _artifact_hash(existing):
+            raise SplitIntegrityError(f"Existing subset artifact has an invalid hash: {destination}")
+        if existing != artifact:
+            raise SplitIntegrityError(
+                f"Existing subset artifact differs from the packaged authority: {destination}"
+            )
+        reused = True
+    else:
+        write_json(artifact, destination)
+    return artifact, selected, reused, file_sha256(destination)
+
+
 def prepare_iu_xray_kaggle_500(
-    processed_root: str | Path, config: Mapping[str, Any]
+    processed_root: str | Path,
+    config: Mapping[str, Any],
+    source_path: str | Path | None = None,
 ) -> IuXraySubsetArtifacts:
     """Create subset-only splits, normalized text, vocabulary, and selections."""
 
@@ -144,21 +225,38 @@ def prepare_iu_xray_kaggle_500(
     iu_root = Path(processed_root) / "iu_xray"
     records, source_population_hash = load_validated_population(iu_root)
     expected_source = int(config["subset"]["source_population"])
-    if len(records) != expected_source:
+    expected_subset = int(config["subset"]["population_size"])
+    if len(records) not in {expected_source, expected_subset}:
         raise SplitIntegrityError(
-            f"Validated IU-Xray population is {len(records)}; profile requires {expected_source}"
+            f"Validated IU-Xray population is {len(records)}; profile requires either the "
+            f"full source population ({expected_source}) or packaged subset ({expected_subset})"
         )
     source_manifest = iu_root / "valid_studies.jsonl"
     source_manifest_hash = file_sha256(source_manifest)
     subset_path = iu_root / "subset_500_ids.json"
-    subset, selected, subset_reused, subset_file_hash = build_or_reuse_iu_subset(
-        records,
-        source_population_hash=source_population_hash,
-        source_manifest_sha256=source_manifest_hash,
-        population_size=int(config["subset"]["population_size"]),
-        base_seed=int(config["subset"]["base_seed"]),
-        destination=subset_path,
-    )
+    if len(records) == expected_source:
+        subset, selected, subset_reused, subset_file_hash = build_or_reuse_iu_subset(
+            records,
+            source_population_hash=source_population_hash,
+            source_manifest_sha256=source_manifest_hash,
+            population_size=expected_subset,
+            base_seed=int(config["subset"]["base_seed"]),
+            destination=subset_path,
+        )
+        preparation_mode = "selected_from_full_validated_population"
+    else:
+        if source_path is None:
+            raise SplitIntegrityError(
+                "A reduced 500-study validation requires the IU-Xray-500 package path "
+                "so its subset_500_ids.json provenance can be verified"
+            )
+        subset, selected, subset_reused, subset_file_hash = _load_packaged_subset(
+            records,
+            source_path=source_path,
+            destination=subset_path,
+            config=config,
+        )
+        preparation_mode = "verified_preselected_package"
 
     profile_dir = Path(processed_root) / str(config["execution_profile"]["output_namespace"])
     profile = {"name": PROFILE_NAME, "label": PROFILE_LABEL}
@@ -252,6 +350,7 @@ def prepare_iu_xray_kaggle_500(
         "artifact_version": "iu_xray_kaggle_500_preparation_v1",
         "dataset": "iu_xray",
         "execution_profile": profile,
+        "preparation_mode": preparation_mode,
         "selected_uid_count": len(selected),
         "physical_image_count": int(subset["physical_image_count"]),
         "views_per_uid": subset["views_per_uid"],
@@ -267,6 +366,7 @@ def prepare_iu_xray_kaggle_500(
     summary_path = profile_dir / "preparation_summary.json"
     summary_file_hash = write_json(summary, summary_path)
     return IuXraySubsetArtifacts(
+        dataset="iu_xray",
         subset_ids=subset_path,
         directory=profile_dir,
         split=split_path,
@@ -278,6 +378,13 @@ def prepare_iu_xray_kaggle_500(
         preparation_summary=summary_path,
         selected_records=selected,
         counts={name: int(split["counts"][name]) for name in SPLIT_NAMES},
+        paired_10_count=int(paired["count"]),
+        prompt_count=int(prompts["count"]),
+        vocabulary_size=int(vocabulary_artifact["vocabulary_size"]),
+        max_sequence_length=int(
+            statistics["all_decoder_sequence_lengths_including_bos_eos"]["maximum"]
+        ),
+        reports_over_configured_max=int(statistics["reports_exceeding_configured_max"]),
         hashes={**dependency_hashes, "report_statistics": statistics_file_hash, "preparation_summary": summary_file_hash},
         reused={
             "subset": subset_reused,

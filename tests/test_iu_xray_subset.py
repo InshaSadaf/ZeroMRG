@@ -16,7 +16,10 @@ from zeromrg.data.iu_xray_package import (
     build_iu_xray_subset_package,
     validate_iu_xray_subset_package,
 )
-from zeromrg.data.iu_xray_subset import build_or_reuse_iu_subset
+from zeromrg.data.iu_xray_subset import (
+    build_or_reuse_iu_subset,
+    prepare_iu_xray_kaggle_500,
+)
 from zeromrg.data.schemas import canonical_json_bytes, sha256_bytes, write_json
 from zeromrg.data.split import (
     build_or_reuse_selection,
@@ -190,6 +193,80 @@ class IuXraySubsetTests(unittest.TestCase):
             )
             self.assertTrue(reused["reused"])
             self.assertEqual(first_zip_hash, file_sha256(package_dir.with_suffix(".zip")))
+
+    def test_preparation_accepts_and_verifies_preselected_kaggle_package(self) -> None:
+        full_population = _records(3331)
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            package = root / "input" / "IU-Xray-500"
+            packaged_subset, selected, _, _ = build_or_reuse_iu_subset(
+                full_population,
+                source_population_hash="full-population-hash",
+                source_manifest_sha256="full-manifest-hash",
+                population_size=500,
+                base_seed=42,
+                destination=package / "subset_500_ids.json",
+            )
+            processed = root / "processed" / "iu_xray"
+            processed.mkdir(parents=True)
+            valid_path = processed / "valid_studies.jsonl"
+            audit_path = processed / "audit_manifest.jsonl"
+            valid_payload = b"".join(canonical_json_bytes(record) for record in selected)
+            audit_payload = b"".join(
+                canonical_json_bytes(
+                    {
+                        "record_type": "dataset_audit",
+                        "status": "valid",
+                        "details": {"sample_id": record["sample_id"]},
+                    }
+                )
+                for record in selected
+            )
+            valid_path.write_bytes(valid_payload)
+            audit_path.write_bytes(audit_payload)
+            write_json(
+                {
+                    "dataset": "iu_xray",
+                    "integrity": {
+                        "valid_manifest_sha256": file_sha256(valid_path),
+                        "audit_manifest_sha256": file_sha256(audit_path),
+                    },
+                },
+                processed / "validation_summary.json",
+            )
+            config = {
+                "execution_profile": {
+                    "name": "kaggle_500",
+                    "label": "RESOURCE-CONSTRAINED",
+                    "output_namespace": "iu_xray/kaggle_500",
+                },
+                "subset": {"source_population": 3331, "population_size": 500, "base_seed": 42},
+                "split": {
+                    "train_ratio": 0.7,
+                    "validation_ratio": 0.1,
+                    "test_ratio": 0.2,
+                    "train_count": 350,
+                    "validation_count": 50,
+                    "test_count": 100,
+                },
+                "paired": {"ten_percent_count": 35},
+                "prompts": {"count": 250},
+                "text_preparation": {
+                    "normalization_version": "nfc_whitespace_v1",
+                    "tokenizer_version": "word_punctuation_v1",
+                    "max_report_tokens": 512,
+                },
+            }
+            result = prepare_iu_xray_kaggle_500(root / "processed", config, source_path=package)
+            self.assertEqual(result.counts, {"train": 350, "validation": 50, "test": 100})
+            self.assertEqual(result.paired_10_count, 35)
+            self.assertEqual(result.prompt_count, 250)
+            self.assertEqual(
+                json.loads(result.subset_ids.read_text(encoding="utf-8"))["artifact_hash"],
+                packaged_subset["artifact_hash"],
+            )
+            summary = json.loads(result.preparation_summary.read_text(encoding="utf-8"))
+            self.assertEqual(summary["preparation_mode"], "verified_preselected_package")
 
 
 if __name__ == "__main__":

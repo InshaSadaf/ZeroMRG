@@ -11,6 +11,8 @@ PROJECT_ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(PROJECT_ROOT / "src"))
 
 from zeromrg.data.prepare_text import prepare_text_data
+from zeromrg.data.iu_xray_subset import prepare_iu_xray_kaggle_500
+from zeromrg.data.archive_io import DatasetSourceError
 from zeromrg.data.split import SplitIntegrityError
 from zeromrg.utils.config import load_config, resolve_paths
 from zeromrg.utils.provenance import detect_environment
@@ -19,6 +21,12 @@ from zeromrg.utils.provenance import detect_environment
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--dataset", required=True, choices=("cov_ctr", "iu_xray", "all"))
+    parser.add_argument(
+        "--profile",
+        choices=("full", "kaggle_500"),
+        default="full",
+        help="IU-Xray execution profile; COV-CTR always remains full",
+    )
     parser.add_argument(
         "--config", action="append", default=[], help="Additional YAML overlay; repeatable"
     )
@@ -40,7 +48,12 @@ def _within(path: Path, root: Path) -> bool:
 
 
 def _load_dataset_config(dataset: str, environment: str, args: argparse.Namespace):
-    files: list[Path] = [PROJECT_ROOT / "configs" / f"{dataset}.yaml"]
+    config_name = (
+        "iu_xray_kaggle_500"
+        if dataset == "iu_xray" and args.profile == "kaggle_500"
+        else dataset
+    )
+    files: list[Path] = [PROJECT_ROOT / "configs" / f"{config_name}.yaml"]
     if environment == "KAGGLE":
         files.append(PROJECT_ROOT / "configs" / "kaggle.yaml")
     elif environment == "LOCAL":
@@ -82,9 +95,21 @@ def main() -> int:
                 raise SplitIntegrityError(
                     f"Kaggle processed artifacts must remain below /kaggle/working: {processed_root}"
                 )
-            result = prepare_text_data(dataset, processed_root, config)
+            profile_name = config.get("execution_profile", {}).get("name")
+            if dataset == "iu_xray" and profile_name == "kaggle_500":
+                source_path = paths["datasets"].get("iu_xray")
+                if not source_path:
+                    raise SplitIntegrityError(
+                        "IU-Xray-500 preparation requires paths.datasets.iu_xray to point "
+                        "to the attached reduced package"
+                    )
+                result = prepare_iu_xray_kaggle_500(
+                    processed_root, config, source_path=source_path
+                )
+            else:
+                result = prepare_text_data(dataset, processed_root, config)
             _print_result(result)
-    except (OSError, ValueError, SplitIntegrityError) as exc:
+    except (OSError, ValueError, DatasetSourceError, SplitIntegrityError) as exc:
         print(f"ERROR: {exc}", file=sys.stderr)
         return 2
     return 0
@@ -92,4 +117,3 @@ def main() -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
-

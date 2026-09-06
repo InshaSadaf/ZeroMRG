@@ -130,3 +130,12 @@ Use `--source <path>` if the original IU-Xray ZIP/folder is not at the path in `
 The portable upload is created as both `artifacts/IU-Xray-500/` and `artifacts/IU-Xray-500.zip`. The package retains the compatible IU layout (`indiana_reports.csv`, `indiana_projections.csv`, and `images/images_normalized/`), contains only selected metadata rows and images, preserves image bytes, and includes its provenance and validation summary. Upload the ZIP as a private Kaggle Dataset, attach it to the notebook, and point `paths.datasets.iu_xray` at its actual `/kaggle/input/...` mount. No Kaggle dataset slug is assumed.
 
 Runs using this profile must load `configs/iu_xray_kaggle_500.yaml` and keep checkpoints/results under an equivalent `iu_xray/kaggle_500` namespace. They must be reported as resource-constrained subset results, never as results on the paper's full IU-Xray population.
+
+After validating the attached reduced package, prepare its profile-specific text artifacts with:
+
+```bash
+python scripts/prepare_text_data.py --dataset iu_xray --profile kaggle_500 \
+  --override paths.datasets.iu_xray=/kaggle/input/<iu-xray-500-dataset>
+```
+
+The command verifies that the 500 validated UIDs and all mapped views exactly match the packaged `subset_500_ids.json` before creating or reusing the 350/50/100 split and other profile artifacts. Do not run reduced IU data through the default `--profile full` path.
