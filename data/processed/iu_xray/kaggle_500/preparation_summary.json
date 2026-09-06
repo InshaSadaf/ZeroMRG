@@ -1,0 +1,36 @@
+{
+  "artifact_hash": "d0de0e5a45f51a31df5d1c3a3ecedf19b1452523ed6db6afb6c1f0af1ec105b0",
+  "artifact_version": "iu_xray_kaggle_500_preparation_v1",
+  "dataset": "iu_xray",
+  "dependency_file_hashes": {
+    "normalized_manifest": "f68d5485a42a3407d991ae0a3f2f30ff3dc4d39fe0839ff102f56f6b72dbe848",
+    "paired_10_ids": "be55723b477790cf600ab1cdc82031c5dd0af84be65ba95157dd0944cb761387",
+    "prompt_ids": "f8ba4d7ac98d9ad2fdd045e6e5f969062672d8f54e24821527f3312725d07c03",
+    "report_statistics": "18a07c496d329698736a4c94d58de79153a869b72ff349672bb0a69b59c420fa",
+    "splits": "30ecfe778c003cce8df5738794578fa05db6334350722a7910eaf9db47286b79",
+    "subset_500_ids": "f9badf52194df1789b4582d9b7f4016a560c47d84487b4a09754e93ef684786d",
+    "vocabulary": "5bf54a354563973f117db2ec43c571a6108e7809707fc766ad54fc2ece55db4e"
+  },
+  "execution_profile": {
+    "label": "RESOURCE-CONSTRAINED",
+    "name": "kaggle_500"
+  },
+  "paired_10_count": 35,
+  "physical_image_count": 977,
+  "prompt_count": 250,
+  "reports_exceeding_configured_max": 0,
+  "selected_uid_count": 500,
+  "split_counts": {
+    "test": 100,
+    "train": 350,
+    "validation": 50
+  },
+  "views_per_uid": {
+    "1": 49,
+    "2": 426,
+    "3": 24,
+    "4": 1
+  },
+  "vocabulary_size": 1013,
+  "vocabulary_training_report_count": 350
+}

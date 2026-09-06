@@ -1,0 +1,35 @@
+_base_: iu_xray.yaml
+
+execution_profile:
+  name: kaggle_500
+  label: RESOURCE-CONSTRAINED
+  description: deterministic 500-study IU-Xray execution profile for Kaggle
+  output_namespace: iu_xray/kaggle_500
+
+subset:
+  enabled: true
+  selection_level: uid
+  population_size: 500
+  source_population: 3331
+  base_seed: 42
+
+split:
+  train_ratio: 0.7
+  validation_ratio: 0.1
+  test_ratio: 0.2
+  train_count: 350
+  validation_count: 50
+  test_count: 100
+
+paired:
+  ten_percent_count: 35
+
+prompts:
+  count: 250
+
+_evidence:
+  execution_profile: RESOURCE-CONSTRAINED
+  subset: RESOURCE-CONSTRAINED
+  split: RESOURCE-CONSTRAINED
+  paired: RESOURCE-CONSTRAINED
+  prompts: RESOURCE-CONSTRAINED

@@ -1,0 +1,102 @@
+{
+  "affected_sample_ids": [],
+  "all_decoder_content_token_lengths": {
+    "maximum": 161,
+    "mean": 46.644,
+    "minimum": 16,
+    "p50": 41.0,
+    "p90": 75.20000000000005,
+    "p95": 94.04999999999995,
+    "p99": 132.01
+  },
+  "all_decoder_sequence_lengths_including_bos_eos": {
+    "maximum": 162,
+    "mean": 47.644,
+    "minimum": 17,
+    "p50": 42.0,
+    "p90": 76.20000000000005,
+    "p95": 95.04999999999995,
+    "p99": 133.01
+  },
+  "all_reports": 500,
+  "artifact_hash": "5d56eac8ec876b98e9ee71a908d0560514aee0b17ba12921d9a49ca55c51abd2",
+  "artifact_version": "report_statistics_v1",
+  "configured_max_report_tokens": 512,
+  "dataset": "iu_xray",
+  "dependency_file_hashes": {
+    "normalized_manifest": "f68d5485a42a3407d991ae0a3f2f30ff3dc4d39fe0839ff102f56f6b72dbe848",
+    "paired_10_ids": "be55723b477790cf600ab1cdc82031c5dd0af84be65ba95157dd0944cb761387",
+    "prompt_ids": "f8ba4d7ac98d9ad2fdd045e6e5f969062672d8f54e24821527f3312725d07c03",
+    "splits": "30ecfe778c003cce8df5738794578fa05db6334350722a7910eaf9db47286b79",
+    "subset_500_ids": "f9badf52194df1789b4582d9b7f4016a560c47d84487b4a09754e93ef684786d",
+    "vocabulary": "5bf54a354563973f117db2ec43c571a6108e7809707fc766ad54fc2ece55db4e"
+  },
+  "execution_profile": {
+    "label": "RESOURCE-CONSTRAINED",
+    "name": "kaggle_500"
+  },
+  "longest_by_split": {
+    "test": {
+      "maximum_including_bos_eos": 157,
+      "sample_ids": [
+        "3892"
+      ]
+    },
+    "train": {
+      "maximum_including_bos_eos": 162,
+      "sample_ids": [
+        "423"
+      ]
+    },
+    "validation": {
+      "maximum_including_bos_eos": 136,
+      "sample_ids": [
+        "1695"
+      ]
+    }
+  },
+  "max_length_decision": "retain_512",
+  "minimum_safe_max_report_tokens": 162,
+  "normalization_changed_reports": 0,
+  "normalization_version": "nfc_whitespace_v1",
+  "note": "No report was truncated; sequence lengths include BOS and EOS.",
+  "percentage_exceeding_configured_max": 0.0,
+  "reports_exceeding_configured_max": 0,
+  "source_subset_artifact_hash": "1774efc51fdfff526770d3d42cd3bc87a43347d4da93f85d3e0b90ebce2df25f",
+  "split_hash": "e4a51696ca08304a61e9e8c656e86b390bc3932a025f28bfcfe62c20a9f1d5c1",
+  "tokenizer_version": "word_punctuation_v1",
+  "training_character_lengths": {
+    "maximum": 894,
+    "mean": 279.0885714285714,
+    "minimum": 83,
+    "p50": 250.5,
+    "p90": 464.0,
+    "p95": 547.6500000000001,
+    "p99": 713.2999999999997
+  },
+  "training_decoder_content_token_lengths": {
+    "maximum": 161,
+    "mean": 47.285714285714285,
+    "minimum": 16,
+    "p50": 41.0,
+    "p90": 78.10000000000002,
+    "p95": 96.55000000000001,
+    "p99": 130.52999999999997
+  },
+  "training_reports": 350,
+  "training_whitespace_token_lengths": {
+    "maximum": 133,
+    "mean": 39.44,
+    "minimum": 13,
+    "p50": 34.0,
+    "p90": 65.10000000000002,
+    "p95": 82.0,
+    "p99": 112.03999999999996
+  },
+  "unknown_token_counts_by_split": {
+    "test": 83,
+    "train": 0,
+    "validation": 75
+  },
+  "vocabulary_artifact_hash": "c3fb1e660fd4d4204eaa1f994843e6a7f39b432cad657d357dd99aacdd5f5753"
+}

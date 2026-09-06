@@ -218,13 +218,15 @@ def build_or_reuse_splits(
     destination: str | Path,
     expected_counts: Mapping[str, int] | None = None,
     validated_population_hash: str | None = None,
+    seed_namespace: str | None = None,
+    execution_profile: Mapping[str, Any] | None = None,
 ) -> tuple[dict[str, Any], bool, str]:
     destination = Path(destination)
     ids = sorted(membership_id(record, dataset) for record in records)
     if len(ids) != len(set(ids)):
         raise SplitIntegrityError(f"Duplicate split membership IDs in {dataset} population")
     pop_hash = validated_population_hash or population_hash(records, dataset)
-    derived = derive_seed(base_seed, dataset, "split", SPLIT_VERSION)
+    derived = derive_seed(base_seed, seed_namespace or dataset, "split", SPLIT_VERSION)
     counts = allocate_split_counts(len(ids), ratios)
     if expected_counts and counts != {name: int(expected_counts[name]) for name in SPLIT_NAMES}:
         raise SplitIntegrityError(f"Computed split counts {counts} differ from configured expectations {expected_counts}")
@@ -251,6 +253,10 @@ def build_or_reuse_splits(
         "training_membership_hash": train_membership_hash,
         **memberships,
     }
+    if seed_namespace is not None:
+        core["seed_namespace"] = seed_namespace
+    if execution_profile is not None:
+        core["execution_profile"] = dict(execution_profile)
 
     if destination.exists():
         existing = _read_verified_artifact(destination, "split_hash")
@@ -280,11 +286,13 @@ def build_or_reuse_selection(
     base_seed: int,
     split_hash: str,
     destination: str | Path,
+    seed_namespace: str | None = None,
+    execution_profile: Mapping[str, Any] | None = None,
 ) -> tuple[dict[str, Any], bool, str]:
     destination = Path(destination)
     if count < 0 or count > len(train_ids):
         raise SplitIntegrityError(f"Cannot select {count} {purpose} IDs from {len(train_ids)} training IDs")
-    derived = derive_seed(base_seed, dataset, purpose, SELECTION_VERSION)
+    derived = derive_seed(base_seed, seed_namespace or dataset, purpose, SELECTION_VERSION)
     candidates = sorted(str(value) for value in train_ids)
     chosen = sorted(random.Random(derived).sample(candidates, count))
     if len(chosen) != len(set(chosen)) or not set(chosen).issubset(set(train_ids)):
@@ -302,6 +310,10 @@ def build_or_reuse_selection(
         "count": count,
         "ids": chosen,
     }
+    if seed_namespace is not None:
+        core["seed_namespace"] = seed_namespace
+    if execution_profile is not None:
+        core["execution_profile"] = dict(execution_profile)
     if destination.exists():
         existing = _read_verified_artifact(destination, "artifact_hash")
         comparable = {key: value for key, value in existing.items() if key not in {"generated_at_utc", "artifact_hash"}}

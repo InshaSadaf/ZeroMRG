@@ -1,6 +1,6 @@
 # Kaggle setup for ZeroMRG
 
-This repository is developed locally and is intended to execute primarily in a Kaggle Notebook with GPU acceleration. The current implementation phase provides environment checks and configuration only: it does not preprocess data, download checkpoints, or train ZeroMRG.
+This repository is developed locally and is intended to execute primarily in a Kaggle Notebook with GPU acceleration. The current implementation scope provides environment checks, read-only dataset validation, and deterministic dataset/text artifacts. It does not implement or train the ZeroMRG model or download checkpoints.
 
 ## 1. Create the notebook and enable a GPU
 
@@ -114,3 +114,19 @@ python -m unittest discover -s tests -v
 ```
 
 Use dotted-path overrides when local archives live elsewhere, for example `--override paths.datasets.iu_xray=relative/or/absolute/path`. A normal development machine should be reported as `LOCAL`; unavailable Kaggle mount paths are not an error during local checks.
+
+## 10. Resource-constrained IU-Xray-500 profile
+
+The full COV-CTR population remains unchanged and is identified as `FULL DATASET REPRODUCTION`: 714 usable samples, a 571/71/72 split, 57 paired-training IDs, and 500 prompt IDs. The canonical full-IU configuration and artifacts also remain available and unchanged.
+
+For limited Kaggle storage, memory, or runtime, build the explicitly labelled `RESOURCE-CONSTRAINED` IU-Xray profile locally:
+
+```bash
+python scripts/build_iu_xray_kaggle_subset.py
+```
+
+Use `--source <path>` if the original IU-Xray ZIP/folder is not at the path in `configs/local.yaml`. The command deterministically selects 500 validated study UIDs, retains every image view for those UIDs, creates a 350/50/100 split, selects 35 paired-training IDs and 250 prompt IDs, and builds a vocabulary from the 350 training reports only. It writes selection provenance to `data/processed/iu_xray/subset_500_ids.json` and profile-specific derived artifacts to `data/processed/iu_xray/kaggle_500/`.
+
+The portable upload is created as both `artifacts/IU-Xray-500/` and `artifacts/IU-Xray-500.zip`. The package retains the compatible IU layout (`indiana_reports.csv`, `indiana_projections.csv`, and `images/images_normalized/`), contains only selected metadata rows and images, preserves image bytes, and includes its provenance and validation summary. Upload the ZIP as a private Kaggle Dataset, attach it to the notebook, and point `paths.datasets.iu_xray` at its actual `/kaggle/input/...` mount. No Kaggle dataset slug is assumed.
+
+Runs using this profile must load `configs/iu_xray_kaggle_500.yaml` and keep checkpoints/results under an equivalent `iu_xray/kaggle_500` namespace. They must be reported as resource-constrained subset results, never as results on the paper's full IU-Xray population.

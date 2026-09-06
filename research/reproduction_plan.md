@@ -900,3 +900,15 @@ Any failed gate blocks progression. A resource failure permits only an explicitl
 - [ ] Results — predictions, metrics, configurations, hashes, hardware, date, and count/version caveats
 
 No checklist item is completed by this planning document. Implementation, preprocessing, checkpoint download, and training begin only in later explicitly authorized phases.
+
+## 16. Resource-constrained IU-Xray-500 execution profile
+
+**[RESOURCE-CONSTRAINED]** This operational profile supplements, and does not replace or revise, the canonical full-IU reproduction plan above. COV-CTR remains the complete 714-sample validated population with its 571/71/72 split, 57 paired-training IDs, and 500 prompt IDs. The canonical IU-Xray population remains 3,331 strict study UIDs; its existing configuration and derived artifacts must not be overwritten.
+
+For resource-limited Kaggle execution, `configs/iu_xray_kaggle_500.yaml` defines a deterministic selection of 500 UIDs from the validated 3,331-UID population using base seed 42 and a dedicated versioned seed namespace. Selection occurs before splitting and preserves all projection rows and physical image views belonging to every selected UID. The isolated profile split is exactly 350 train, 50 validation, and 100 test. Its 35 paired-training IDs and 250 prompt IDs are drawn only from the 350 training UIDs. Its decoder vocabulary and report-length statistics are built independently from the subset, with vocabulary construction restricted to subset training reports.
+
+Subset selection provenance is stored at `data/processed/iu_xray/subset_500_ids.json`; all other subset-derived data artifacts are stored below `data/processed/iu_xray/kaggle_500/`. Future checkpoints, predictions, metrics, and logs for this profile must use the same `iu_xray/kaggle_500` namespace so that neither full-IU nor COV artifacts can be mixed with subset runs.
+
+The portable `IU-Xray-500` package preserves the original IU-compatible filenames and layout, report field values, and selected PNG bytes. It includes filtered report/projection tables, every selected view, selection provenance, a package summary, and an explicit resource-constrained README. Package acceptance requires independent validation of exactly 500 valid UIDs, exact metadata/image filtering, no missing/unmapped/corrupt images, unchanged image hashes, correct view grouping, and the recorded 350/50/100, 35, and 250 profile counts. A deterministic ZIP may be used for Kaggle upload.
+
+Results from this profile are not directly equivalent to full-IU paper results. Every table, checkpoint, or metric produced from it must carry the `RESOURCE-CONSTRAINED` label and the subset artifact hash. No architectural, loss, preprocessing, or evaluation-method change is implied by the smaller execution population.
