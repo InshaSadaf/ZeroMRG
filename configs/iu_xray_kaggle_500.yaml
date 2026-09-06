@@ -33,3 +33,14 @@ _evidence:
   split: RESOURCE-CONSTRAINED
   paired: RESOURCE-CONSTRAINED
   prompts: RESOURCE-CONSTRAINED
+
+dataset:
+  prompt_count: 250
+  paired_10_count: 35
+  primary_usable_samples: 500
+  expected_split_counts:
+    train: 350
+    validation: 50
+    test: 100
+  validation_expectations:
+    primary_usable_samples: 500
