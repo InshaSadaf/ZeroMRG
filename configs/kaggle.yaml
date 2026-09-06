@@ -1,0 +1,22 @@
+runtime:
+  environment: KAGGLE
+
+device:
+  preferred: auto
+  primary_index: 0
+
+paths:
+  datasets:
+    cov_ctr: null
+    iu_xray: null
+  outputs:
+    processed: /kaggle/working/zeromrg/data/processed
+    checkpoints: /kaggle/working/zeromrg/checkpoints
+    results: /kaggle/working/zeromrg/results
+    logs: /kaggle/working/zeromrg/logs
+    artifacts: /kaggle/working/zeromrg/artifacts
+
+_evidence:
+  runtime: IMPLEMENTATION-ASSUMPTION
+  device: IMPLEMENTATION-ASSUMPTION
+  paths: IMPLEMENTATION-ASSUMPTION

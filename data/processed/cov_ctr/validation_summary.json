@@ -1,0 +1,167 @@
+{
+  "counts": {
+    "annotation_rows": 726,
+    "conflicting_duplicate_keys": 6,
+    "corrupt_images": 0,
+    "duplicate_annotation_keys_total": 6,
+    "exact_duplicate_annotation_rows": 0,
+    "excluded_records": 32,
+    "images_without_reports": 26,
+    "physical_images": 746,
+    "reports_without_images": 0,
+    "unique_annotation_image_ids": 720,
+    "valid_samples": 714
+  },
+  "dataset": "cov_ctr",
+  "fields": {
+    "columns": [
+      "image_id",
+      "findings",
+      "terminologies",
+      "COVID",
+      "impression",
+      "reports_En"
+    ],
+    "empty_value_counts": {
+      "COVID": 0,
+      "findings": 0,
+      "image_id": 0,
+      "impression": 0,
+      "reports_En": 0,
+      "terminologies": 0
+    },
+    "project_report_field": "reports_En",
+    "project_report_language": "en"
+  },
+  "images": {
+    "actual_formats": {
+      "JPEG": 236,
+      "PNG": 510
+    },
+    "corrupt_paths": [],
+    "duplicate_content_groups": [],
+    "extension_mismatch_count": 34,
+    "extension_mismatch_paths": [
+      "COV-CTR/2020.03.12.20034686-p17-91-1.png",
+      "COV-CTR/2020.03.12.20034686-p17-91-2.png",
+      "COV-CTR/2020.03.16.20035105-p6-64-1.png",
+      "COV-CTR/2020.03.16.20035105-p6-64-2.png",
+      "COV-CTR/2020.03.16.20035105-p6-64-3.png",
+      "COV-CTR/2020.03.16.20035105-p6-64-4.png",
+      "COV-CTR/2020.03.16.20036145-p19-128-1.png",
+      "COV-CTR/2020.03.16.20036145-p19-128-2.png",
+      "COV-CTR/2020.03.16.20036145-p19-128-3.png",
+      "COV-CTR/2020.03.16.20036145-p19-128-4.png",
+      "COV-CTR/2020.03.18.20038125-p15-54-2.png",
+      "COV-CTR/2020.03.18.20038125-p15-54-4.png",
+      "COV-CTR/2020.03.18.20038125-p15-54-5.png",
+      "COV-CTR/2020.03.18.20038125-p15-54-6.png",
+      "COV-CTR/2020.03.18.20038125-p16-56-1.png",
+      "COV-CTR/2020.03.18.20038125-p16-56-2.png",
+      "COV-CTR/2020.03.18.20038125-p16-56-3.png",
+      "COV-CTR/2020.03.18.20038125-p16-56-4.png",
+      "COV-CTR/2020.03.18.20038125-p16-56-5.png",
+      "COV-CTR/2020.03.18.20038125-p16-56-6.png",
+      "COV-CTR/2020.03.21.20040691-p18-6-6.png",
+      "COV-CTR/2020.03.21.20040691-p18-67-1.png",
+      "COV-CTR/2020.03.21.20040691-p18-67-2.png",
+      "COV-CTR/2020.03.21.20040691-p18-67-3.png",
+      "COV-CTR/2020.03.21.20040691-p18-67-4.png",
+      "COV-CTR/2020.03.21.20040691-p18-67-5.png",
+      "COV-CTR/2020.03.21.20040691-p18-67-7.png",
+      "COV-CTR/2020.03.21.20040691-p18-67-8.png",
+      "COV-CTR/2020.03.22.20034041-p16-66.png",
+      "COV-CTR/2020.03.22.20034041-p17-80-1.png",
+      "COV-CTR/2020.03.22.20034041-p17-80-2.png",
+      "COV-CTR/2020.03.22.20034041-p18-92-1.png",
+      "COV-CTR/2020.03.22.20034041-p18-92-2.png",
+      "COV-CTR/2020.03.22.20034041-p18-92-3.png"
+    ],
+    "modes": {
+      "L": 44,
+      "RGB": 528,
+      "RGBA": 174
+    }
+  },
+  "integrity": {
+    "annotation_sha256": "bfb892f3453276f652d8a14dcfdc6f215dd3eecd435394a5c05bdb8209a04489",
+    "audit_manifest_sha256": "48b56dcffd9e8ec21c2c98486ce44213506e9712e9998853a57dab9f66abcade",
+    "image_inventory_sha256": "0ca03c7f6718591bf70743b134345b2503645cecbcd58471a31077f0273ea6c1",
+    "valid_manifest_sha256": "05cf874cc83ce420e4cda4ab1762654361abc0ef095ce68afebe7a48cef80c07",
+    "validation_summary_payload_sha256": "b1cc1b510154c0d9327067cf6990eab39d7d6b14950f6398139a0ef75e693941"
+  },
+  "mapping": {
+    "conflict_keys": [
+      "20.jpg",
+      "2020.02.13.20022673-p13-77%2.png",
+      "2020.02.17.20024018-p17-61%1.png",
+      "2020.02.17.20024018-p17-61%3.png",
+      "2020.02.26.20026989-p34-114_1%0.png",
+      "83%2.jpg"
+    ],
+    "missing_image_keys": [],
+    "unannotated_image_paths": [
+      "COV-CTR/18%3.jpg",
+      "COV-CTR/2020.01.24.919183-p27-134.png",
+      "COV-CTR/2020.02.22.20024927-p19-68%0.png",
+      "COV-CTR/2020.02.22.20024927-p19-68%1.png",
+      "COV-CTR/2020.02.22.20024927-p19-68%2.png",
+      "COV-CTR/2020.02.24.20027201-p19-670.png",
+      "COV-CTR/2020.02.26.20026989-p34-114_2%0.png",
+      "COV-CTR/2020.03.03.20030775-p12-93%0.png",
+      "COV-CTR/2020.03.04.20031047-p14-87%0.png",
+      "COV-CTR/2020.03.04.20031047-p14-87%1.png",
+      "COV-CTR/2020.03.07.20031393-p7-50%0.png",
+      "COV-CTR/2020.03.07.20031393-p7-50%1.png",
+      "COV-CTR/2020.03.07.20031393-p7-50%2.png",
+      "COV-CTR/2020.03.07.20031393-p7-50%3.png",
+      "COV-CTR/2020.03.08.20031658-p15-103.png",
+      "COV-CTR/2020.03.08.20031658-p15-104.png",
+      "COV-CTR/2020.03.08.20031658-p15-105.png",
+      "COV-CTR/2020.03.08.20031658-p15-106.png",
+      "COV-CTR/25%0.jpg",
+      "COV-CTR/26%2.jpg",
+      "COV-CTR/43%3.jpg",
+      "COV-CTR/5%7.jpg",
+      "COV-CTR/6%2.jpg",
+      "COV-CTR/83%3.jpg",
+      "COV-CTR/89%3.jpg",
+      "COV-CTR/Talaromyces-marneffei-infection-relapse-presenting-as-ost_2020_International-p1-12%3.png"
+    ]
+  },
+  "reference_comparison": {
+    "conflicting_duplicate_keys": {
+      "actual": 6,
+      "expected": 6,
+      "matches": true
+    },
+    "primary_usable_samples": {
+      "actual": 714,
+      "expected": 714,
+      "matches": true
+    },
+    "unannotated_images": {
+      "actual": 26,
+      "expected": 26,
+      "matches": true
+    }
+  },
+  "schema_version": "1.0",
+  "source_display_name": "COV-CTR with English reports.zip",
+  "source_kind": "zip",
+  "structure": {
+    "annotation_path": "COV-CTR/reports_ZH_EN.csv",
+    "directory_file_counts": {
+      "COV-CTR": 748
+    },
+    "image_extensions": {
+      ".jpg": 202,
+      ".png": 544
+    },
+    "non_image_files": [
+      "COV-CTR/.DS_Store",
+      "COV-CTR/reports_ZH_EN.csv"
+    ],
+    "total_files": 748
+  }
+}

@@ -1,0 +1,69 @@
+project:
+  name: zeromrg
+  phase: environment-and-configuration
+
+dataset:
+  name: null
+  modality: null
+  language: en
+
+reproducibility:
+  seed: 42
+  deterministic: true
+
+text_preparation:
+  normalization_version: nfc_whitespace_v1
+  tokenizer_version: word_punctuation_v1
+  max_report_tokens: 512
+
+device:
+  preferred: auto
+  primary_index: 0
+  distributed: false
+
+training:
+  batch_size: 6
+  optimizer: SGD
+  learning_rate: 0.001
+  momentum: 0.99
+  early_stopping_patience: 50
+  early_stopping_metric: BLEU-4
+  dropout: 0.1
+  max_epochs: 200
+
+pretrained:
+  text_checkpoint: M-CLIP/XLM-Roberta-Large-Vit-L-14
+  image_checkpoint: ViT-L/14
+  download_enabled: false
+
+paths:
+  datasets:
+    cov_ctr: null
+    iu_xray: null
+  outputs:
+    processed: data/processed
+    checkpoints: checkpoints
+    results: results
+    logs: logs
+    artifacts: artifacts
+
+_evidence:
+  project: IMPLEMENTATION-ASSUMPTION
+  dataset.name: IMPLEMENTATION-ASSUMPTION
+  dataset.modality: IMPLEMENTATION-ASSUMPTION
+  dataset.language: PAPER-STATED
+  reproducibility: IMPLEMENTATION-ASSUMPTION
+  text_preparation: IMPLEMENTATION-ASSUMPTION
+  device: IMPLEMENTATION-ASSUMPTION
+  training.batch_size: PAPER-STATED
+  training.optimizer: PAPER-STATED
+  training.learning_rate: PAPER-STATED
+  training.momentum: PAPER-STATED
+  training.early_stopping_patience: PAPER-STATED
+  training.early_stopping_metric: IMPLEMENTATION-ASSUMPTION
+  training.dropout: IMPLEMENTATION-ASSUMPTION
+  training.max_epochs: IMPLEMENTATION-ASSUMPTION
+  pretrained.text_checkpoint: PAPER-STATED
+  pretrained.image_checkpoint: IMPLEMENTATION-ASSUMPTION
+  pretrained.download_enabled: IMPLEMENTATION-ASSUMPTION
+  paths: IMPLEMENTATION-ASSUMPTION

@@ -1,0 +1,96 @@
+{
+  "affected_sample_ids": [],
+  "all_decoder_content_token_lengths": {
+    "maximum": 127,
+    "mean": 76.28011204481793,
+    "minimum": 19,
+    "p50": 75.0,
+    "p90": 96.0,
+    "p95": 104.0,
+    "p99": 115.0
+  },
+  "all_decoder_sequence_lengths_including_bos_eos": {
+    "maximum": 128,
+    "mean": 77.28011204481793,
+    "minimum": 20,
+    "p50": 76.0,
+    "p90": 97.0,
+    "p95": 105.0,
+    "p99": 116.0
+  },
+  "all_reports": 714,
+  "artifact_hash": "22dfe3f887ee12b8c998426a55c708b00a9f5c09fa0eb111f27cf5e0072b7155",
+  "artifact_version": "report_statistics_v1",
+  "configured_max_report_tokens": 512,
+  "dataset": "cov_ctr",
+  "dependency_file_hashes": {
+    "normalized_manifest": "5cda2b9b889ea7b5acc05b3ee4a488da7777786339c1f1273ebf17c3ef92b5fe",
+    "paired_10_ids": "a62c333134693f97eca22b2baa2f37c475cfe7fcb7e3a50a0ecf9f12b04fbe25",
+    "prompt_ids": "ff3df9b2ed5bb89b2a0a357f886b0b3f729bb0bc4a54afd2c07e86fd4cde2e85",
+    "splits": "2c3bb2e1efbee0b8250fc2250f1c8be048759f417eaa56d1c53927b3459d4108",
+    "vocabulary": "bb204385492ffe1aef4869411e012a6c27005deffcf256c85711767da1c32ef2"
+  },
+  "longest_by_split": {
+    "test": {
+      "maximum_including_bos_eos": 122,
+      "sample_ids": [
+        "cov_ctr:sample:122e6fae7ba34bca5073"
+      ]
+    },
+    "train": {
+      "maximum_including_bos_eos": 128,
+      "sample_ids": [
+        "cov_ctr:sample:9a026c70e2777f258197"
+      ]
+    },
+    "validation": {
+      "maximum_including_bos_eos": 113,
+      "sample_ids": [
+        "cov_ctr:sample:417d3cd00835782f2626"
+      ]
+    }
+  },
+  "max_length_decision": "retain_512",
+  "minimum_safe_max_report_tokens": 128,
+  "normalization_changed_reports": 714,
+  "normalization_version": "nfc_whitespace_v1",
+  "note": "No report was truncated; sequence lengths include BOS and EOS.",
+  "percentage_exceeding_configured_max": 0.0,
+  "reports_exceeding_configured_max": 0,
+  "split_hash": "5aed9b214886936c7dc2c0367f7350db30fdb8def8e9d5206469641b22aca3ae",
+  "tokenizer_version": "word_punctuation_v1",
+  "training_character_lengths": {
+    "maximum": 666,
+    "mean": 403.01050788091067,
+    "minimum": 97,
+    "p50": 401.0,
+    "p90": 506.0,
+    "p95": 537.0,
+    "p99": 598.4999999999989
+  },
+  "training_decoder_content_token_lengths": {
+    "maximum": 127,
+    "mean": 76.43082311733801,
+    "minimum": 19,
+    "p50": 75.0,
+    "p90": 97.0,
+    "p95": 104.0,
+    "p99": 115.59999999999991
+  },
+  "training_reports": 571,
+  "training_whitespace_token_lengths": {
+    "maximum": 116,
+    "mean": 68.68126094570928,
+    "minimum": 17,
+    "p50": 68.0,
+    "p90": 88.0,
+    "p95": 93.0,
+    "p99": 104.29999999999995
+  },
+  "unknown_token_counts_by_split": {
+    "test": 19,
+    "train": 0,
+    "validation": 12
+  },
+  "vocabulary_artifact_hash": "4dcfa26d9dfd0b31bfa0224dbd2b929b26852621869582dd2db993b375c87dd0"
+}

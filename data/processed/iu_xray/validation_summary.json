@@ -1,0 +1,139 @@
+{
+  "counts": {
+    "both_sections_uids": 3331,
+    "corrupt_images": 0,
+    "duplicate_report_uids": 0,
+    "exact_duplicate_projection_rows": 0,
+    "exact_duplicate_report_rows": 0,
+    "excluded_records": 524,
+    "findings_only_uids": 6,
+    "images_missing_projection_metadata": 4,
+    "impression_only_uids": 489,
+    "neither_section_uids": 25,
+    "physical_images": 7470,
+    "projection_rows": 7466,
+    "projection_rows_missing_images": 0,
+    "projection_uids_without_reports": 0,
+    "report_rows": 3851,
+    "report_uids_without_projections": 0,
+    "unique_projection_uids": 3851,
+    "unique_report_uids": 3851,
+    "valid_uids": 3331
+  },
+  "dataset": "iu_xray",
+  "fields": {
+    "empty_projection_value_counts": {
+      "filename": 0,
+      "projection": 0,
+      "uid": 0
+    },
+    "empty_report_value_counts": {
+      "MeSH": 0,
+      "Problems": 0,
+      "comparison": 599,
+      "findings": 514,
+      "image": 0,
+      "impression": 31,
+      "indication": 86,
+      "uid": 0
+    },
+    "project_report_language": "en",
+    "project_target_fields": [
+      "impression",
+      "findings"
+    ],
+    "projection_columns": [
+      "uid",
+      "filename",
+      "projection"
+    ],
+    "report_columns": [
+      "uid",
+      "MeSH",
+      "Problems",
+      "image",
+      "indication",
+      "comparison",
+      "findings",
+      "impression"
+    ]
+  },
+  "images": {
+    "actual_formats": {
+      "PNG": 7470
+    },
+    "corrupt_paths": [],
+    "duplicate_content_groups": [
+      [
+        "images/images_normalized/1015_IM-0001-1001.dcm.png",
+        "images/images_normalized/1015_IM-0013-1001.dcm.png"
+      ],
+      [
+        "images/images_normalized/1015_IM-0001-2001.dcm.png",
+        "images/images_normalized/1015_IM-0013-2001.dcm.png"
+      ],
+      [
+        "images/images_normalized/3245_IM-1537-1001.dcm.png",
+        "images/images_normalized/3245_IM-1537-4001.dcm.png"
+      ]
+    ],
+    "modes": {
+      "L": 7470
+    }
+  },
+  "integrity": {
+    "audit_manifest_sha256": "86a300d445d513ef7ed777efc34e06fe8e1b41b690a94626c1c5fcc473fe552e",
+    "image_inventory_sha256": "4395f9fe96043025ef1b2993ce0166eb02cb83881895ed86a5223f245a08d3cb",
+    "projection_csv_sha256": "7af9c8a6b4f8ae695c654ecd4208edd193a37892a5607b7cb9e609dc997e6b7a",
+    "report_csv_sha256": "cd7257716f7be4aaf46e55a9ea266b69095372a2f23dc0e19e32a95b0f02e2e6",
+    "valid_manifest_sha256": "5378ddfeb170168eab9cc07e0df00a4ef53f9079e0498a387b758b75cda3042c",
+    "validation_summary_payload_sha256": "52612d3ddaf55836f5e5a3eb089df1b8eab286b64e81934060e26b156fbb3216"
+  },
+  "mapping": {
+    "duplicate_projection_filenames": [],
+    "projection_rows_missing_images": [],
+    "projection_uids_without_reports": [],
+    "projection_values": {
+      "Frontal": 3818,
+      "Lateral": 3648
+    },
+    "report_uids_without_projections": [],
+    "unexpected_projection_values": [],
+    "unmapped_image_paths": [
+      "images/images_normalized/2084_IM-0715-1001-0002.dcm.png",
+      "images/images_normalized/2084_IM-0715-2001-0001.dcm.png",
+      "images/images_normalized/2560_IM-1064-4001.dcm.png",
+      "images/images_normalized/3809_IM-1919-1003002.dcm.png"
+    ],
+    "views_per_uid": {
+      "1": 446,
+      "2": 3210,
+      "3": 181,
+      "4": 13,
+      "5": 1
+    }
+  },
+  "reference_comparison": {
+    "primary_usable_samples": {
+      "actual": 3331,
+      "expected": 3331,
+      "matches": true
+    }
+  },
+  "schema_version": "1.0",
+  "source_display_name": "IU-Xray.zip",
+  "source_kind": "zip",
+  "structure": {
+    "directory_file_counts": {
+      ".": 2,
+      "images/images_normalized": 7470
+    },
+    "non_image_files": [
+      "indiana_projections.csv",
+      "indiana_reports.csv"
+    ],
+    "projection_path": "indiana_projections.csv",
+    "report_path": "indiana_reports.csv",
+    "total_files": 7472
+  }
+}

@@ -1,0 +1,17 @@
+runtime:
+  environment: LOCAL
+
+paths:
+  datasets:
+    cov_ctr: data/COV-CTR with English reports.zip
+    iu_xray: data/IU-Xray.zip
+  outputs:
+    processed: data/processed
+    checkpoints: checkpoints
+    results: results
+    logs: logs
+    artifacts: artifacts
+
+_evidence:
+  runtime: IMPLEMENTATION-ASSUMPTION
+  paths: IMPLEMENTATION-ASSUMPTION

@@ -1,0 +1,26 @@
+# Kaggle commonly provides several of these packages already. Install only the
+# missing requirements in the notebook environment; source code never installs
+# packages automatically.
+numpy>=1.24,<3
+PyYAML>=6,<7
+Pillow>=9,<12
+pandas>=1.5,<3
+psutil>=5.9,<7
+tqdm>=4.65,<5
+
+# Select a CUDA-compatible build for the active Kaggle image/driver. These broad
+# constraints avoid silently replacing a compatible Kaggle preinstallation.
+torch>=2.1,<3
+torchvision>=0.16,<1
+
+transformers>=4.35,<5
+sentencepiece>=0.1.99,<1
+multilingual-clip>=1.0.10,<2
+openai-clip>=1.0.1,<2
+
+# Paper-compatible caption metrics. METEOR additionally requires Java.
+pycocoevalcap>=1.2,<2
+
+# Development and verification.
+pytest>=7,<9
+

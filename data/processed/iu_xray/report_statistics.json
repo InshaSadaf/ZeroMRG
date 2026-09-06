@@ -1,0 +1,96 @@
+{
+  "affected_sample_ids": [],
+  "all_decoder_content_token_lengths": {
+    "maximum": 267,
+    "mean": 47.382467727409185,
+    "minimum": 15,
+    "p50": 42.0,
+    "p90": 77.0,
+    "p95": 93.0,
+    "p99": 129.0
+  },
+  "all_decoder_sequence_lengths_including_bos_eos": {
+    "maximum": 268,
+    "mean": 48.382467727409185,
+    "minimum": 16,
+    "p50": 43.0,
+    "p90": 78.0,
+    "p95": 94.0,
+    "p99": 130.0
+  },
+  "all_reports": 3331,
+  "artifact_hash": "ea01d2846cd2b9882026a8ebe168d646943154f7d1d496e695ed77a3644975e6",
+  "artifact_version": "report_statistics_v1",
+  "configured_max_report_tokens": 512,
+  "dataset": "iu_xray",
+  "dependency_file_hashes": {
+    "normalized_manifest": "155bcab0e97b0db3a7207eade1618c6cf16a42a3fc9f3fbac83b6d8302a59453",
+    "paired_10_ids": "75841359499feb72c2fdea2cd6cf8cbdd930cb623be293ecb20dec330d1a3a7d",
+    "prompt_ids": "68fb3709a8ed05bbc5ee1ea03e1780d644cd097bfa5af1462d15cb978382fbbe",
+    "splits": "1e9364099f3d6dd2d3e936d1ec2dbd50972df9def3506f5ee3dbe9f4d540f174",
+    "vocabulary": "7e2e2c2d6c442f6cf63ca964c7bec63c5f89ecf6a7917328c7524febb8fe71ac"
+  },
+  "longest_by_split": {
+    "test": {
+      "maximum_including_bos_eos": 207,
+      "sample_ids": [
+        "2415"
+      ]
+    },
+    "train": {
+      "maximum_including_bos_eos": 268,
+      "sample_ids": [
+        "206"
+      ]
+    },
+    "validation": {
+      "maximum_including_bos_eos": 151,
+      "sample_ids": [
+        "650"
+      ]
+    }
+  },
+  "max_length_decision": "retain_512",
+  "minimum_safe_max_report_tokens": 268,
+  "normalization_changed_reports": 2,
+  "normalization_version": "nfc_whitespace_v1",
+  "note": "No report was truncated; sequence lengths include BOS and EOS.",
+  "percentage_exceeding_configured_max": 0.0,
+  "reports_exceeding_configured_max": 0,
+  "split_hash": "57082e66271047d4c4c2340f2fb89eae47b35837a5be36896d57a8b0a1ba14e6",
+  "tokenizer_version": "word_punctuation_v1",
+  "training_character_lengths": {
+    "maximum": 1412,
+    "mean": 281.37650085763295,
+    "minimum": 81,
+    "p50": 251.0,
+    "p90": 453.9000000000001,
+    "p95": 542.0,
+    "p99": 749.69
+  },
+  "training_decoder_content_token_lengths": {
+    "maximum": 267,
+    "mean": 47.538164665523155,
+    "minimum": 15,
+    "p50": 42.0,
+    "p90": 76.0,
+    "p95": 94.0,
+    "p99": 131.69000000000005
+  },
+  "training_reports": 2332,
+  "training_whitespace_token_lengths": {
+    "maximum": 230,
+    "mean": 39.7418524871355,
+    "minimum": 12,
+    "p50": 35.0,
+    "p90": 64.0,
+    "p95": 78.44999999999982,
+    "p99": 112.0
+  },
+  "unknown_token_counts_by_split": {
+    "test": 233,
+    "train": 0,
+    "validation": 98
+  },
+  "vocabulary_artifact_hash": "dbdd57f4ef68d82295bc5872bc949ee1d65ec52e879c814dddab1f59fae17429"
+}

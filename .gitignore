@@ -1,0 +1,33 @@
+# Raw datasets - NEVER push to GitHub
+data/*.zip
+data/**/*.zip
+data/raw/
+data/**/raw/
+
+# Model checkpoints
+checkpoints/
+*.pt
+*.pth
+*.ckpt
+*.bin
+*.safetensors
+
+# Results/logs
+logs/
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Secrets
+.env
+.env.*
