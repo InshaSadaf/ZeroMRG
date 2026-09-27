@@ -1,0 +1,85 @@
+model:
+  architecture: ZeroMRG
+  embedding_dim: 768
+  text_encoder:
+    checkpoint: M-CLIP/XLM-Roberta-Large-Vit-L-14
+    implementation: multilingual_clip.pt_multilingual_clip.MultilingualCLIP
+    max_tokens: 512
+    truncate: false
+    frozen_autoencoding: true
+  image_encoder:
+    checkpoint: ViT-L/14
+    implementation: openai_clip
+    input_resolution: 224
+    output_dim: 768
+    frozen_zero_shot: true
+    preprocessing:
+      resize: 224
+      center_crop: 224
+      color_mode: RGB
+      interpolation: bicubic
+      mean: [0.48145466, 0.4578275, 0.40821073]
+      std: [0.26862954, 0.26130258, 0.27577711]
+  decoder:
+    d_model: 768
+    num_layers: 6
+    num_heads: 8
+    ffn_dim: 3072
+    dropout: 0.1
+    activation: gelu
+    positional_encoding: learned
+    max_sequence_length: 512
+    condition_memory_tokens: 1
+    norm_first: false
+    final_layer_norm: true
+    tie_token_and_output_embeddings: false
+  prompt_enrichment:
+    score_scaling: sqrt_embedding_dim
+    softmax_dimension: prompts
+    residual_addition: true
+    final_l2_normalization: true
+  multi_view:
+    method: enrich_each_view_then_masked_mean_then_l2_normalize
+    uses_view_mask: true
+
+optimization:
+  batch_size: 6
+  optimizer:
+    name: SGD
+    learning_rate: 0.001
+    momentum: 0.99
+  loss:
+    name: cross_entropy
+    ignore_padding: true
+  early_stopping:
+    metric: validation_BLEU
+    patience: 50
+  dropout:
+    enabled: true
+
+generation:
+  strategy: greedy
+  stop_on_eos: true
+  max_length: 512
+
+_evidence:
+  model.architecture: PAPER-STATED
+  model.embedding_dim: IMPLEMENTATION-ASSUMPTION
+  model.text_encoder.checkpoint: PAPER-STATED
+  model.text_encoder.implementation: IMPLEMENTATION-ASSUMPTION
+  model.text_encoder.max_tokens: IMPLEMENTATION-ASSUMPTION
+  model.text_encoder.truncate: IMPLEMENTATION-ASSUMPTION
+  model.text_encoder.frozen_autoencoding: IMPLEMENTATION-ASSUMPTION
+  model.image_encoder: IMPLEMENTATION-ASSUMPTION
+  model.decoder: IMPLEMENTATION-ASSUMPTION
+  model.prompt_enrichment: PAPER-STATED
+  model.multi_view: IMPLEMENTATION-ASSUMPTION
+  optimization.batch_size: PAPER-STATED
+  optimization.optimizer: PAPER-STATED
+  optimization.loss.name: PAPER-STATED
+  optimization.loss.ignore_padding: IMPLEMENTATION-ASSUMPTION
+  optimization.early_stopping: PAPER-STATED
+  optimization.dropout.enabled: PAPER-STATED
+  generation.strategy: IMPLEMENTATION-ASSUMPTION
+  generation.stop_on_eos: PAPER-STATED
+  generation.max_length: IMPLEMENTATION-ASSUMPTION

@@ -16,11 +16,12 @@ torchvision>=0.16,<1
 transformers>=4.35,<5
 sentencepiece>=0.1.99,<1
 multilingual-clip>=1.0.10,<2
-openai-clip>=1.0.1,<2
+# Use OpenAI's repository directly: the unrelated PyPI packages named
+# similarly are not accepted as the paper companion encoder implementation.
+clip @ git+https://github.com/openai/CLIP.git
 
 # Paper-compatible caption metrics. METEOR additionally requires Java.
 pycocoevalcap>=1.2,<2
 
 # Development and verification.
 pytest>=7,<9
-
