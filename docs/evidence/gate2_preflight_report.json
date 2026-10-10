@@ -1,0 +1,36 @@
+{
+  "kind": "preflight_only",
+  "checkpoint_sha256": "ecc204f031b0fa83b4734c3228f20ba2172ce291288f31a6551921126546c299",
+  "latest": {
+    "epoch": 90,
+    "next_epoch": 91,
+    "best_epoch": 85,
+    "best_validation_bleu4": 56.44423922571333,
+    "epochs_without_improvement": 5,
+    "momentum_buffers": 112,
+    "nonzero_momentum_buffers": 112,
+    "parameter_count": 57399152,
+    "legacy_rng_missing": true,
+    "scheduler": "none",
+    "compatibility": "PASS"
+  },
+  "dependency_assertions": "PASS",
+  "finite_train_forward_loss": 0.08689973503351212,
+  "disposable_restore": "PASS",
+  "versions": {
+    "python": "3.13.15",
+    "torch": "2.11.0+cu128",
+    "cuda": "12.8",
+    "numpy": "2.1.3",
+    "pandas": "2.3.3",
+    "Pillow": "12.3.0",
+    "clip": "not installed",
+    "multilingual-clip": "not installed",
+    "transformers": "5.16.1",
+    "pycocoevalcap": "not installed"
+  },
+  "gpu": "Tesla T4",
+  "zero_shot": "BLOCKED",
+  "overall": "BLOCKED",
+  "best_selection": "Best checkpoint disagrees with history: need epoch 85, found epoch 8. Recover matching weights; do not substitute latest weights."
+}

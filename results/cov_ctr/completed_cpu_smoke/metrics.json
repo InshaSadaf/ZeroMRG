@@ -1,0 +1,35 @@
+{
+  "0_percent_paired": {
+    "BLEU-1": 4.246673286976752,
+    "BLEU-2": 0.590901410036687,
+    "BLEU-3": 0.3089148640777815,
+    "BLEU-4": 0.22488229360977047,
+    "CIDEr": "unavailable_in_diagnostic_backend",
+    "METEOR": "unavailable_in_diagnostic_backend",
+    "ROUGE-L": 4.463747539583541,
+    "exact_match_percent": 0.0,
+    "metric_backend": "diagnostic_python_v1_not_paper_comparable"
+  },
+  "100_percent_paired": {
+    "BLEU-1": 4.443234756812579,
+    "BLEU-2": 1.0510777714227566,
+    "BLEU-3": 0.454682019573797,
+    "BLEU-4": 0.3010733050883516,
+    "CIDEr": "unavailable_in_diagnostic_backend",
+    "METEOR": "unavailable_in_diagnostic_backend",
+    "ROUGE-L": 5.169539797754029,
+    "exact_match_percent": 0.0,
+    "metric_backend": "diagnostic_python_v1_not_paper_comparable"
+  },
+  "10_percent_paired": {
+    "BLEU-1": 4.246673286976752,
+    "BLEU-2": 0.590901410036687,
+    "BLEU-3": 0.3089148640777815,
+    "BLEU-4": 0.22488229360977047,
+    "CIDEr": "unavailable_in_diagnostic_backend",
+    "METEOR": "unavailable_in_diagnostic_backend",
+    "ROUGE-L": 4.463747539583541,
+    "exact_match_percent": 0.0,
+    "metric_backend": "diagnostic_python_v1_not_paper_comparable"
+  }
+}

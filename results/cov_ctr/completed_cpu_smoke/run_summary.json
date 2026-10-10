@@ -1,0 +1,30 @@
+{
+  "batch_size": 8,
+  "completed_at_utc": "2026-09-27T18:38:17.536842+00:00",
+  "dataset": "cov_ctr",
+  "decoder": {
+    "d_model": 32,
+    "heads": 4,
+    "layers": 1
+  },
+  "encoder_backend": "deterministic_hash_features",
+  "epochs_per_stage": 2,
+  "graphs": [
+    "training_loss.svg",
+    "validation_bleu4.svg",
+    "test_metrics.svg"
+  ],
+  "profile": "smoke",
+  "python": "3.10.0",
+  "result_directory": "E:\\Insha Project\\ZeroMRG\\results\\cov_ctr\\completed_cpu_smoke",
+  "scientific_status": "DIAGNOSTIC_ONLY_NOT_PAPER_COMPARABLE",
+  "seed": 42,
+  "split_subset_counts": {
+    "test": 12,
+    "train": 48,
+    "validation": 8
+  },
+  "started_at_utc": "2026-09-27T18:38:15.667614+00:00",
+  "status": "COMPLETE",
+  "torch": "2.14.0+cpu"
+}

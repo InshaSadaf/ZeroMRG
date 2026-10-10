@@ -1,0 +1,9 @@
+{
+  "command": "venv/Scripts/python.exe -m unittest discover -s tests -v",
+  "date": "2026-10-10",
+  "tests": 51,
+  "gate1_recovery_tests": 12,
+  "result": "PASS",
+  "elapsed_test_seconds": 4.911,
+  "scope": "Lightweight CPU unit tests and small synthetic tensors; no actual checkpoint model forward, training, GPU inference, or remote execution"
+}

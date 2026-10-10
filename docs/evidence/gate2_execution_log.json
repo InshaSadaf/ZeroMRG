@@ -1,0 +1,106 @@
+[{"stream_name":"stderr","time":6.694945573,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":6.69498805,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":6.694991851,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":6.694994193,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":7.282903245,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":7.282929553,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":7.282939385,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":7.282942403,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stdout","time":14.964302612000001,"data":"Mounted roots: ['/kaggle/input/datasets']\n"}
+,{"stream_name":"stdout","time":15.069030163,"data":"GPU: Tesla T4 | free/total GiB: 14.45977783203125 14.56219482421875\n"}
+,{"stream_name":"stdout","time":15.069064878,"data":"Versions: {'python': '3.13.15', 'torch': '2.11.0+cu128', 'cuda': '12.8', 'numpy': '2.1.3', 'pandas': '2.3.3', 'Pillow': '12.3.0', 'clip': 'not installed', 'multilingual-clip': 'not installed', 'transformers': '5.16.1', 'pycocoevalcap': 'not installed'}\n"}
+,{"stream_name":"stdout","time":15.069070313,"data":"Selected checkpoint: /kaggle/input/datasets/inshasadaf114/zeromrg-checkpoint-backup5-zip/text_decoder_last.pt | output: /kaggle/working/zeromrg_gate1_7b6326fd42ce\n"}
+,{"stream_name":"stdout","time":22.37209688,"data":"Dataset/split counts: 726 rows, 746 images, 714 usable; 571/71/72 partitions\n"}
+,{"stream_name":"stdout","time":22.372231637,"data":"Training-only vocabulary: 368; prompt bank: 500 x 768 raw; normalized text: 571 + 71\n"}
+,{"stream_name":"stdout","time":28.563108424,"data":"Latest model/optimizer: {'epoch': 90, 'next_epoch': 91, 'best_epoch': 85, 'best_validation_bleu4': 56.44423922571333, 'epochs_without_improvement': 5, 'momentum_buffers': 112, 'nonzero_momentum_buffers': 112, 'parameter_count': 57399152, 'legacy_rng_missing': True, 'scheduler': 'none', 'compatibility': 'PASS'}\n"}
+,{"stream_name":"stdout","time":28.563147005,"data":"Saved best epoch from history: 85 (weights still require verification)\n"}
+,{"stream_name":"stdout","time":29.178555741,"data":"Finite latest-checkpoint TRAIN forward CE: 0.08689973503351212\n"}
+,{"stream_name":"stdout","time":33.664414745,"data":"Disposable save/restore PASS; SHA-256: df7aa91ad241a380ae37a0a89c02f349450589970f6a31802ef16bb30b5dbe0b\n"}
+,{"stream_name":"stdout","time":37.700782608,"data":"{\n"}
+,{"stream_name":"stdout","time":37.700810192,"data":"  \"kind\": \"preflight_only\",\n"}
+,{"stream_name":"stdout","time":37.700815886,"data":"  \"checkpoint_sha256\": \"ecc204f031b0fa83b4734c3228f20ba2172ce291288f31a6551921126546c299\",\n"}
+,{"stream_name":"stdout","time":37.700819962,"data":"  \"latest\": {\n"}
+,{"stream_name":"stdout","time":37.700823428,"data":"    \"epoch\": 90,\n"}
+,{"stream_name":"stdout","time":37.700827196,"data":"    \"next_epoch\": 91,\n"}
+,{"stream_name":"stdout","time":37.70083068,"data":"    \"best_epoch\": 85,\n"}
+,{"stream_name":"stdout","time":37.700833908999996,"data":"    \"best_validation_bleu4\": 56.44423922571333,\n"}
+,{"stream_name":"stdout","time":37.700837469,"data":"    \"epochs_without_improvement\": 5,\n"}
+,{"stream_name":"stdout","time":37.700841378,"data":"    \"momentum_buffers\": 112,\n"}
+,{"stream_name":"stdout","time":37.700856027,"data":"    \"nonzero_momentum_buffers\": 112,\n"}
+,{"stream_name":"stdout","time":37.700859905,"data":"    \"parameter_count\": 57399152,\n"}
+,{"stream_name":"stdout","time":37.700863379,"data":"    \"legacy_rng_missing\": true,\n"}
+,{"stream_name":"stdout","time":37.700866713,"data":"    \"scheduler\": \"none\",\n"}
+,{"stream_name":"stdout","time":37.700870222,"data":"    \"compatibility\": \"PASS\"\n"}
+,{"stream_name":"stdout","time":37.700873632,"data":"  },\n"}
+,{"stream_name":"stdout","time":37.700876991,"data":"  \"dependency_assertions\": \"PASS\",\n"}
+,{"stream_name":"stdout","time":37.700881126,"data":"  \"finite_train_forward_loss\": 0.08689973503351212,\n"}
+,{"stream_name":"stdout","time":37.700884804,"data":"  \"disposable_restore\": \"PASS\",\n"}
+,{"stream_name":"stdout","time":37.700889121,"data":"  \"versions\": {\n"}
+,{"stream_name":"stdout","time":37.700892595,"data":"    \"python\": \"3.13.15\",\n"}
+,{"stream_name":"stdout","time":37.700896179,"data":"    \"torch\": \"2.11.0+cu128\",\n"}
+,{"stream_name":"stdout","time":37.700899727,"data":"    \"cuda\": \"12.8\",\n"}
+,{"stream_name":"stdout","time":37.700903043,"data":"    \"numpy\": \"2.1.3\",\n"}
+,{"stream_name":"stdout","time":37.700906445,"data":"    \"pandas\": \"2.3.3\",\n"}
+,{"stream_name":"stdout","time":37.700909916,"data":"    \"Pillow\": \"12.3.0\",\n"}
+,{"stream_name":"stdout","time":37.700913382,"data":"    \"clip\": \"not installed\",\n"}
+,{"stream_name":"stdout","time":37.700916879,"data":"    \"multilingual-clip\": \"not installed\",\n"}
+,{"stream_name":"stdout","time":37.700920637,"data":"    \"transformers\": \"5.16.1\",\n"}
+,{"stream_name":"stdout","time":37.700923998,"data":"    \"pycocoevalcap\": \"not installed\"\n"}
+,{"stream_name":"stdout","time":37.700927592,"data":"  },\n"}
+,{"stream_name":"stdout","time":37.700930955,"data":"  \"gpu\": \"Tesla T4\",\n"}
+,{"stream_name":"stdout","time":37.700934507,"data":"  \"zero_shot\": \"BLOCKED\",\n"}
+,{"stream_name":"stdout","time":37.700938005,"data":"  \"overall\": \"BLOCKED\",\n"}
+,{"stream_name":"stdout","time":37.700941555,"data":"  \"best_selection\": \"Best checkpoint disagrees with history: need epoch 85, found epoch 8. Recover matching weights; do not substitute latest weights.\"\n"}
+,{"stream_name":"stdout","time":37.700945467,"data":"}\n"}
+,{"stream_name":"stderr","time":40.882192545,"data":"Traceback (most recent call last):\n"}
+,{"stream_name":"stderr","time":40.882814208,"data":"  File \"\u003cstring\u003e\", line 1, in \u003cmodule\u003e\n"}
+,{"stream_name":"stderr","time":40.882831852,"data":"    import sys;import papermill as pm;pm.execute_notebook(\"__notebook__.ipynb\",\"__notebook__.ipynb\",progress_bar=False,log_output=True,stdout_file=sys.stdout,stderr_file=sys.stderr,allow_errors=False,timeout=1200)\n"}
+,{"stream_name":"stderr","time":40.882837886,"data":"                                      ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":40.882842842,"data":"  File \"/usr/local/lib/python3.13/dist-packages/papermill/execute.py\", line 131, in execute_notebook\n"}
+,{"stream_name":"stderr","time":40.88284753,"data":"    raise_for_execution_errors(nb, output_path)\n"}
+,{"stream_name":"stderr","time":40.882852115,"data":"    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":40.882856273,"data":"  File \"/usr/local/lib/python3.13/dist-packages/papermill/execute.py\", line 251, in raise_for_execution_errors\n"}
+,{"stream_name":"stderr","time":40.882870407,"data":"    raise error\n"}
+,{"stream_name":"stderr","time":40.882873733,"data":"papermill.exceptions.PapermillExecutionError: \n"}
+,{"stream_name":"stderr","time":40.882876948,"data":"---------------------------------------------------------------------------\n"}
+,{"stream_name":"stderr","time":40.882880276,"data":"Exception encountered at \"In [6]\":\n"}
+,{"stream_name":"stderr","time":40.882883728,"data":"---------------------------------------------------------------------------\n"}
+,{"stream_name":"stderr","time":40.882887435,"data":"ValueError                                Traceback (most recent call last)\n"}
+,{"stream_name":"stderr","time":40.88289088,"data":"/tmp/ipykernel_23/912332507.py in \u003ccell line: 0\u003e()\n"}
+,{"stream_name":"stderr","time":40.882895248,"data":"      8 try:\n"}
+,{"stream_name":"stderr","time":40.882898913,"data":"----\u003e 9     validate_selected_best(checkpoint, decoder, best)\n"}
+,{"stream_name":"stderr","time":40.882902375,"data":"     10     preflight['best_selection'] = 'PASS'\n"}
+,{"stream_name":"stderr","time":40.882905516,"data":"\n"}
+,{"stream_name":"stderr","time":40.882908473,"data":"/tmp/ipykernel_23/3030639515.py in validate_selected_best(checkpoint, model, best_checkpoint)\n"}
+,{"stream_name":"stderr","time":40.882911538,"data":"    183     selected = max(checkpoint[\"history\"], key=lambda row: row[\"validation_bleu4\"])\n"}
+,{"stream_name":"stderr","time":40.88291534,"data":"--\u003e 184     require(best_checkpoint.get(\"epoch\") == selected[\"epoch\"] and\n"}
+,{"stream_name":"stderr","time":40.882927124,"data":"    185             math.isclose(float(best_checkpoint.get(\"validation_bleu4\", float(\"nan\"))),\n"}
+,{"stream_name":"stderr","time":40.882931082,"data":"\n"}
+,{"stream_name":"stderr","time":40.882934195,"data":"/tmp/ipykernel_23/3030639515.py in require(condition, message)\n"}
+,{"stream_name":"stderr","time":40.882937838,"data":"     36     if not condition:\n"}
+,{"stream_name":"stderr","time":40.882941729,"data":"---\u003e 37         raise ValueError(message)\n"}
+,{"stream_name":"stderr","time":40.882945239,"data":"     38 \n"}
+,{"stream_name":"stderr","time":40.88294831,"data":"\n"}
+,{"stream_name":"stderr","time":40.882951445,"data":"ValueError: Best checkpoint disagrees with history: need epoch 85, found epoch 8. Recover matching weights; do not substitute latest weights.\n"}
+,{"stream_name":"stderr","time":40.882954863,"data":"\n"}
+,{"stream_name":"stderr","time":40.882958288,"data":"The above exception was the direct cause of the following exception:\n"}
+,{"stream_name":"stderr","time":40.882961710000004,"data":"\n"}
+,{"stream_name":"stderr","time":40.882966107,"data":"ValueError                                Traceback (most recent call last)\n"}
+,{"stream_name":"stderr","time":40.882969653,"data":"/tmp/ipykernel_23/912332507.py in \u003ccell line: 0\u003e()\n"}
+,{"stream_name":"stderr","time":40.882973118,"data":"     13     (RUN_ROOT / 'preflight_report.json').write_text(json.dumps(preflight, indent=2), encoding='utf-8')\n"}
+,{"stream_name":"stderr","time":40.882976238,"data":"     14     print(json.dumps(preflight, indent=2))\n"}
+,{"stream_name":"stderr","time":40.882979535,"data":"---\u003e 15     raise ValueError('PREFLIGHT BLOCKED: validation-selected best weights unavailable. Latest restoration checks passed.') from error\n"}
+,{"stream_name":"stderr","time":40.882983228,"data":"     16 \n"}
+,{"stream_name":"stderr","time":40.882986326,"data":"     17 # Reached only with a verified best artifact. Never substitute epoch-90 weights here.\n"}
+,{"stream_name":"stderr","time":40.88298966,"data":"\n"}
+,{"stream_name":"stderr","time":40.88299807,"data":"ValueError: PREFLIGHT BLOCKED: validation-selected best weights unavailable. Latest restoration checks passed.\n"}
+,{"stream_name":"stderr","time":40.883001845,"data":"\n"}
+,{"stream_name":"stderr","time":43.044563554,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":43.044587748,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":43.195689488,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":43.195712054,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":43.917303146,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n"}
+,{"stream_name":"stderr","time":43.994944194,"data":"[NbConvertApp] Writing 71318 bytes to __notebook__.ipynb\n"}
+,{"stream_name":"stderr","time":46.384736117,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to html\n"}
+,{"stream_name":"stderr","time":47.029258016,"data":"[NbConvertApp] Writing 473053 bytes to __results__.html\n"}
+]

@@ -1,5 +1,7 @@
 # ZeroMRG Implementation and Reproduction Plan
 
+> **Gate 1 scope override, 2026-10-10:** this is historical planning, not the current execution specification. Only COV-CTR 0%-paired is authorized; all training and GPU inference belong on Kaggle. Preserve the existing split/caches. The canonical decoder is the actual checkpoint-producing six-layer post-norm model with unscaled embeddings, no final normalization and 160 positions, not newer modular defaults in this plan. Latest recovery is epoch90; history-selected epoch85 weights are missing. Follow [Gate 1 readiness](../docs/zeromrg_gate1_readiness.md), not local-GPU or paired/IU-Xray recommendations below. No remote execution is authorized.
+
 ## 0. Scope, evidence labels, and non-negotiable constraints
 
 This is the Phase 3 plan for reproducing the base ZeroMRG paper using only the supplied **COV-CTR** and **IU-Xray** datasets. It does not implement code, preprocess full datasets, download checkpoints, or start training.

@@ -1,0 +1,43 @@
+{
+  "date": "2026-10-10",
+  "head": "fd2a370a9c3fd4fe427a4f94ae3ea480ed8e315f",
+  "status": [
+    " M .gitignore",
+    " M docs/kaggle_setup.md",
+    " M research/reproduction_plan.md",
+    "?? docs/evidence/",
+    "?? docs/kaggle_cli_workflow.md",
+    "?? docs/kaggle_covctr_progress.md",
+    "?? docs/kaggle_epoch95_resume_guide.md",
+    "?? docs/kaggle_gate0_assessment.md",
+    "?? docs/zeromrg_checkpoint_persistence.md",
+    "?? docs/zeromrg_checkpoint_recovery.md",
+    "?? docs/zeromrg_gate1_readiness.md",
+    "?? docs/zeromrg_source_reconciliation.md",
+    "?? notebooks/ZeroMRG_COV_CTR_Resume_Epoch95_Kaggle.ipynb",
+    "?? notebooks/gate1/",
+    "?? results/",
+    "?? scripts/audit_gate1_checkpoints.py",
+    "?? scripts/build_gate1_notebooks.py",
+    "?? scripts/kaggle-auth.ps1",
+    "?? scripts/kaggle.ps1",
+    "?? scripts/run_cov_ctr_experiment.py",
+    "?? scripts/validate_gate1_sources.py",
+    "?? scripts/zeromrg_gate1_runtime.py",
+    "?? src/zeromrg/evaluation/",
+    "?? tests/test_evaluation.py",
+    "?? tests/test_gate1_recovery.py"
+  ],
+  "tracked_diff_stat": [
+    " .gitignore                    | 1 +",
+    " docs/kaggle_setup.md          | 2 ++",
+    " research/reproduction_plan.md | 2 ++",
+    " 3 files changed, 5 insertions(+)"
+  ],
+  "tracked_diff_check": {
+    "exit_code": 0,
+    "output": "warning: in the working copy of '.gitignore', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'docs/kaggle_setup.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'research/reproduction_plan.md', LF will be replaced by CRLF the next time Git touches it\n"
+  },
+  "no_staging_commit_or_push": true,
+  "scope": "Gate 1 local preparation only; user untracked work preserved"
+}

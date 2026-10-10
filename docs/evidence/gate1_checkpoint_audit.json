@@ -1,0 +1,820 @@
+{
+  "mode": "CPU tensor/schema inspection only; no real model forward or training",
+  "archives": [
+    {
+      "path": "C:\\Users\\Insha sadaf\\Downloads\\zeromrg_covctr_training_backup (1).zip",
+      "bytes": 693632795,
+      "sha256": "52944e8d29e5261bde68bd12ea76adbeaeb6e0f472b736441466760a53c511b0",
+      "members": [
+        {
+          "name": "paired_10_manifest.csv",
+          "bytes": 31829,
+          "crc32": "546946ff"
+        },
+        {
+          "name": "mclip_prompt_bank.pt",
+          "bytes": 1552815,
+          "crc32": "e67575eb"
+        },
+        {
+          "name": "text_decoder_last.pt",
+          "bytes": 459272635,
+          "crc32": "96fd0176"
+        },
+        {
+          "name": "report_length_statistics.json",
+          "bytes": 139,
+          "crc32": "46a43cef"
+        },
+        {
+          "name": "validated_manifest.csv",
+          "bytes": 378582,
+          "crc32": "84c6ae9d"
+        },
+        {
+          "name": "decoder_vocabulary.json",
+          "bytes": 5650,
+          "crc32": "fd778d32"
+        },
+        {
+          "name": "train_manifest.csv",
+          "bytes": 301017,
+          "crc32": "08034661"
+        },
+        {
+          "name": "prompt_manifest.csv",
+          "bytes": 264997,
+          "crc32": "3e20c253"
+        },
+        {
+          "name": "test_manifest.csv",
+          "bytes": 38387,
+          "crc32": "65c2c384"
+        },
+        {
+          "name": "mclip_text_features.pt",
+          "bytes": 2102875,
+          "crc32": "480559c1"
+        },
+        {
+          "name": "text_training_history.json",
+          "bytes": 3275,
+          "crc32": "7ddd8efe"
+        },
+        {
+          "name": "split_summary.json",
+          "bytes": 153,
+          "crc32": "5ca69ef8"
+        },
+        {
+          "name": "validation_audit.json",
+          "bytes": 358,
+          "crc32": "2b4965e8"
+        },
+        {
+          "name": "validation_manifest.csv",
+          "bytes": 39232,
+          "crc32": "b3fb1fdd"
+        },
+        {
+          "name": "text_decoder_best.pt",
+          "bytes": 229639049,
+          "crc32": "acc6021d"
+        }
+      ],
+      "last_keys": [
+        "best_validation_bleu4",
+        "decoder",
+        "epoch",
+        "epochs_without_improvement",
+        "history",
+        "optimizer"
+      ],
+      "best_keys": [
+        "decoder",
+        "epoch",
+        "max_tokens",
+        "validation_bleu4",
+        "vocabulary_size"
+      ],
+      "verification": {
+        "epoch": 30,
+        "next_epoch": 31,
+        "best_epoch": 8,
+        "best_validation_bleu4": 52.33887482243904,
+        "epochs_without_improvement": 22,
+        "momentum_buffers": 112,
+        "nonzero_momentum_buffers": 112,
+        "parameter_count": 57399152,
+        "legacy_rng_missing": true,
+        "scheduler": "none",
+        "compatibility": "PASS"
+      },
+      "best_artifact_epoch": 8,
+      "best_artifact_metric": 52.33887482243904,
+      "best_selection_integrity": "PASS",
+      "external_history_matches": true,
+      "optimizer_group": {
+        "lr": 0.001,
+        "momentum": 0.99,
+        "dampening": 0,
+        "weight_decay": 0,
+        "nesterov": false,
+        "maximize": false,
+        "foreach": null,
+        "differentiable": false,
+        "fused": null
+      },
+      "crc_integrity": "PASS",
+      "status": "PASS"
+    },
+    {
+      "path": "C:\\Users\\Insha sadaf\\Downloads\\zeromrg_covctr_training_backup (2).zip",
+      "bytes": 693635085,
+      "sha256": "5aac1410e4058f0a622d97df036006605e6125cbd1819872366bb103272dd1a5",
+      "members": [
+        {
+          "name": "paired_10_manifest.csv",
+          "bytes": 31829,
+          "crc32": "546946ff"
+        },
+        {
+          "name": "mclip_prompt_bank.pt",
+          "bytes": 1552815,
+          "crc32": "e67575eb"
+        },
+        {
+          "name": "text_decoder_last.pt",
+          "bytes": 459273275,
+          "crc32": "5361a5e5"
+        },
+        {
+          "name": "report_length_statistics.json",
+          "bytes": 139,
+          "crc32": "46a43cef"
+        },
+        {
+          "name": "validated_manifest.csv",
+          "bytes": 378582,
+          "crc32": "84c6ae9d"
+        },
+        {
+          "name": "decoder_vocabulary.json",
+          "bytes": 5650,
+          "crc32": "fd778d32"
+        },
+        {
+          "name": "train_manifest.csv",
+          "bytes": 301017,
+          "crc32": "08034661"
+        },
+        {
+          "name": "prompt_manifest.csv",
+          "bytes": 264997,
+          "crc32": "3e20c253"
+        },
+        {
+          "name": "test_manifest.csv",
+          "bytes": 38387,
+          "crc32": "65c2c384"
+        },
+        {
+          "name": "mclip_text_features.pt",
+          "bytes": 2102875,
+          "crc32": "480559c1"
+        },
+        {
+          "name": "text_training_history.json",
+          "bytes": 4925,
+          "crc32": "96d8ef53"
+        },
+        {
+          "name": "split_summary.json",
+          "bytes": 153,
+          "crc32": "5ca69ef8"
+        },
+        {
+          "name": "validation_audit.json",
+          "bytes": 358,
+          "crc32": "2b4965e8"
+        },
+        {
+          "name": "validation_manifest.csv",
+          "bytes": 39232,
+          "crc32": "b3fb1fdd"
+        },
+        {
+          "name": "text_decoder_best.pt",
+          "bytes": 229639049,
+          "crc32": "acc6021d"
+        }
+      ],
+      "last_keys": [
+        "best_validation_bleu4",
+        "decoder",
+        "epoch",
+        "epochs_without_improvement",
+        "history",
+        "optimizer"
+      ],
+      "best_keys": [
+        "decoder",
+        "epoch",
+        "max_tokens",
+        "validation_bleu4",
+        "vocabulary_size"
+      ],
+      "verification": {
+        "epoch": 45,
+        "next_epoch": 46,
+        "best_epoch": 35,
+        "best_validation_bleu4": 55.0885769760973,
+        "epochs_without_improvement": 10,
+        "momentum_buffers": 112,
+        "nonzero_momentum_buffers": 112,
+        "parameter_count": 57399152,
+        "legacy_rng_missing": true,
+        "scheduler": "none",
+        "compatibility": "PASS"
+      },
+      "best_artifact_epoch": 8,
+      "best_artifact_metric": 52.33887482243904,
+      "best_selection_integrity": "BLOCKED: Best checkpoint disagrees with history: need epoch 35, found epoch 8. Recover matching weights; do not substitute latest weights.",
+      "external_history_matches": true,
+      "optimizer_group": {
+        "lr": 0.001,
+        "momentum": 0.99,
+        "dampening": 0,
+        "weight_decay": 0,
+        "nesterov": false,
+        "maximize": false,
+        "foreach": null,
+        "differentiable": false,
+        "fused": null
+      },
+      "crc_integrity": "PASS",
+      "status": "PASS"
+    },
+    {
+      "path": "C:\\Users\\Insha sadaf\\Downloads\\zeromrg_covctr_training_backup (3).zip",
+      "bytes": 693637440,
+      "sha256": "9bce00a02db1421cacfb1192466b9988bde985c3c0d006dfa84128f1e07ab894",
+      "members": [
+        {
+          "name": "paired_10_manifest.csv",
+          "bytes": 31829,
+          "crc32": "546946ff"
+        },
+        {
+          "name": "mclip_prompt_bank.pt",
+          "bytes": 1552815,
+          "crc32": "e67575eb"
+        },
+        {
+          "name": "text_decoder_last.pt",
+          "bytes": 459273979,
+          "crc32": "d8b03f4c"
+        },
+        {
+          "name": "report_length_statistics.json",
+          "bytes": 139,
+          "crc32": "46a43cef"
+        },
+        {
+          "name": "validated_manifest.csv",
+          "bytes": 378582,
+          "crc32": "84c6ae9d"
+        },
+        {
+          "name": "decoder_vocabulary.json",
+          "bytes": 5650,
+          "crc32": "fd778d32"
+        },
+        {
+          "name": "train_manifest.csv",
+          "bytes": 301017,
+          "crc32": "08034661"
+        },
+        {
+          "name": "prompt_manifest.csv",
+          "bytes": 264997,
+          "crc32": "3e20c253"
+        },
+        {
+          "name": "test_manifest.csv",
+          "bytes": 38387,
+          "crc32": "65c2c384"
+        },
+        {
+          "name": "mclip_text_features.pt",
+          "bytes": 2102875,
+          "crc32": "480559c1"
+        },
+        {
+          "name": "text_training_history.json",
+          "bytes": 6576,
+          "crc32": "c46d9514"
+        },
+        {
+          "name": "split_summary.json",
+          "bytes": 153,
+          "crc32": "5ca69ef8"
+        },
+        {
+          "name": "validation_audit.json",
+          "bytes": 358,
+          "crc32": "2b4965e8"
+        },
+        {
+          "name": "validation_manifest.csv",
+          "bytes": 39232,
+          "crc32": "b3fb1fdd"
+        },
+        {
+          "name": "text_decoder_best.pt",
+          "bytes": 229639049,
+          "crc32": "acc6021d"
+        }
+      ],
+      "last_keys": [
+        "best_validation_bleu4",
+        "decoder",
+        "epoch",
+        "epochs_without_improvement",
+        "history",
+        "optimizer"
+      ],
+      "best_keys": [
+        "decoder",
+        "epoch",
+        "max_tokens",
+        "validation_bleu4",
+        "vocabulary_size"
+      ],
+      "verification": {
+        "epoch": 60,
+        "next_epoch": 61,
+        "best_epoch": 35,
+        "best_validation_bleu4": 55.0885769760973,
+        "epochs_without_improvement": 25,
+        "momentum_buffers": 112,
+        "nonzero_momentum_buffers": 112,
+        "parameter_count": 57399152,
+        "legacy_rng_missing": true,
+        "scheduler": "none",
+        "compatibility": "PASS"
+      },
+      "best_artifact_epoch": 8,
+      "best_artifact_metric": 52.33887482243904,
+      "best_selection_integrity": "BLOCKED: Best checkpoint disagrees with history: need epoch 35, found epoch 8. Recover matching weights; do not substitute latest weights.",
+      "external_history_matches": true,
+      "optimizer_group": {
+        "lr": 0.001,
+        "momentum": 0.99,
+        "dampening": 0,
+        "weight_decay": 0,
+        "nesterov": false,
+        "maximize": false,
+        "foreach": null,
+        "differentiable": false,
+        "fused": null
+      },
+      "crc_integrity": "PASS",
+      "status": "PASS"
+    },
+    {
+      "path": "C:\\Users\\Insha sadaf\\Downloads\\zeromrg_covctr_training_backup (4).zip",
+      "bytes": 693639795,
+      "sha256": "00961ddf46f488b133a9c27c62da9e260b5d2adab621d3c16624f637600a4496",
+      "members": [
+        {
+          "name": "paired_10_manifest.csv",
+          "bytes": 31829,
+          "crc32": "546946ff"
+        },
+        {
+          "name": "mclip_prompt_bank.pt",
+          "bytes": 1552815,
+          "crc32": "e67575eb"
+        },
+        {
+          "name": "text_decoder_last.pt",
+          "bytes": 459274683,
+          "crc32": "2b8d8551"
+        },
+        {
+          "name": "report_length_statistics.json",
+          "bytes": 139,
+          "crc32": "46a43cef"
+        },
+        {
+          "name": "validated_manifest.csv",
+          "bytes": 378582,
+          "crc32": "84c6ae9d"
+        },
+        {
+          "name": "decoder_vocabulary.json",
+          "bytes": 5650,
+          "crc32": "fd778d32"
+        },
+        {
+          "name": "train_manifest.csv",
+          "bytes": 301017,
+          "crc32": "08034661"
+        },
+        {
+          "name": "prompt_manifest.csv",
+          "bytes": 264997,
+          "crc32": "3e20c253"
+        },
+        {
+          "name": "test_manifest.csv",
+          "bytes": 38387,
+          "crc32": "65c2c384"
+        },
+        {
+          "name": "mclip_text_features.pt",
+          "bytes": 2102875,
+          "crc32": "480559c1"
+        },
+        {
+          "name": "text_training_history.json",
+          "bytes": 8227,
+          "crc32": "8b583b7e"
+        },
+        {
+          "name": "split_summary.json",
+          "bytes": 153,
+          "crc32": "5ca69ef8"
+        },
+        {
+          "name": "validation_audit.json",
+          "bytes": 358,
+          "crc32": "2b4965e8"
+        },
+        {
+          "name": "validation_manifest.csv",
+          "bytes": 39232,
+          "crc32": "b3fb1fdd"
+        },
+        {
+          "name": "text_decoder_best.pt",
+          "bytes": 229639049,
+          "crc32": "acc6021d"
+        }
+      ],
+      "last_keys": [
+        "best_validation_bleu4",
+        "decoder",
+        "epoch",
+        "epochs_without_improvement",
+        "history",
+        "optimizer"
+      ],
+      "best_keys": [
+        "decoder",
+        "epoch",
+        "max_tokens",
+        "validation_bleu4",
+        "vocabulary_size"
+      ],
+      "verification": {
+        "epoch": 75,
+        "next_epoch": 76,
+        "best_epoch": 35,
+        "best_validation_bleu4": 55.0885769760973,
+        "epochs_without_improvement": 40,
+        "momentum_buffers": 112,
+        "nonzero_momentum_buffers": 112,
+        "parameter_count": 57399152,
+        "legacy_rng_missing": true,
+        "scheduler": "none",
+        "compatibility": "PASS"
+      },
+      "best_artifact_epoch": 8,
+      "best_artifact_metric": 52.33887482243904,
+      "best_selection_integrity": "BLOCKED: Best checkpoint disagrees with history: need epoch 35, found epoch 8. Recover matching weights; do not substitute latest weights.",
+      "external_history_matches": true,
+      "optimizer_group": {
+        "lr": 0.001,
+        "momentum": 0.99,
+        "dampening": 0,
+        "weight_decay": 0,
+        "nesterov": false,
+        "maximize": false,
+        "foreach": null,
+        "differentiable": false,
+        "fused": null
+      },
+      "crc_integrity": "PASS",
+      "status": "PASS"
+    },
+    {
+      "path": "C:\\Users\\Insha sadaf\\Downloads\\zeromrg_covctr_training_backup (5).zip",
+      "bytes": 693642148,
+      "sha256": "e3fc6449cfc8098ff43cefa9da704738d3f3898b3c17d7b3058caac5cec762e7",
+      "members": [
+        {
+          "name": "paired_10_manifest.csv",
+          "bytes": 31829,
+          "crc32": "546946ff"
+        },
+        {
+          "name": "mclip_prompt_bank.pt",
+          "bytes": 1552815,
+          "crc32": "e67575eb"
+        },
+        {
+          "name": "text_decoder_last.pt",
+          "bytes": 459275387,
+          "crc32": "72589e34"
+        },
+        {
+          "name": "report_length_statistics.json",
+          "bytes": 139,
+          "crc32": "46a43cef"
+        },
+        {
+          "name": "validated_manifest.csv",
+          "bytes": 378582,
+          "crc32": "84c6ae9d"
+        },
+        {
+          "name": "decoder_vocabulary.json",
+          "bytes": 5650,
+          "crc32": "fd778d32"
+        },
+        {
+          "name": "train_manifest.csv",
+          "bytes": 301017,
+          "crc32": "08034661"
+        },
+        {
+          "name": "prompt_manifest.csv",
+          "bytes": 264997,
+          "crc32": "3e20c253"
+        },
+        {
+          "name": "test_manifest.csv",
+          "bytes": 38387,
+          "crc32": "65c2c384"
+        },
+        {
+          "name": "mclip_text_features.pt",
+          "bytes": 2102875,
+          "crc32": "480559c1"
+        },
+        {
+          "name": "text_training_history.json",
+          "bytes": 9876,
+          "crc32": "4b30c558"
+        },
+        {
+          "name": "split_summary.json",
+          "bytes": 153,
+          "crc32": "5ca69ef8"
+        },
+        {
+          "name": "validation_audit.json",
+          "bytes": 358,
+          "crc32": "2b4965e8"
+        },
+        {
+          "name": "validation_manifest.csv",
+          "bytes": 39232,
+          "crc32": "b3fb1fdd"
+        },
+        {
+          "name": "text_decoder_best.pt",
+          "bytes": 229639049,
+          "crc32": "acc6021d"
+        }
+      ],
+      "last_keys": [
+        "best_validation_bleu4",
+        "decoder",
+        "epoch",
+        "epochs_without_improvement",
+        "history",
+        "optimizer"
+      ],
+      "best_keys": [
+        "decoder",
+        "epoch",
+        "max_tokens",
+        "validation_bleu4",
+        "vocabulary_size"
+      ],
+      "verification": {
+        "epoch": 90,
+        "next_epoch": 91,
+        "best_epoch": 85,
+        "best_validation_bleu4": 56.44423922571333,
+        "epochs_without_improvement": 5,
+        "momentum_buffers": 112,
+        "nonzero_momentum_buffers": 112,
+        "parameter_count": 57399152,
+        "legacy_rng_missing": true,
+        "scheduler": "none",
+        "compatibility": "PASS"
+      },
+      "best_artifact_epoch": 8,
+      "best_artifact_metric": 52.33887482243904,
+      "best_selection_integrity": "BLOCKED: Best checkpoint disagrees with history: need epoch 85, found epoch 8. Recover matching weights; do not substitute latest weights.",
+      "external_history_matches": true,
+      "optimizer_group": {
+        "lr": 0.001,
+        "momentum": 0.99,
+        "dampening": 0,
+        "weight_decay": 0,
+        "nesterov": false,
+        "maximize": false,
+        "foreach": null,
+        "differentiable": false,
+        "fused": null
+      },
+      "crc_integrity": "PASS",
+      "status": "PASS",
+      "actual_restore": {
+        "epoch": 90,
+        "next_epoch": 91,
+        "best_epoch": 85,
+        "best_validation_bleu4": 56.44423922571333,
+        "epochs_without_improvement": 5,
+        "momentum_buffers": 112,
+        "nonzero_momentum_buffers": 112,
+        "parameter_count": 57399152,
+        "legacy_rng_missing": true,
+        "scheduler": "none",
+        "compatibility": "PASS"
+      },
+      "canonical_member_sha256": {
+        "paired_10_manifest.csv": "d900a2b79bf3a099bc231346fb8ef9762759ef04db428bfba806ece915b41f2f",
+        "mclip_prompt_bank.pt": "3cb770a2a470c70d95952828cf23abc088250571897b960a2a39e9bae6c8e1ce",
+        "text_decoder_last.pt": "ecc204f031b0fa83b4734c3228f20ba2172ce291288f31a6551921126546c299",
+        "report_length_statistics.json": "7fcce6c30ef1c1f1e1cee054dd4f2af899cf46c8bd2b1167eee6f965aa492bb0",
+        "validated_manifest.csv": "1536c6eb78e2857e599da4f7b3854ed5fa01fd66e50f390dd315d72fe5572aee",
+        "decoder_vocabulary.json": "c0e169c3558fe0cbf2e36431281aa223f64e2e4fb88f7361e23b33e12bcc3ad5",
+        "train_manifest.csv": "8902b8fea1163429aec6940a9744f7c792d1b7f9a00ca300a1fab17448ead973",
+        "prompt_manifest.csv": "f60c45a1dc9beecba16917d767f1cf6b0f67231141a9226efdb771a27f9281de",
+        "test_manifest.csv": "fcbcd1bd12220b0a3a286c4b1a82a8543e34c0a3495c5d0b8c89c81033b3eb66",
+        "mclip_text_features.pt": "7275ebb5ea1a9ef273eee38b16e45fe6a3f42f154bb844ca2ba890e09853863a",
+        "text_training_history.json": "ccd65f2ec0ce2f569f683233f5a13c48c26bb27075aa9661bc7a272c3a14a015",
+        "split_summary.json": "53b0da26acab5f3521e17bc82bcf893a0de622412ca72f578a029f5170b8af55",
+        "validation_audit.json": "f3706a7197e47c1a2693464f9f01452072ac9e6084388966968e37b42d0c3fae",
+        "validation_manifest.csv": "94c555cb25a19485616065079139722bfe7122a17639267ba5e03d9e4cfa7c5d",
+        "text_decoder_best.pt": "dba64646e89f1c55c69c9e3a7361141829e4dc7ec32114f98f2edce8b89a0568"
+      },
+      "dependency_assertions": "PASS",
+      "dependency_hashes": {
+        "train_manifest.csv": "8902b8fea1163429aec6940a9744f7c792d1b7f9a00ca300a1fab17448ead973",
+        "validation_manifest.csv": "94c555cb25a19485616065079139722bfe7122a17639267ba5e03d9e4cfa7c5d",
+        "test_manifest.csv": "fcbcd1bd12220b0a3a286c4b1a82a8543e34c0a3495c5d0b8c89c81033b3eb66",
+        "prompt_manifest.csv": "f60c45a1dc9beecba16917d767f1cf6b0f67231141a9226efdb771a27f9281de",
+        "validated_manifest.csv": "1536c6eb78e2857e599da4f7b3854ed5fa01fd66e50f390dd315d72fe5572aee",
+        "validation_audit.json": "f3706a7197e47c1a2693464f9f01452072ac9e6084388966968e37b42d0c3fae",
+        "decoder_vocabulary.json": "c0e169c3558fe0cbf2e36431281aa223f64e2e4fb88f7361e23b33e12bcc3ad5",
+        "mclip_text_features.pt": "7275ebb5ea1a9ef273eee38b16e45fe6a3f42f154bb844ca2ba890e09853863a",
+        "mclip_prompt_bank.pt": "3cb770a2a470c70d95952828cf23abc088250571897b960a2a39e9bae6c8e1ce"
+      },
+      "prompt_text_comparison": {
+        "max_absolute_difference": 0.001852482557296753,
+        "minimum_cosine": 0.9998813271522522,
+        "mean_cosine": 0.9999997615814209,
+        "exact_encoder_revision": "UNVERIFIED"
+      },
+      "prompt_norm_range": [
+        9.929829597473145,
+        13.149367332458496
+      ]
+    },
+    {
+      "path": "C:\\Users\\Insha sadaf\\Downloads\\zeromrg_covctr_training_backup.zip",
+      "bytes": 693630444,
+      "sha256": "d49be367277d3b24b4c52fe124417690bf3a871eba98f0554ca049f3f3fb2b84",
+      "members": [
+        {
+          "name": "paired_10_manifest.csv",
+          "bytes": 31829,
+          "crc32": "546946ff"
+        },
+        {
+          "name": "mclip_prompt_bank.pt",
+          "bytes": 1552815,
+          "crc32": "e67575eb"
+        },
+        {
+          "name": "text_decoder_last.pt",
+          "bytes": 459271931,
+          "crc32": "4ac237e0"
+        },
+        {
+          "name": "report_length_statistics.json",
+          "bytes": 139,
+          "crc32": "46a43cef"
+        },
+        {
+          "name": "validated_manifest.csv",
+          "bytes": 378582,
+          "crc32": "84c6ae9d"
+        },
+        {
+          "name": "decoder_vocabulary.json",
+          "bytes": 5650,
+          "crc32": "fd778d32"
+        },
+        {
+          "name": "train_manifest.csv",
+          "bytes": 301017,
+          "crc32": "08034661"
+        },
+        {
+          "name": "prompt_manifest.csv",
+          "bytes": 264997,
+          "crc32": "3e20c253"
+        },
+        {
+          "name": "test_manifest.csv",
+          "bytes": 38387,
+          "crc32": "65c2c384"
+        },
+        {
+          "name": "mclip_text_features.pt",
+          "bytes": 2102875,
+          "crc32": "480559c1"
+        },
+        {
+          "name": "text_training_history.json",
+          "bytes": 1628,
+          "crc32": "f5ce1561"
+        },
+        {
+          "name": "split_summary.json",
+          "bytes": 153,
+          "crc32": "5ca69ef8"
+        },
+        {
+          "name": "validation_audit.json",
+          "bytes": 358,
+          "crc32": "2b4965e8"
+        },
+        {
+          "name": "validation_manifest.csv",
+          "bytes": 39232,
+          "crc32": "b3fb1fdd"
+        },
+        {
+          "name": "text_decoder_best.pt",
+          "bytes": 229639049,
+          "crc32": "acc6021d"
+        }
+      ],
+      "last_keys": [
+        "best_validation_bleu4",
+        "decoder",
+        "epoch",
+        "epochs_without_improvement",
+        "history",
+        "optimizer"
+      ],
+      "best_keys": [
+        "decoder",
+        "epoch",
+        "max_tokens",
+        "validation_bleu4",
+        "vocabulary_size"
+      ],
+      "verification": {
+        "epoch": 15,
+        "next_epoch": 16,
+        "best_epoch": 8,
+        "best_validation_bleu4": 52.33887482243904,
+        "epochs_without_improvement": 7,
+        "momentum_buffers": 112,
+        "nonzero_momentum_buffers": 112,
+        "parameter_count": 57399152,
+        "legacy_rng_missing": true,
+        "scheduler": "none",
+        "compatibility": "PASS"
+      },
+      "best_artifact_epoch": 8,
+      "best_artifact_metric": 52.33887482243904,
+      "best_selection_integrity": "PASS",
+      "external_history_matches": true,
+      "optimizer_group": {
+        "lr": 0.001,
+        "momentum": 0.99,
+        "dampening": 0,
+        "weight_decay": 0,
+        "nesterov": false,
+        "maximize": false,
+        "foreach": null,
+        "differentiable": false,
+        "fused": null
+      },
+      "crc_integrity": "PASS",
+      "status": "PASS"
+    }
+  ],
+  "gate1_selection_status": "BLOCKED: history selects epoch 85, available best has epoch 8"
+}

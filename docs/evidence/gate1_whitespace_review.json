@@ -1,0 +1,7 @@
+{
+  "path": "tests\\test_models.py",
+  "before_sha256": "59a27e1bcea69e6532dccb4eff389a9bcbea88ae6b85eb86d274511f1664e305",
+  "after_sha256": "3fa554b6fbd1337d6680d56e9b6dd67d88c7cc8038daf251dfcfe87434b894f4",
+  "removed_added_blank_lines": 11,
+  "nonblank_content_unchanged": true
+}

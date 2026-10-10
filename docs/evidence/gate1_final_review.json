@@ -1,0 +1,11 @@
+{
+  "historical_notebook_hashes": {
+    "artifacts/reconciliation/gate1_20261010_remote/zeromrg-workflow.ipynb": "b6589232df1ff75e216c59a76d2b36308c85e4086c05f505ee34d161d84424ad",
+    "notebooks/ZeroMRG_COV_CTR_End_to_End_Kaggle.ipynb": "992e5d7f5cd218d2fba86a05f23c7d872d52fea26b5d04535761fe50bfdc5056",
+    "notebooks/ZeroMRG_COV_CTR_Resume_Epoch95_Kaggle.ipynb": "846fcd8ad5c5d27e001697387bde5daeb686371b709e1c415510831da1651a55"
+  },
+  "historical_notebooks_unchanged": true,
+  "gate1_source_trailing_whitespace": "PASS",
+  "local_test_evidence": "docs/evidence/gate1_local_test_results.json",
+  "gpu_or_remote_execution": "NOT RUN"
+}

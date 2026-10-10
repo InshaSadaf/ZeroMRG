@@ -1,0 +1,75 @@
+{
+  "observed_utc": "2026-10-10 18:56:05 UTC",
+  "running_observed_utc": "2026-10-10 18:33:52 UTC",
+  "terminal_status_confirmed_utc": "2026-10-10 18:52:28 UTC",
+  "local_date": "2026-10-11 (Asia/Calcutta); submission 2026-10-10 UTC",
+  "target": "inshasadaf114/zeromrg-covctr-gate1-preflight",
+  "version": 1,
+  "server_status": "KernelWorkerStatus.ERROR",
+  "authorization": "One bounded preflight only, timeout 1200 seconds; no continuation/training/test evaluation/checkpoint overwriting",
+  "gate2": "BLOCKED",
+  "diagnostic_behavior": "PASS: intended selected-best mismatch stop after latest diagnostics",
+  "submitted_notebook_sha256": "3d9731b0e36bf0aa0ab591f3dfa370aabeb6512f0670d6201c141f0ca7b54991",
+  "retrieved_remote_source_sha256": "dd0946729f6b07c353f589699bc98478fe88ed506fab3f72ca1aab5414e6be18",
+  "server_private": true,
+  "server_datasets": [
+    "inshasadaf114/dataset",
+    "inshasadaf114/zeromrg-checkpoint-backup5-zip"
+  ],
+  "dataset_counts": {
+    "raw_csv_rows": 726,
+    "physical_images": 746,
+    "usable": 714,
+    "train": 571,
+    "validation": 71,
+    "test": 72,
+    "prompts": 500,
+    "vocabulary": 368,
+    "embedding_dim": 768
+  },
+  "latest_checkpoint": {
+    "epoch": 90,
+    "next_epoch": 91,
+    "sha256": "ecc204f031b0fa83b4734c3228f20ba2172ce291288f31a6551921126546c299",
+    "model_parameters": 57399152,
+    "momentum_buffers": 112,
+    "finite_nonzero_momentum_buffers": 112,
+    "best_epoch_from_history": 85,
+    "best_validation_bleu4": 56.44423922571333,
+    "epochs_without_improvement": 5,
+    "legacy_rng_missing": true,
+    "compatibility": "PASS"
+  },
+  "gpu": {
+    "name": "Tesla T4",
+    "free_GiB_before_decoder_load": 14.45977783203125,
+    "total_GiB": 14.56219482421875
+  },
+  "finite_training_sample_forward_CE": 0.08689973503351212,
+  "disposable_restore": "PASS; model/momentum exact and restored logits equal",
+  "disposable_sha256": "df7aa91ad241a380ae37a0a89c02f349450589970f6a31802ef16bb30b5dbe0b",
+  "best_validation": "BLOCKED: need epoch 85, found epoch 8",
+  "exception": "ValueError: PREFLIGHT BLOCKED: validation-selected best weights unavailable. Latest restoration checks passed.",
+  "image_encoder_or_zero_shot_generation": "NOT REACHED",
+  "missing_packages_in_run": [
+    "clip",
+    "multilingual-clip",
+    "pycocoevalcap"
+  ],
+  "runtime_environment": {
+    "python": "3.13.15",
+    "torch": "2.11.0+cu128",
+    "cuda": "12.8"
+  },
+  "log_last_elapsed_seconds": 47.029258016,
+  "kernel_output_listing_caveat": "kernels files returned only a CSV header, but kernels output independently retrieved report, write probe, and log",
+  "raw_evidence_directory": "artifacts/gate2/preflight_20261010T181029719Z",
+  "report": "docs/evidence/gate2_preflight_report.json",
+  "execution_log": "docs/evidence/gate2_execution_log.json",
+  "report_sha256": "607b4d92d49698eaf69f4d8d874ef88ccc63f7c3db130412abcbd225341b0ca2",
+  "log_sha256": "a4e30bc0f559f4b5c2adc82a7700e6112b9b666bb0a7fa30401a0726699e26c5",
+  "canonical_local_checkpoints_and_history_unchanged": true,
+  "no_dataset_mutation_commands": true,
+  "no_continuation_submission": true,
+  "no_training_or_test_scoring": true
+}

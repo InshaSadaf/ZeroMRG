@@ -1,0 +1,22 @@
+[
+  {
+    "path": "notebooks\\gate1\\continuation\\ZeroMRG_COV_CTR_Checkpoint_Continuation_Kaggle.ipynb",
+    "sha256": "f4ffaf4872be61095f4888bd8db4c53c05b138c89620f2affd542bb16bbc58fb",
+    "code_cells": 8,
+    "python_compile": "PASS",
+    "embedded_source": "PASS",
+    "pinned_dependency_hashes": "PASS",
+    "metadata": "PASS",
+    "execution": "NOT RUN"
+  },
+  {
+    "path": "notebooks\\gate1\\preflight\\ZeroMRG_COV_CTR_Preflight_Only_Kaggle.ipynb",
+    "sha256": "3d9731b0e36bf0aa0ab591f3dfa370aabeb6512f0670d6201c141f0ca7b54991",
+    "code_cells": 6,
+    "python_compile": "PASS",
+    "embedded_source": "PASS",
+    "pinned_dependency_hashes": "PASS",
+    "metadata": "PASS",
+    "execution": "NOT RUN"
+  }
+]
