@@ -1,3 +1,5 @@
+> **Governance authority notice, 2026-10-11:** Current project position is maintained only in [project_state.md](project_state.md); roadmap and advancement are in [implementation_master_plan.md](implementation_master_plan.md). This original body is preserved as historical evidence or a detailed technical procedure, not a competing current-state or authorization record. Later scoped approvals/results are indexed in the execution ledger. The later reviewed training session used existing private baseline kernel output; a new private dataset is not an automatic restart prerequisite. Preserve historical evidence and follow the master plan amendments.
+
 # ZeroMRG Gate 3 recovery decision
 
 Updated 2026-10-11 for the existing `E:\Insha Project\ZeroMRG` COV-CTR 0%-paired reproduction. **The single authorized private Gate 3 baseline-only version completed and its export was independently verified.** No decoder training, image generation or test scoring occurred. Gate 1 and Gate 2 remain their original historical assessments; this is a separate, explicitly labelled recovery protocol. Preparation documents were preserved before this update.

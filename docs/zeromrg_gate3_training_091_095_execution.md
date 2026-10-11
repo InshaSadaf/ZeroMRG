@@ -24,4 +24,36 @@ Every completed epoch atomically saves full resumable latest; genuine new winner
 
 ## Execution result
 
-Submission/status, actual metrics, final epoch, final patience/winner, hashes, GPU runtime and independent persistence verification are **PENDING**. No result is inferred from prepared code. This record will be completed from actual Kaggle outputs; a failure will be diagnosed without automatic resubmission.
+**BLOCKED pending runtime and persistence evidence.** Exactly one wrapper push succeeded: private **version1**, numeric ID **138131184**, actual target `inshasadaf114/zeromrg-covctr-gate3-recovery-epochs-91-95`. Retrieved server source has all11 cells identical to the reviewed notebook, SHA `c1b92cae947fdadd281f2dab18d8215811fce3f59ac171109d399c8d0566fbb1`; privacy, GPU enablement and the two datasets plus private baseline kernel-output attachment are recorded in the source snapshot. No second version or dataset was published.
+
+The fresh project CLI check reports **`KernelWorkerStatus.RUNNING`**. After a bounded7,800-second local status monitor, the final independent source/status/output check still reports **RUNNING**, an empty failure message, and **zero output files**. No runtime log is available through the inspected output endpoint. See [execution audit](evidence/gate3_training_091_095_execution_audit.json), status snapshots and source copies under `artifacts/gate3/training_091_095_20261011T062341734415Z`.
+
+The local monitor exited with `RuntimeError: Status monitoring bound reached; job status unresolved. Do not submit another run.` This is a **local monitoring limit**, not a Kaggle notebook traceback, installation failure, BLEU failure, checkpoint failure or evidence that training failed. The7,200-second execution timeout was requested in the original push; its actual enforcement and the provider's queue/provision/execution phases cannot be verified from the available status. No timeout was extended and the remote job was not cancelled. Optional read-only browser inspection could not proceed because no browser surface is enabled; it caused no UI or job changes.
+
+| Requested result | Evidence status |
+|---|---|
+| Final completed epoch | UNVERIFIED; do not assume95 or zero updates |
+| Epoch91–95 losses and validation BLEU4 | UNVERIFIED; no output/log returned |
+| Final historical stopping patience | UNVERIFIED; immutable starting evidence is5/50 |
+| Final recovery-best epoch/score | UNVERIFIED; last independently verified winner is90 /54.21140850351637 |
+| Whether original56.44423922571333 was exceeded | UNVERIFIED |
+| New checkpoint hashes, actual weights and optimizer/RNG export | UNVERIFIED; no new artifact available |
+| Independent persistence | UNVERIFIED; `/kaggle/working` existence is not claimed |
+| Actual GPU type, runtime, peak memory and billed duration | UNVERIFIED for this session; baseline required T4 signature is not a new runtime observation |
+| Runtime exceptions and first actual failure | UNVERIFIED; status exposes no failure message or traceback |
+| Image/test exclusion | Audited source contains no image encoder/inference or held-out scoring; no runtime output is available for independent execution audit |
+| Another continuation's readiness | BLOCKED until the existing run ends and its artifacts pass independent verification |
+
+No metrics or new model weights were manufactured. Original90/stale8/history artifacts and original85 selection evidence remain preserved; submitted baseline source/metadata hashes remain unchanged. The latest **independently verified** recovery boundary remains full epoch90, not an assumed95 checkpoint. This does not assert that the remote job has made no updates.
+
+## Resume existing-run verification only
+
+The remote execution may continue after local monitoring stops. Do **not** push this notebook again or start another training session. Next action is read-only:
+
+```powershell
+.\scripts\kaggle.ps1 -KaggleArgs @('kernels','status','inshasadaf114/zeromrg-covctr-gate3-recovery-epochs-91-95')
+```
+
+When that same version ends, run `python scripts/monitor_gate3_training_091_095.py` to capture its actual source/status/log, then `python scripts/retrieve_gate3_training_091_095.py` for bounded streaming retrieval into a new non-overwriting directory. For a COMPLETE execution with its final ZIP, `python scripts/verify_gate3_training_091_095.py <retrieval-directory>` checks SHA/CRC/manifest, actual epochs, architecture, real saved winners, all112 optimizer momentum buffers, RNG and metric/selection histories on CPU only. These are read-only/CPU actions, not another GPU session. If ERROR or an incomplete export is returned, diagnose the first actual traceback and validate any surviving completed states separately; do not force the success verifier to pass or resubmit automatically.
+
+Only after actual retrieval and validation may this pending execution record be updated with measured results and readiness for a separately authorized next session. No Git staging, commit, push, checkpoint deletion, original dataset mutation, cancellation, additional Kaggle run, image generation or held-out evaluation occurred in this task.

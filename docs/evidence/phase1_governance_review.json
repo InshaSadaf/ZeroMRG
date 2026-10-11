@@ -1,0 +1,320 @@
+{
+  "review_id": "EV-010/Phase1-governance-revision1",
+  "date": "2026-10-11",
+  "scope": "Local read-only evidence reconciliation and documentation only; no implementation or remote queries",
+  "starting_assessment": {
+    "path": "docs/kaggle_gate0_assessment.md",
+    "classification": "Equivalent reliable starting assessment; no separately named Phase0 assessment found in bounded repository inventory",
+    "limits": "Gate0 is historical; later Gates and local source/artifacts override provisional claims. Reference-governance synthesis supplied by Phase1."
+  },
+  "git": {
+    "head": "7dd83c10e3e3cf43447bd31b09485208deb1f6b5",
+    "branch": "main",
+    "preexisting_status": " M .gitignore\nA  docs/evidence/gate3_training_091_095_execution_audit.json\n M docs/kaggle_covctr_progress.md\n M docs/zeromrg_gate3_readiness.md\n M docs/zeromrg_gate3_training_091_095_execution.md\nA  scripts/record_gate3_training_091_095_pending.py\n?? .agents/\n?? docs/zeromrg_gate3_one_epoch_diagnostic_plan.md\n?? docs/zeromrg_gate3_runtime_investigation.md\n?? ref_docs/\n?? scripts/gate3_runtime_diagnostics.py\n?? scripts/investigate_gate3_runtime.py\n?? skills-lock.json\n?? tests/test_gate3_runtime_diagnostics.py\n",
+    "final_status": " M .gitignore\nA  docs/evidence/gate3_training_091_095_execution_audit.json\n M docs/kaggle_covctr_progress.md\n M docs/kaggle_gate0_assessment.md\n M docs/kaggle_setup.md\n M docs/zeromrg_gate3_baseline_execution.md\n M docs/zeromrg_gate3_persistence.md\n M docs/zeromrg_gate3_readiness.md\n M docs/zeromrg_gate3_recovery_decision.md\n M docs/zeromrg_gate3_training_091_095_execution.md\n M docs/zeromrg_gate3_training_protocol.md\n M research/AGENTS.md\n M research/reproduction_plan.md\nA  scripts/record_gate3_training_091_095_pending.py\n?? .agents/\n?? AGENTS.md\n?? docs/decision_log.md\n?? docs/execution_ledger.md\n?? docs/implementation_master_plan.md\n?? docs/project_state.md\n?? docs/zeromrg_gate3_one_epoch_diagnostic_plan.md\n?? docs/zeromrg_gate3_runtime_investigation.md\n?? ref_docs/\n?? scripts/gate3_runtime_diagnostics.py\n?? scripts/investigate_gate3_runtime.py\n?? skills-lock.json\n?? tests/test_gate3_runtime_diagnostics.py\n",
+    "existing_staged_entries_preserved": true,
+    "no_staging_commit_or_push": true
+  },
+  "evidence": {
+    "input_sha256": {
+      "docs/kaggle_cli_workflow.md": "2df3be32929a5c2af3659494df1c5ec103804fad54681c167da4271302dc48c4",
+      "docs/kaggle_covctr_progress.md": "076eb003e00f0967eeb19a04ad6cfdf67d363188f8f346c2a7f38e75a6dce114",
+      "docs/kaggle_epoch95_resume_guide.md": "de9ff1b267e097de515b590194e16f4f4d643f46a1cfe13f53a9833745186d95",
+      "docs/kaggle_gate0_assessment.md": "b1469a952169124daf7ac79fcfb4fb4dac7a50263540fd6799ca3939445a2191",
+      "docs/kaggle_setup.md": "b825c10160d0e03b303c0af3c4f353781c574e42258523122b2ba2b1fb702b86",
+      "docs/zeromrg_checkpoint_persistence.md": "4346c6a9632e349c7f6938c8b1b18de239a4bac9ba95b0f22b4b34922834e659",
+      "docs/zeromrg_checkpoint_recovery.md": "f26a86f5ba6b2cbbc6e57cf64501083dc6458e202288103a71d0fcfc61806303",
+      "docs/zeromrg_gate1_readiness.md": "6d0eb0d9e6162390ccffe304d1b7c3f3fd327713cc4b3cfc119eab972fa46eed",
+      "docs/zeromrg_gate2_preflight.md": "f6c413a3d13ca8e01827096978d687d65b51117297e777a0196cfbdef23557d4",
+      "docs/zeromrg_gate3_baseline_execution.md": "ad6f51038c56b1de23169c83892c9a9d139f10530e8a7a17c3ec878687b5bff6",
+      "docs/zeromrg_gate3_dependencies.md": "f16dff62e09b35ec9064978662cd5401fbde63485a9d40280340d8340264e650",
+      "docs/zeromrg_gate3_one_epoch_diagnostic_plan.md": "4f01ac4ca69827fabc933e0b5bf412ec0cfc273df05e840c7ac4ac00da516697",
+      "docs/zeromrg_gate3_persistence.md": "04ca7f143304c5cc990786c0319beed0ddfacfa950ad0231736f23eb7dee385f",
+      "docs/zeromrg_gate3_readiness.md": "c9d4d8ffeeac03665ed6720929a013f8f06bf9549a584e78bd381e329d658160",
+      "docs/zeromrg_gate3_recovery_decision.md": "2f1f0d6934f69416ca77d4b9477dc4c73a8306af611747c74d4f533ad3c72de5",
+      "docs/zeromrg_gate3_runtime_investigation.md": "47f4db7034734022086dc8bde2e1f220d14670b549d9c153fbecc4b122587069",
+      "docs/zeromrg_gate3_training_091_095_execution.md": "2a13de853a90ee96d39b25a868056310560a646e27f0daa7207a485c4808d594",
+      "docs/zeromrg_gate3_training_protocol.md": "bb9e017d349c5af554ffbf6275fb8376574b0df0563aef064a42f8733765291c",
+      "docs/zeromrg_source_reconciliation.md": "9dd99f5aa26b5a7067c77d88fc4220ef5b86ef21cdf3448e5af1a0e4e051f8f4",
+      "research/AGENTS.md": "016fa2ac35a6f08cf4ccdc4efc8b236dd16f716f184f933d47775887106790d6",
+      "research/dataset_analysis.md": "7093c0d1c845d528f911d6fdff800abf454dbe1f5c74504a196ece3a2ac1dcea",
+      "research/paper_analysis.md": "565995dd9a490544e67c11ae48a41164fa4ddb21189cbdf9f3ff352b6c657bac",
+      "research/reproduction_plan.md": "35abd7b648958a0f33d88fb7cfe99df324de55c2344e4cc608b33acaeaa2d1e0",
+      "artifacts/reconciliation/gate1_20261010_remote/paper_text.txt": "8f377a801fc2226cb28a62bbaa6fc181414b120260f6110ce090eb359bc73e9a",
+      "data/processed/cov_ctr/samples_with_splits.jsonl": "5cda2b9b889ea7b5acc05b3ee4a488da7777786339c1f1273ebf17c3ef92b5fe",
+      "data/processed/cov_ctr/splits.json": "2c3bb2e1efbee0b8250fc2250f1c8be048759f417eaa56d1c53927b3459d4108",
+      "data/processed/iu_xray/splits.json": "1e9364099f3d6dd2d3e936d1ec2dbd50972df9def3506f5ee3dbe9f4d540f174",
+      "data/processed/iu_xray/validation_summary.json": "b03cccebe8a27dbed0ba9a65220ab10576df854b319ae29d85c0298e8db46c91",
+      "data/processed/iu_xray/kaggle_500/preparation_summary.json": "97234039c1048c352b74090dc0e7e220a636c88f1fcf5c12d737644572103437",
+      "artifacts/gate3/active_training_091_095.json": "dd66e7dd2cef68e8d9fee9166edb7479ccaa5da3fdb7a93de61e04ee62092487",
+      "artifacts/gate3/runtime_incident_20261011T101158310018Z/investigation.json": "204ea4ec87d9ed640909f77a9b8e83cd540d518c8ccbff4847c4939d39791a9c",
+      "docs/evidence/gate3_baseline_verification.json": "0fa1dc6a2be3a516acb8e0842e8de30665e44bdabbb720997382ee6a880c0458",
+      "artifacts/gate3/baseline_retrieval_20261011T055727985114Z/verified_export_20261011T060635057524Z/dependencies/train_manifest.csv": "8902b8fea1163429aec6940a9744f7c792d1b7f9a00ca300a1fab17448ead973",
+      "artifacts/gate3/baseline_retrieval_20261011T055727985114Z/verified_export_20261011T060635057524Z/dependencies/validation_manifest.csv": "94c555cb25a19485616065079139722bfe7122a17639267ba5e03d9e4cfa7c5d",
+      "artifacts/gate3/baseline_retrieval_20261011T055727985114Z/verified_export_20261011T060635057524Z/dependencies/test_manifest.csv": "fcbcd1bd12220b0a3a286c4b1a82a8543e34c0a3495c5d0b8c89c81033b3eb66"
+    },
+    "reference_sections_reviewed": {
+      "ref_docs/IMPLEMENTATION_MASTER_PLAN.md": "sections19-22; outline for responsibility mapping",
+      "ref_docs/ZEROMRG_IMPLEMENTATION_ARCHITECTURE.md": "sections7-8; outline",
+      "ref_docs/ZEROMRG_IMPLEMENTATION_FEASIBILITY.md": "sections7-9; outline",
+      "ref_docs/RESEARCH_TERMINOLOGY_DICTIONARY.md": "provenance, confidence, split comparability and reproducibility entries"
+    },
+    "reference_authority": "Governance examples only; architecture/method/hardware/thresholds/authorizations not adopted",
+    "cov_split_comparison": {
+      "method": "CSV-aware in-memory parser; equality and intersection of image_id sets by train/validation/test versus existing modular JSONL image_ids; no files regenerated",
+      "checkpoint_dependency_directory": "artifacts/gate3/baseline_retrieval_20261011T055727985114Z/verified_export_20261011T060635057524Z/dependencies",
+      "modular_manifest": "data/processed/cov_ctr/samples_with_splits.jsonl",
+      "counts": {
+        "train": {
+          "local": 571,
+          "checkpoint": 571,
+          "overlap": 456,
+          "equal": false
+        },
+        "validation": {
+          "local": 71,
+          "checkpoint": 71,
+          "overlap": 3,
+          "equal": false
+        },
+        "test": {
+          "local": 72,
+          "checkpoint": 72,
+          "overlap": 10,
+          "equal": false
+        }
+      },
+      "conclusion": "Matching counts conceal distinct memberships; retain checkpoint family for recovery and corresponding comparisons"
+    },
+    "iu_known_byte_duplicate_groups": {
+      "source": "data/processed/iu_xray/validation_summary.json",
+      "method": "Map existing duplicate group paths to preserved study split manifest",
+      "observed_cross_split": false,
+      "limit": "Checks listed known byte duplicates only; not patient independence or fresh full-image hashing"
+    },
+    "remote_observation": {
+      "fresh_remote_requests_this_turn": 0,
+      "last_saved_incident_utc": "2026-10-11T10:11:58.310018+00:00",
+      "last_saved_state": "Exact training version1 RUNNING with zero published files/log characters",
+      "present_remote_state": "UNKNOWN",
+      "last_independently_verified_epoch": 90
+    }
+  },
+  "consistency": {
+    "objective_matches_local_paper_and_scope": true,
+    "fractions_are_paired_train_supervision": true,
+    "text_reconstruction_not_image_result": true,
+    "all_24_steps_have_A_to_M": true,
+    "step_ids": [
+      "ZM-001",
+      "ZM-002",
+      "ZM-003",
+      "ZM-004",
+      "ZM-005",
+      "ZM-006",
+      "ZM-007",
+      "ZM-008",
+      "ZM-009",
+      "ZM-010",
+      "ZM-011",
+      "ZM-012",
+      "ZM-013",
+      "ZM-014",
+      "ZM-015",
+      "ZM-016",
+      "ZM-017",
+      "ZM-018",
+      "ZM-019",
+      "ZM-020",
+      "ZM-021",
+      "ZM-022",
+      "ZM-023",
+      "ZM-024"
+    ],
+    "statuses": {
+      "ZM-001": "COMPLETE",
+      "ZM-002": "BLOCKED",
+      "ZM-003": "PARTIAL",
+      "ZM-004": "BLOCKED",
+      "ZM-005": "PARTIAL",
+      "ZM-006": "PARTIAL",
+      "ZM-007": "BLOCKED",
+      "ZM-008": "PARTIAL",
+      "ZM-009": "PARTIAL",
+      "ZM-010": "NOT_STARTED",
+      "ZM-011": "NOT_STARTED",
+      "ZM-012": "BLOCKED",
+      "ZM-013": "PARTIAL",
+      "ZM-014": "NOT_STARTED",
+      "ZM-015": "NOT_STARTED",
+      "ZM-016": "PARTIAL",
+      "ZM-017": "PARTIAL",
+      "ZM-018": "NOT_STARTED",
+      "ZM-019": "NOT_STARTED",
+      "ZM-020": "PARTIAL",
+      "ZM-021": "NOT_STARTED",
+      "ZM-022": "NOT_STARTED",
+      "ZM-023": "NOT_STARTED",
+      "ZM-024": "NOT_STARTED"
+    },
+    "dependencies": {
+      "ZM-001": [],
+      "ZM-002": [
+        "ZM-001"
+      ],
+      "ZM-003": [
+        "ZM-001"
+      ],
+      "ZM-004": [
+        "ZM-002"
+      ],
+      "ZM-005": [
+        "ZM-003",
+        "ZM-004"
+      ],
+      "ZM-006": [
+        "ZM-005",
+        "ZM-010"
+      ],
+      "ZM-007": [
+        "ZM-006"
+      ],
+      "ZM-008": [
+        "ZM-003",
+        "ZM-004"
+      ],
+      "ZM-009": [
+        "ZM-003"
+      ],
+      "ZM-010": [
+        "ZM-008"
+      ],
+      "ZM-011": [
+        "ZM-007",
+        "ZM-009",
+        "ZM-010"
+      ],
+      "ZM-012": [
+        "ZM-011"
+      ],
+      "ZM-013": [
+        "ZM-012",
+        "ZM-003"
+      ],
+      "ZM-014": [
+        "ZM-013",
+        "ZM-011"
+      ],
+      "ZM-015": [
+        "ZM-014",
+        "ZM-013"
+      ],
+      "ZM-016": [
+        "ZM-011"
+      ],
+      "ZM-017": [
+        "ZM-016",
+        "ZM-003",
+        "ZM-008",
+        "ZM-009"
+      ],
+      "ZM-018": [
+        "ZM-017"
+      ],
+      "ZM-019": [
+        "ZM-018",
+        "ZM-017",
+        "ZM-009"
+      ],
+      "ZM-020": [
+        "ZM-019",
+        "ZM-012",
+        "ZM-013"
+      ],
+      "ZM-021": [
+        "ZM-020",
+        "ZM-019"
+      ],
+      "ZM-022": [
+        "ZM-021",
+        "ZM-020"
+      ],
+      "ZM-023": [
+        "ZM-011",
+        "ZM-014",
+        "ZM-015",
+        "ZM-019",
+        "ZM-021",
+        "ZM-022"
+      ],
+      "ZM-024": [
+        "ZM-023"
+      ]
+    },
+    "acyclic": true,
+    "topological_order": [
+      "ZM-001",
+      "ZM-002",
+      "ZM-003",
+      "ZM-004",
+      "ZM-005",
+      "ZM-008",
+      "ZM-010",
+      "ZM-006",
+      "ZM-007",
+      "ZM-009",
+      "ZM-011",
+      "ZM-012",
+      "ZM-013",
+      "ZM-014",
+      "ZM-015",
+      "ZM-016",
+      "ZM-017",
+      "ZM-018",
+      "ZM-019",
+      "ZM-020",
+      "ZM-021",
+      "ZM-022",
+      "ZM-023",
+      "ZM-024"
+    ],
+    "all_required_dataset_target_outcomes_mapped": true,
+    "prior_completed_evidence_preserved_without_unnecessary_rerun": true,
+    "approval_vs_proposal_distinguished": true,
+    "canonical_responsibilities_nonduplicative": true,
+    "first_eligible_action": "ZM-002 after owner review/resumption instruction: existing-version bounded status/source/output retrieval and CPU validation, no resubmission",
+    "no_implementation_steps_executed": true,
+    "local_links": "PASS after artifact written and final audit",
+    "historical_bodies_preserved": true,
+    "protected_source_files": 100,
+    "protected_source_hashes_unchanged": true,
+    "git_diff_check": "PASS; line-ending notices only"
+  },
+  "limitations": [
+    "No current remote status/quota/runtime/platform claim verified during this turn",
+    "No new Torch checkpoint inspection/forward/training or metric recomputation; existing independently verified evidence reused",
+    "Original85 weights and historical RNG/encoder/metric revisions unresolved",
+    "Inference locks and full metric families need actual runtime qualification",
+    "Supervised research choices, IU profile/view policies and future resource budgets remain conditional",
+    "Ignored weights/exports need verified future storage and retrieval; Git documentation does not back them up"
+  ],
+  "documentation_sha256": {
+    "docs/implementation_master_plan.md": "dad918823760bb684b113f5bc24e34aa48cbe14b0f14b9ad25fb4d2e4e48b7ad",
+    "docs/project_state.md": "a4ddca691879a2795e5a6400610ff6029a4b607293502776cf93ad3abbf11229",
+    "docs/execution_ledger.md": "51ed01f636f46d453dcaf7e8cd1420cc5fd8cd203a2632dd0a12a6213cfec02d",
+    "docs/decision_log.md": "56b3b9c963632b5f3c7a650580f740b2022fa971f98acb9b54a7e417f6b0cefa",
+    "AGENTS.md": "3438c18924a81a383358d1d89d2cd08323c9015d1dc61cabd8256d6ff0ed0fd4",
+    "docs/kaggle_gate0_assessment.md": "2c944907be825303b934d7265fe462b06ea686405a8a54e05f3a054f62d3a48a",
+    "docs/kaggle_covctr_progress.md": "7f697da2bf576cf5ce8c4379d8f160439d5841d6aa86cf96eb0f578bfc606749",
+    "docs/kaggle_setup.md": "fadc358ede0e61b36a1bfa82cb91364b771da58e70836258749e993ff0bd4575",
+    "docs/zeromrg_gate3_readiness.md": "a9d42822ecced136c5c8879e1446a848619bee774cd24e2be59ca36a6e28a99d",
+    "docs/zeromrg_gate3_training_protocol.md": "5f11e96a3e64298570c1c8d1a7d55f085cee0b63a2ff41243d332bc9dedbe391",
+    "docs/zeromrg_gate3_persistence.md": "515c01a6d0f3ef874bff4a5928d1c82151fb647042dbb77fc8788516ea17edc9",
+    "docs/zeromrg_gate3_recovery_decision.md": "51e3b7f70a32ac4e7280db27a7363b174eff216bb6bee2bbac457bccf37ac8c9",
+    "docs/zeromrg_gate3_baseline_execution.md": "80a85535d16d034536b55dcd216a658bddbb91d571dde639e7bf778222f4b2f8",
+    "research/reproduction_plan.md": "aa659117cb15bf3c10da8b0e32fa4a086bae1d50c08d1320a268ca734a46aa25",
+    "research/AGENTS.md": "87f727e38bd35835e36982e2e89a8258b6cab9b75be1b050df38a6517d03b160"
+  },
+  "protected_source_manifest_sha256": "891eee536a03929596c0830b560c6cd3aaea277e7aa4b7d31da3220bf9a8fd0b",
+  "final_result": "PASS: planning/governance complete, implementation awaiting review and scoped authorization"
+}

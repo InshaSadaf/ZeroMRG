@@ -1,3 +1,5 @@
+> **Governance authority notice, 2026-10-11:** Current project position is maintained only in [../docs/project_state.md](../docs/project_state.md); roadmap and advancement are in [../docs/implementation_master_plan.md](../docs/implementation_master_plan.md). This original body is preserved as historical evidence or a detailed technical procedure, not a competing current-state or authorization record. Later scoped approvals/results are indexed in the execution ledger. The supplied dataset is COV-CTR, not the stale COV_CT spelling below; COV-CT is outside scope. Resume with root AGENTS.md and the canonical records.
+
 # Project Role
 
 You are the research implementation agent for this repository.

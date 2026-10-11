@@ -1,3 +1,5 @@
+> **Governance authority notice, 2026-10-11:** Current project position is maintained only in [project_state.md](project_state.md); roadmap and advancement are in [implementation_master_plan.md](implementation_master_plan.md). This original body is preserved as historical evidence or a detailed technical procedure, not a competing current-state or authorization record. Later scoped approvals/results are indexed in the execution ledger. The later reviewed training session used existing private baseline kernel output; a new private dataset is not an automatic restart prerequisite. Preserve historical evidence and follow the master plan amendments.
+
 # Gate 3 baseline execution evidence
 
 Verified 2026-10-11. **PASS: the single authorized baseline-only version completed, and its exported recovery checkpoint was independently retrieved and verified.** This is validation text reconstruction, not an image-to-report result. No training session is authorized by this result.

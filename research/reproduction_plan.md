@@ -1,3 +1,5 @@
+> **Governance authority notice, 2026-10-11:** Current project position is maintained only in [../docs/project_state.md](../docs/project_state.md); roadmap and advancement are in [../docs/implementation_master_plan.md](../docs/implementation_master_plan.md). This original body is preserved as historical evidence or a detailed technical procedure, not a competing current-state or authorization record. Later scoped approvals/results are indexed in the execution ledger.
+
 # ZeroMRG Implementation and Reproduction Plan
 
 > **Gate 1 scope override, 2026-10-10:** this is historical planning, not the current execution specification. Only COV-CTR 0%-paired is authorized; all training and GPU inference belong on Kaggle. Preserve the existing split/caches. The canonical decoder is the actual checkpoint-producing six-layer post-norm model with unscaled embeddings, no final normalization and 160 positions, not newer modular defaults in this plan. Latest recovery is epoch90; history-selected epoch85 weights are missing. Follow [Gate 1 readiness](../docs/zeromrg_gate1_readiness.md), not local-GPU or paired/IU-Xray recommendations below. No remote execution is authorized.

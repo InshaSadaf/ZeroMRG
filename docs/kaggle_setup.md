@@ -1,3 +1,5 @@
+> **Governance authority notice, 2026-10-11:** Current project position is maintained only in [project_state.md](project_state.md); roadmap and advancement are in [implementation_master_plan.md](implementation_master_plan.md). This original body is preserved as historical evidence or a detailed technical procedure, not a competing current-state or authorization record. Later scoped approvals/results are indexed in the execution ledger.
+
 # Kaggle setup for ZeroMRG
 
 > **Current execution scope (Gate 1, 2026-10-10): COV-CTR 0% paired only; GPU work on Kaggle.** Use the self-contained [Gate 1 preflight notebook](../notebooks/gate1/preflight/ZeroMRG_COV_CTR_Preflight_Only_Kaggle.ipynb) and its metadata after explicit execution approval. Historical setup below is general development guidance and does not authorize rebuilding audited splits/caches, paired/IU-Xray experiments, or local GPU work. Recovery is currently blocked by missing history-selected epoch85 weights; see [readiness](zeromrg_gate1_readiness.md).
