@@ -1,0 +1,22 @@
+{
+  "package": "pycocoevalcap==1.2",
+  "wheel": {
+    "filename": "pycocoevalcap-1.2-py3-none-any.whl",
+    "url": "https://files.pythonhosted.org/packages/08/f9/466f289f1628296b5e368940f89e3cfcfb066d15ddc02ff536dc532b1c93/pycocoevalcap-1.2-py3-none-any.whl",
+    "size": 104312215,
+    "digests": {
+      "blake2b_256": "08f9466f289f1628296b5e368940f89e3cfcfb066d15ddc02ff536dc532b1c93",
+      "md5": "14526e84cc463601a44f9e8536e2eff7",
+      "sha256": "083ed7910f1aec000b0a237ef6665f74edf19954204d0b1cbdb8399ed132228d"
+    },
+    "requires_python": ">=3"
+  },
+  "implementation_sha256": {
+    "pycocoevalcap/tokenizer/ptbtokenizer.py": "ded90551127b8a4bf683873432ccafa83330a9997f6d0b695cb71a618808b8c1",
+    "pycocoevalcap/tokenizer/stanford-corenlp-3.4.1.jar": "2fcb91bb7a111f93d71e264f4ee0e3afd19ba0dde6d21b38605088df9e940399",
+    "pycocoevalcap/bleu/bleu.py": "05b74a92b32e071eacfb954ef34328137cfd1b82c563572648633087def23776",
+    "pycocoevalcap/bleu/bleu_scorer.py": "413ccfef71b88c5f11d25d05fdcf08625a1559338ffbb7c2787e800116eaecdd"
+  },
+  "local_java": "UNAVAILABLE; tokenizer runtime not executed locally",
+  "status": "Wheel integrity, Python syntax and implementation hashes verified; no install"
+}

@@ -1,0 +1,18 @@
+{
+  "id": "inshasadaf114/zeromrg-covctr-gate3-recovery",
+  "title": "ZeroMRG COVCTR Gate3 Recovery Baseline",
+  "code_file": "ZeroMRG_COV_CTR_Recovery_Kaggle.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_tpu": false,
+  "enable_internet": true,
+  "dataset_sources": [
+    "inshasadaf114/dataset",
+    "inshasadaf114/zeromrg-checkpoint-backup5-zip"
+  ],
+  "kernel_sources": [],
+  "competition_sources": [],
+  "model_sources": []
+}

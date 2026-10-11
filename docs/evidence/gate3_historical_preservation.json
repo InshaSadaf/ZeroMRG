@@ -1,0 +1,51 @@
+{
+  "directory": "artifacts\\gate3\\historical_evidence\\epoch90_ecc204f031b0",
+  "files": {
+    "text_decoder_last.pt": {
+      "sha256": "ecc204f031b0fa83b4734c3228f20ba2172ce291288f31a6551921126546c299",
+      "bytes": 459275387
+    },
+    "text_decoder_best.pt": {
+      "sha256": "dba64646e89f1c55c69c9e3a7361141829e4dc7ec32114f98f2edce8b89a0568",
+      "bytes": 229639049
+    },
+    "text_training_history.json": {
+      "sha256": "ccd65f2ec0ce2f569f683233f5a13c48c26bb27075aa9661bc7a272c3a14a015",
+      "bytes": 9876
+    },
+    "gate1_checkpoint_audit.json": {
+      "sha256": "e6db958c0dddb7e270efc877ebc90e659c8dafa16937d285e1eae14279a7661e",
+      "bytes": 24408
+    },
+    "gate1_remote_best_audit.json": {
+      "sha256": "aa66aeb8b41e09e03040e5dcc16fd549be99ba9ab347ffa329454d5305297e8c",
+      "bytes": 726
+    },
+    "gate1_notebook_validation.json": {
+      "sha256": "611b20453ddb19222a03bc8773420ddd780897f9c10867b42f64d78b9f41f356",
+      "bytes": 741
+    },
+    "gate1_local_test_results.json": {
+      "sha256": "65af55be5475bcf5279ac7c55babca6ece07939a1fcc0d0e6204e2976932905b",
+      "bytes": 358
+    },
+    "gate2_preflight_report.json": {
+      "sha256": "607b4d92d49698eaf69f4d8d874ef88ccc63f7c3db130412abcbd225341b0ca2",
+      "bytes": 1115
+    },
+    "gate2_execution_log.json": {
+      "sha256": "a4e30bc0f559f4b5c2adc82a7700e6112b9b666bb0a7fa30401a0726699e26c5",
+      "bytes": 12504
+    },
+    "gate2_preflight_audit.json": {
+      "sha256": "b7dcf44b2b5e3886e6b7ddc02b346ee1a914c6042ce303ab54ce59eb6e9d24dd",
+      "bytes": 3158
+    }
+  },
+  "historical_best_epoch": 85,
+  "historical_best_validation_bleu4": 56.44423922571333,
+  "historical_non_improvement_counter": 5,
+  "patience": 50,
+  "preservation": "Exclusive creation, hash verification and read-only copies; originals unmodified",
+  "immutability_limit": "Filesystem read-only is an accidental-write guard, not tamper-proof storage"
+}

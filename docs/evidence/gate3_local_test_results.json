@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "exit_code": 0,
+  "tests": 65,
+  "elapsed_seconds": 12.514999999955762,
+  "command": [
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "tests",
+    "-v"
+  ],
+  "scope": "CPU fixtures/static checks only; CUDA_VISIBLE_DEVICES=-1",
+  "gate3_recovery_tests": 14,
+  "real_decoder_training": false,
+  "models_downloaded": false,
+  "log": "artifacts\\gate3\\lightweight_test_log.txt"
+}

@@ -1,0 +1,15 @@
+{
+  "status": "PASS_STATIC_ONLY",
+  "cells": 11,
+  "notebook_sha256": "46dc67a9833d7b698968e3afea10604f9520512e784db563fedc9d7ea7d0872b",
+  "metadata_sha256": "3093a64fcf9fd2cce962310d51a9c94368c90147f69bc2edab6a5eec59a46720",
+  "runtime_hashes": {
+    "gate1": "e897aa5e800ce18911744cc13e16b75b239477a4edb8bc1df0f8e9ab3f9e038a",
+    "gate3": "1fbca913016996971e369a909397293b74284e15d582d51b6376b95b7f2bbe5a"
+  },
+  "training_default": false,
+  "baseline": "UNMEASURED",
+  "remote_execution": false,
+  "gate1_notebooks_unchanged": true,
+  "inference_runtime": "UNVERIFIED"
+}

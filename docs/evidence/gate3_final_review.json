@@ -1,0 +1,178 @@
+{
+  "head": "e4fe4a07aa2125d95b359a3cae3e8fcb2d87b932",
+  "status": [
+    "M .gitignore",
+    " M docs/kaggle_covctr_progress.md",
+    "?? docs/evidence/gate3_dependency_audit.json",
+    "?? docs/evidence/gate3_final_review.json",
+    "?? docs/evidence/gate3_historical_preservation.json",
+    "?? docs/evidence/gate3_inference_resolution.json",
+    "?? docs/evidence/gate3_local_test_results.json",
+    "?? docs/evidence/gate3_metric_implementation.json",
+    "?? docs/evidence/gate3_notebook_validation.json",
+    "?? docs/evidence/gate3_report_preservation.json",
+    "?? docs/zeromrg_gate3_dependencies.md",
+    "?? docs/zeromrg_gate3_persistence.md",
+    "?? docs/zeromrg_gate3_recovery_decision.md",
+    "?? docs/zeromrg_gate3_training_protocol.md",
+    "?? notebooks/gate3/",
+    "?? requirements/",
+    "?? scripts/audit_gate3_dependencies.py",
+    "?? scripts/build_gate3_notebook.py",
+    "?? scripts/inspect_gate3_metric_wheel.py",
+    "?? scripts/preserve_gate3_history.py",
+    "?? scripts/resolve_gate3_inference.py",
+    "?? scripts/review_gate3_delivery.py",
+    "?? scripts/validate_gate3_sources.py",
+    "?? scripts/verify_gate3_local.py",
+    "?? scripts/zeromrg_gate3_runtime.py",
+    "?? tests/test_gate3_recovery.py"
+  ],
+  "tracked_diff": ".gitignore                     | 1 +\n docs/kaggle_covctr_progress.md | 2 ++\n 2 files changed, 3 insertions(+)",
+  "whitespace_check": "PASS",
+  "ignored_large_artifacts_and_credentials": [
+    "artifacts/gate3/historical_evidence/epoch90_ecc204f031b0/text_decoder_last.pt",
+    "artifacts/gate3/dependency_audit/pycocoevalcap-1.2-py3-none-any.whl",
+    ".kaggle/kaggle.json"
+  ],
+  "files": {
+    "docs\\zeromrg_gate3_dependencies.md": {
+      "bytes": 7987,
+      "sha256": "c63f44bd52673fc27c8eb7d5a966d38726a40548fcd2bc14849cf3064e601a4d"
+    },
+    "docs\\zeromrg_gate3_persistence.md": {
+      "bytes": 7419,
+      "sha256": "6928edd8e34c4baa8bac40d84b2e7fd743a96fc709c9abf05cd6f0ce100f39b8"
+    },
+    "docs\\zeromrg_gate3_recovery_decision.md": {
+      "bytes": 8094,
+      "sha256": "0632e5cbf38dd59472e11e4ede230709cd174ea7c61119f41ba79ee940ee8b06"
+    },
+    "docs\\zeromrg_gate3_training_protocol.md": {
+      "bytes": 11390,
+      "sha256": "c10b54a89cba6de1191a5fdf4aaaf4f231023554cfd6edb059e70cb547f0d0f4"
+    },
+    "notebooks\\gate3\\kernel-metadata.json": {
+      "bytes": 516,
+      "sha256": "3093a64fcf9fd2cce962310d51a9c94368c90147f69bc2edab6a5eec59a46720"
+    },
+    "notebooks\\gate3\\requirements-bleu.lock": {
+      "bytes": 99,
+      "sha256": "50df8d669c526e8acf8ced6b0d0dea44db8039b53dd237140b2b20bdee605576"
+    },
+    "notebooks\\gate3\\ZeroMRG_COV_CTR_Recovery_Kaggle.ipynb": {
+      "bytes": 170124,
+      "sha256": "46dc67a9833d7b698968e3afea10604f9520512e784db563fedc9d7ea7d0872b"
+    },
+    "requirements\\gate3-inference-candidate.lock": {
+      "bytes": 2342,
+      "sha256": "1abdc355c3fab62272c872c066fee6bb5261ed6da8961379c8c52ac00227ee60"
+    },
+    "requirements\\gate3-inference-candidate.txt": {
+      "bytes": 449,
+      "sha256": "672e313a2f7f62d1aa524eedc9527d1802310af63d499dbb9296a338f2ac1501"
+    },
+    "tests\\test_gate3_recovery.py": {
+      "bytes": 12474,
+      "sha256": "0148545e60a588e5e22edfad7d6fda8c86f2d51aeab689fdde2712fdb8e1f547"
+    },
+    "scripts\\audit_gate3_dependencies.py": {
+      "bytes": 3005,
+      "sha256": "60ca30708b52b98fbdd4cfc73df46e4f30701da581bba8877c27271c2fb9f17d"
+    },
+    "scripts\\build_gate3_notebook.py": {
+      "bytes": 22745,
+      "sha256": "aa90ec316041146a32aa3d74ce21fa9c44a3e1dcc11f2981ee5e9309f99c4db8"
+    },
+    "scripts\\inspect_gate3_metric_wheel.py": {
+      "bytes": 2423,
+      "sha256": "20f8b19daa21b0c50defd0c4771e2e6f86388ef98ebf525d90860aecd31f1c1d"
+    },
+    "scripts\\preserve_gate3_history.py": {
+      "bytes": 4623,
+      "sha256": "b26bb21d5e5b43da5b990d122b2780aa56f70dbf6a9830643066c474d01a5e4f"
+    },
+    "scripts\\resolve_gate3_inference.py": {
+      "bytes": 2722,
+      "sha256": "891db6362a363dca00fb35f7d4e110476a3992656ff7cc76bd9d21a630ee302a"
+    },
+    "scripts\\review_gate3_delivery.py": {
+      "bytes": 2559,
+      "sha256": "8dd020e0aed671cac5b48d6d8f1da4708c6877a688dce62640dd3426e328f33f"
+    },
+    "scripts\\validate_gate3_sources.py": {
+      "bytes": 5732,
+      "sha256": "a073aefd2b5a2ca30ece098eb2fe37dc9920d9358a762949a4307938de35c0ab"
+    },
+    "scripts\\verify_gate3_local.py": {
+      "bytes": 1733,
+      "sha256": "d16205b7b10be358cc6c7e41c7e5c1ae3da06c9264da2293f6f09d55a7655e9e"
+    },
+    "scripts\\zeromrg_gate3_runtime.py": {
+      "bytes": 17242,
+      "sha256": "1fbca913016996971e369a909397293b74284e15d582d51b6376b95b7f2bbe5a"
+    },
+    "docs\\evidence\\gate3_dependency_audit.json": {
+      "bytes": 195118,
+      "sha256": "4740fd2042d52499dbca980e4a23ee4b2f0a511afdb3af3bf293801cc72995f9"
+    },
+    "docs\\evidence\\gate3_historical_preservation.json": {
+      "bytes": 1979,
+      "sha256": "d10a8e4586dfa25f2ca9bd61281f1ee41d03c146deb20d53b12b3171a372eb46"
+    },
+    "docs\\evidence\\gate3_inference_resolution.json": {
+      "bytes": 8222,
+      "sha256": "3633e869d0378468c60213dbecf71fc34e66cf862660cd4ba5d2d7ff1efe6486"
+    },
+    "docs\\evidence\\gate3_local_test_results.json": {
+      "bytes": 430,
+      "sha256": "5e0f757caff0a459386c63f6695687f2a25bddca665bb18e9e2a057816e9233e"
+    },
+    "docs\\evidence\\gate3_metric_implementation.json": {
+      "bytes": 1234,
+      "sha256": "aedc5518571b6b036ff315f40d35ff82258b8e0b3b37ea67fcbd0cd54fa2050b"
+    },
+    "docs\\evidence\\gate3_notebook_validation.json": {
+      "bytes": 591,
+      "sha256": "84371519c8436f509babb074e14d59820441c0fa7ebbd69277f77d055d306528"
+    },
+    "docs\\evidence\\gate3_report_preservation.json": {
+      "bytes": 887,
+      "sha256": "3955986f92ab94e303e4227a4da0fe5cbd07b906a46069aae04545e9aa8a7fe9"
+    }
+  },
+  "gate1_gate2_reports_preserved": true,
+  "old_notebooks_hash_verified": true,
+  "staged": false,
+  "committed": false,
+  "remote_execution": false,
+  "remote_publication": false,
+  "user_change_preserved": ".gitignore .kaggle exclusion retained",
+  "local_validation": {
+    "status": "PASS",
+    "exit_code": 0,
+    "tests": 65,
+    "elapsed_seconds": 12.514999999955762,
+    "command": [
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tests",
+      "-v"
+    ],
+    "scope": "CPU fixtures/static checks only; CUDA_VISIBLE_DEVICES=-1",
+    "gate3_recovery_tests": 14,
+    "real_decoder_training": false,
+    "models_downloaded": false,
+    "log": "artifacts\\gate3\\lightweight_test_log.txt"
+  },
+  "remaining": [
+    "Actual epoch90 validation baseline",
+    "Java/PTB Kaggle runtime",
+    "New recovery checkpoint/export retrieval",
+    "Encoder import/frozen-forward",
+    "Historical encoder/RNG revision uncertainty",
+    "Missing original epoch85 weights"
+  ]
+}

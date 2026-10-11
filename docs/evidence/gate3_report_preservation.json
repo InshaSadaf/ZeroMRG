@@ -1,0 +1,25 @@
+{
+  "directory": "artifacts\\gate3\\historical_evidence\\epoch90_ecc204f031b0\\reports",
+  "files": {
+    "zeromrg_gate1_readiness.md": {
+      "sha256": "6d0eb0d9e6162390ccffe304d1b7c3f3fd327713cc4b3cfc119eab972fa46eed",
+      "bytes": 11654
+    },
+    "zeromrg_checkpoint_recovery.md": {
+      "sha256": "f26a86f5ba6b2cbbc6e57cf64501083dc6458e202288103a71d0fcfc61806303",
+      "bytes": 10811
+    },
+    "zeromrg_source_reconciliation.md": {
+      "sha256": "9dd99f5aa26b5a7067c77d88fc4220ef5b86ef21cdf3448e5af1a0e4e051f8f4",
+      "bytes": 13185
+    },
+    "zeromrg_checkpoint_persistence.md": {
+      "sha256": "4346c6a9632e349c7f6938c8b1b18de239a4bac9ba95b0f22b4b34922834e659",
+      "bytes": 6768
+    },
+    "zeromrg_gate2_preflight.md": {
+      "sha256": "f6c413a3d13ca8e01827096978d687d65b51117297e777a0196cfbdef23557d4",
+      "bytes": 8371
+    }
+  }
+}
