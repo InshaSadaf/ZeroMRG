@@ -1,6 +1,6 @@
 # ZeroMRG Gate 3 recovery decision
 
-Prepared 2026-10-11 for the existing `E:\Insha Project\ZeroMRG` COV-CTR 0%-paired reproduction. **No Gate 3 Kaggle execution, dependency installation, decoder training, image generation or test scoring has occurred.** Gate 1 and Gate 2 remain their original historical assessments; this is a separate, explicitly labelled recovery protocol.
+Updated 2026-10-11 for the existing `E:\Insha Project\ZeroMRG` COV-CTR 0%-paired reproduction. **The single authorized private Gate 3 baseline-only version completed and its export was independently verified.** No decoder training, image generation or test scoring occurred. Gate 1 and Gate 2 remain their original historical assessments; this is a separate, explicitly labelled recovery protocol. Preparation documents were preserved before this update.
 
 ## Evidence and immutable history
 
@@ -14,7 +14,7 @@ Separate exclusive-created, hash-verified, read-only local copies are under `art
 | `text_decoder_best.pt` | Actual epoch8, BLEU4 52.33887482243904; 229,639,049 bytes | `dba64646e89f1c55c69c9e3a7361141829e4dc7ec32114f98f2edce8b89a0568` |
 | `text_training_history.json` | Original90 records, epoch85 selected, best56.44423922571333; 9,876 bytes | `ccd65f2ec0ce2f569f683233f5a13c48c26bb27075aa9661bc7a272c3a14a015` |
 
-The original historical best is **56.44423922571333 at85**, with saved **5/50** consecutive non-improvements. The recorded epoch90 score is54.21140850351637. These are text-reconstruction validation results, not image-to-report results. The new baseline must be measured using actual90 weights; neither historical score is copied into the new recovery measurement.
+The original historical best is **56.44423922571333 at85**, with saved **5/50** consecutive non-improvements, all unchanged. The recorded epoch90 score and freshly measured physical90 baseline both equal54.21140850351637. These are text-reconstruction validation results, not image-to-report results. The baseline was actually measured on all71 validation reports; it was not copied from historical records.
 
 ## Policy comparison
 
@@ -39,12 +39,6 @@ Report recovery results as “available-window validation-selected recovery chec
 
 ## Readiness decision
 
-**Gate 3: CONDITIONAL PASS for prepared source and an approval-gated baseline-only Kaggle run. Training and final inference remain BLOCKED pending runtime evidence and further approval.** All65 lightweight CPU tests passed, including14 new recovery tests;11 notebook cells were statically verified. See [source verification](evidence/gate3_notebook_validation.json) and [local test evidence](evidence/gate3_local_test_results.json). No actual recovery baseline, new trained winner, Java runtime, encoder runtime or durable new export is verified yet. The old Gate 1 continuation remains unchanged and intentionally refuses missing85; use only the separate Gate 3 workflow under the declared deviation.
+**Gate 3 baseline: PASS. Recovery epoch91 is technically ready; training and final inference remain unauthorized.** The completed private version1 measured54.21140850351637 on validation71, restored/saved unchanged90 model and SGD, verified Java/PTB, and exported a full checkpoint that was independently retrieved/hash/schema/tensor verified. No new trained winner or encoder runtime is verified. All65 preparation CPU tests and11-cell static checks remain historical preparation evidence. See [execution evidence](zeromrg_gate3_baseline_execution.md), [current readiness](zeromrg_gate3_readiness.md), [source verification](evidence/gate3_notebook_validation.json) and [local test evidence](evidence/gate3_local_test_results.json). The old Gate 1 continuation remains unchanged and refuses missing85; only the separately labelled Gate 3 policy addresses available-window selection.
 
-See [training protocol](zeromrg_gate3_training_protocol.md), [dependencies](zeromrg_gate3_dependencies.md) and [persistence](zeromrg_gate3_persistence.md). Exact next action requiring approval: **one private baseline-only Gate 3 Kaggle version, with isolated hash-locked BLEU installation, training flagFalse, and a1800-second execution timeout**. Before submission, recheck source hashes, target absence/privacy and attachments. No approval from Gate 2 carries over to this execution.
-
-```powershell
-.\scripts\kaggle.ps1 -KaggleArgs @('kernels','push','-p','notebooks/gate3','-t','1800')
-```
-
-The timeout is a proposed bound, not a measured guarantee. Stop after collecting status, baseline/predictions, restoration checks and export; independently retrieve/hash-verify them before requesting any decoder-training authorization.
+See [training protocol](zeromrg_gate3_training_protocol.md), [dependencies](zeromrg_gate3_dependencies.md) and [persistence](zeromrg_gate3_persistence.md). The one baseline authorization is exhausted; **do not resubmit it**. Next requires explicit approval for a reviewed new private recovery attachment and then a bounded epoch91+ training session. Actual server target is `inshasadaf114/zeromrg-covctr-gate3-recovery-baseline`; prepared metadata still records the shorter requested ID and must be reviewed before any future submission. No publication or additional execution is authorized now.

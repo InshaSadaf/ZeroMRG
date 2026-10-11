@@ -1,6 +1,6 @@
 # Gate 3 checkpoint persistence and verification
 
-This supplements the unchanged [Gate 1 persistence procedure](zeromrg_checkpoint_persistence.md) for the separately labelled recovery branch. No new remote checkpoint dataset/version was published, and **no new Gate 3 durable checkpoint is verified**.
+This supplements the unchanged [Gate 1 persistence procedure](zeromrg_checkpoint_persistence.md) for the separately labelled recovery branch. **The completed private baseline version1 export was independently retrieved and verified**, with retained local immutable copies. No new remote checkpoint dataset/version was published; no new restart attachment is approved. Completed-version retrieval is demonstrated, not perpetual platform retention or interrupted-session durability.
 
 | Artifact | Meaning and update rule |
 |---|---|
@@ -28,8 +28,8 @@ The notebook exports a unique epoch-labelled ZIP after baseline/restoration and 
 1. Before any run, approve the new private target, exact source and attachment metadata. After its completion, read `kernels status` and retrieve actual outputs with the authenticated wrapper into a **new non-overwriting** local directory:
 
    ```powershell
-   .\scripts\kaggle.ps1 -KaggleArgs @('kernels','status','inshasadaf114/zeromrg-covctr-gate3-recovery')
-   .\scripts\kaggle.ps1 -KaggleArgs @('kernels','output','inshasadaf114/zeromrg-covctr-gate3-recovery','-p','artifacts/gate3/<new-retrieval-directory>')
+   .\scripts\kaggle.ps1 -KaggleArgs @('kernels','status','inshasadaf114/zeromrg-covctr-gate3-recovery-baseline')
+   .\scripts\kaggle.ps1 -KaggleArgs @('kernels','output','inshasadaf114/zeromrg-covctr-gate3-recovery-baseline','-p','artifacts/gate3/<new-retrieval-directory>')
    ```
 
 2. Verify ZIP SHA against sidecar, ZIP CRC, internal per-file hashes and runtime hashes. Extract without overwriting existing paths. Load latest with `weights_only=True` on CPU and strict architecture/SGD/ledger/selected-file checks; recompute saved-prediction validation scores where Java/locked metric support is available. Local validation must not execute actual GPU inference or training. Retain raw logs, status and retrieval provenance.
@@ -43,4 +43,6 @@ No automatic dataset-create/version commands run in the notebook. A future owner
 
 ## Current verification
 
-Original historical files/reports were copied with exclusive creation, hashes verified and accidental-write protection applied: [preservation evidence](evidence/gate3_historical_preservation.json). Gate 2 verified real original-checkpoint disposable save/reload and momentum restoration. Gate 3 lightweight fixtures verify the new schema, safe-load round trips and all RNG categories without GPU use; source compilation checks verify export code is prepared. Actual baseline/latest/winner ZIP creation and independent remote retrieval remain **UNVERIFIED** until the approved baseline-only run.
+Original historical files/reports were copied with exclusive creation, hashes verified and accidental-write protection applied: [preservation evidence](evidence/gate3_historical_preservation.json). Gate 2 verified real original-checkpoint disposable save/reload and momentum restoration. Gate 3 actual baseline save/reload, full latest/winner export, independent remote download, ZIP SHA/CRC,26 manifest entries, runtime hashes and CPU model/optimizer/history/RNG checks now **PASS**: [execution evidence](zeromrg_gate3_baseline_execution.md), [verification](evidence/gate3_baseline_verification.json). The downloaded1,382,728,028-byte ZIP has SHA `dec3cd3391e2c107a7c9ed6209997f00554cd47cb0940ca339a74446253680b1`.
+
+Verified files are under `artifacts/gate3/baseline_retrieval_20261011T055727985114Z/verified_export_20261011T060635057524Z`. The first local verification extraction is preserved separately after a reporting-path exception. Select the verified `recovery_latest.pt` for any future approved restart; the best file is model-selection evidence. Retrieval streamed only required diagnostics and the full ZIP through the authenticated project Kaggle SDK, avoiding duplicate loose checkpoints. Listing/download provenance and raw log are retained. The runtime report's pre-retrieval false durability flag remains unchanged; independent evidence establishes actual completed-version retrieval. New private publication/attachment review remains a separate approval step before a training restart.

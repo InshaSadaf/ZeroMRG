@@ -1,0 +1,82 @@
+{
+  "status": "BASELINE_OR_RESTORATION_VERIFIED; NO_TRAINING_YET",
+  "epoch": 90,
+  "report_scope": "immutable initialization snapshot; final completed epoch is in recovery_latest/history",
+  "checks": {
+    "epoch": 90,
+    "next_epoch": 91,
+    "best_epoch": 85,
+    "best_validation_bleu4": 56.44423922571333,
+    "epochs_without_improvement": 5,
+    "momentum_buffers": 112,
+    "nonzero_momentum_buffers": 112,
+    "parameter_count": 57399152,
+    "legacy_rng_missing": false,
+    "scheduler": "none",
+    "compatibility": "PASS",
+    "recovery_best_epoch": 90,
+    "recovery_best_validation_bleu4": 54.21140850351637,
+    "recovery_non_improvement_counter": 0,
+    "historical_rng_missing": true,
+    "stop": false
+  },
+  "historical_record": {
+    "epoch": 90,
+    "best_epoch": 85,
+    "best_validation_bleu4": 56.44423922571333,
+    "epochs_without_improvement": 5,
+    "patience": 50,
+    "selected_weights_available": false,
+    "stale_best_epoch": 8,
+    "files": {
+      "text_decoder_last.pt": "ecc204f031b0fa83b4734c3228f20ba2172ce291288f31a6551921126546c299",
+      "text_decoder_best.pt": "dba64646e89f1c55c69c9e3a7361141829e4dc7ec32114f98f2edce8b89a0568",
+      "text_training_history.json": "ccd65f2ec0ce2f569f683233f5a13c48c26bb27075aa9661bc7a272c3a14a015"
+    }
+  },
+  "original_stop_tracking": {
+    "best_epoch": 85,
+    "best_validation_bleu4": 56.44423922571333,
+    "epochs_without_improvement": 5,
+    "patience": 50
+  },
+  "recovery_best": {
+    "file": "recovery_best_epoch_090.pt",
+    "sha256": "6166e36198737bfbe9e0c35f03f0b320c44e76f3e05068ef6299d74e9179c6b2",
+    "epoch": 90,
+    "validation_bleu4": 54.21140850351637,
+    "predictions_file": "validation_epoch_090.json",
+    "predictions_sha256": "71ca8ba5c4c19de34deb805fff764db59ece359873de7c3581fd68e9e4c38d4d"
+  },
+  "dataset_counts": {
+    "train": 571,
+    "validation": 71,
+    "test": 72
+  },
+  "test_scoring": false,
+  "environment": {
+    "python": "3.13.15",
+    "torch": "2.11.0+cu128",
+    "cuda": "12.8",
+    "numpy": "2.1.3",
+    "gpu": "Tesla T4"
+  },
+  "gpu_memory_before_load_bytes": {
+    "free": 15526068224,
+    "total": 15636037632
+  },
+  "metric_fingerprint": {
+    "package": "pycocoevalcap==1.2",
+    "wheel_sha256": "083ed7910f1aec000b0a237ef6665f74edf19954204d0b1cbdb8399ed132228d",
+    "implementation_sha256": {
+      "pycocoevalcap/tokenizer/ptbtokenizer.py": "ded90551127b8a4bf683873432ccafa83330a9997f6d0b695cb71a618808b8c1",
+      "pycocoevalcap/tokenizer/stanford-corenlp-3.4.1.jar": "2fcb91bb7a111f93d71e264f4ee0e3afd19ba0dde6d21b38605088df9e940399",
+      "pycocoevalcap/bleu/bleu.py": "05b74a92b32e071eacfb954ef34328137cfd1b82c563572648633087def23776",
+      "pycocoevalcap/bleu/bleu_scorer.py": "413ccfef71b88c5f11d25d05fdcf08625a1559338ffbb7c2787e800116eaecdd"
+    },
+    "java": "openjdk version \"21.0.12\" 2026-07-21\nOpenJDK Runtime Environment (build 21.0.12+8-1-24.04-Ubuntu)\nOpenJDK 64-Bit Server VM (build 21.0.12+8-1-24.04-Ubuntu, mixed mode, sharing)",
+    "tokenizer": "Stanford PTB 3.4.1 lowercase punctuation removal",
+    "metric": "corpus BLEU4 closest references x100"
+  },
+  "durable_retrieval_verified": false
+}

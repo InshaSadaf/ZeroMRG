@@ -1,0 +1,74 @@
+[{"stream_name":"stderr","time":6.196062401,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":6.196103503,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":6.196107528,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":6.196109932,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":6.776612648,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":6.776647108,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":6.7766504990000005,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":6.776652969,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stdout","time":13.462341401,"data":"Mounted roots: ['/kaggle/input/datasets']\n"}
+,{"stream_name":"stdout","time":13.55070775,"data":"GPU: Tesla T4 | free/total GiB: 14.45977783203125 14.56219482421875\n"}
+,{"stream_name":"stdout","time":13.550738348,"data":"Versions: {'python': '3.13.15', 'torch': '2.11.0+cu128', 'cuda': '12.8', 'numpy': '2.1.3', 'pandas': '2.3.3', 'Pillow': '12.3.0', 'clip': 'not installed', 'multilingual-clip': 'not installed', 'transformers': '5.16.1', 'pycocoevalcap': 'not installed'}\n"}
+,{"stream_name":"stdout","time":13.55074458,"data":"Selected checkpoint: /kaggle/input/datasets/inshasadaf114/zeromrg-checkpoint-backup5-zip/text_decoder_last.pt | output: /kaggle/working/zeromrg_gate3_6c746254c8bb\n"}
+,{"stream_name":"stdout","time":17.599461004,"data":"Dataset/split counts: 726 rows, 746 images, 714 usable; 571/71/72 partitions\n"}
+,{"stream_name":"stdout","time":17.599495225,"data":"Training-only vocabulary: 368; prompt bank: 500 x 768 raw; normalized text: 571 + 71\n"}
+,{"stream_name":"stdout","time":18.889254463,"data":"Collecting pycocoevalcap==1.2 (from -r /kaggle/working/zeromrg_gate3_6c746254c8bb/requirements-bleu.lock (line 1))\n"}
+,{"stream_name":"stdout","time":19.051787629,"data":"  Downloading pycocoevalcap-1.2-py3-none-any.whl (104.3 MB)\n"}
+,{"stream_name":"stdout","time":19.091208601,"data":"Collecting pycocoevalcap==1.2 (from -r /kaggle/working/zeromrg_gate3_6c746254c8bb/requirements-bleu.lock (line 1))\n"}
+,{"stream_name":"stdout","time":19.091240696,"data":"  Downloading pycocoevalcap-1.2-py3-none-any.whl (104.3 MB)\n"}
+,{"stream_name":"stdout","time":20.534416389,"data":"     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 104.3/104.3 MB 19.1 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":20.736515986,"data":"     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 104.3/104.3 MB 19.1 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":20.842968809,"data":"Installing collected packages: pycocoevalcap\n"}
+,{"stream_name":"stdout","time":21.045236261,"data":"Installing collected packages: pycocoevalcap\n"}
+,{"stream_name":"stdout","time":21.08407927,"data":"Successfully installed pycocoevalcap-1.2\n"}
+,{"stream_name":"stdout","time":21.28678174,"data":"Successfully installed pycocoevalcap-1.2\n"}
+,{"stream_name":"stderr","time":21.420435216,"data":"PTBTokenizer tokenized 9 tokens at 120.56 tokens per second.\n"}
+,{"stream_name":"stderr","time":21.569088538,"data":"PTBTokenizer tokenized 8 tokens at 156.77 tokens per second.\n"}
+,{"stream_name":"stderr","time":21.607698872,"data":"PTBTokenizer tokenized 9 tokens at 120.56 tokens per second.\n"}
+,{"stream_name":"stderr","time":21.607741969,"data":"PTBTokenizer tokenized 8 tokens at 156.77 tokens per second.\n"}
+,{"stream_name":"stderr","time":21.607746928,"data":"\n"}
+,{"stream_name":"stderr","time":21.607750443,"data":"PTBTokenizer tokenized 9 tokens at 120.56 tokens per second.\n"}
+,{"stream_name":"stderr","time":21.607754028,"data":"PTBTokenizer tokenized 8 tokens at 156.77 tokens per second.\n"}
+,{"stream_name":"stderr","time":21.715633161,"data":"PTBTokenizer tokenized 8 tokens at 151.77 tokens per second.\n"}
+,{"stream_name":"stdout","time":21.732925332,"data":"{'testlen': 8, 'reflen': 8, 'guess': [8, 7, 6, 5], 'correct': [8, 7, 6, 5]}\n"}
+,{"stream_name":"stdout","time":21.732945972,"data":"ratio: 0.9999999998750002\n"}
+,{"stream_name":"stdout","time":21.732951656,"data":"Locked BLEU/PTB smoke tests passed: {'package': 'pycocoevalcap==1.2', 'wheel_sha256': '083ed7910f1aec000b0a237ef6665f74edf19954204d0b1cbdb8399ed132228d', 'implementation_sha256': {'pycocoevalcap/tokenizer/ptbtokenizer.py': 'ded90551127b8a4bf683873432ccafa83330a9997f6d0b695cb71a618808b8c1', 'pycocoevalcap/tokenizer/stanford-corenlp-3.4.1.jar': '2fcb91bb7a111f93d71e264f4ee0e3afd19ba0dde6d21b38605088df9e940399', 'pycocoevalcap/bleu/bleu.py': '05b74a92b32e071eacfb954ef34328137cfd1b82c563572648633087def23776', 'pycocoevalcap/bleu/bleu_scorer.py': '413ccfef71b88c5f11d25d05fdcf08625a1559338ffbb7c2787e800116eaecdd'}, 'java': 'openjdk version \"21.0.12\" 2026-07-21\\nOpenJDK Runtime Environment (build 21.0.12+8-1-24.04-Ubuntu)\\nOpenJDK 64-Bit Server VM (build 21.0.12+8-1-24.04-Ubuntu, mixed mode, sharing)', 'tokenizer': 'Stanford PTB 3.4.1 lowercase punctuation removal', 'metric': 'corpus BLEU4 closest references x100'}\n"}
+,{"stream_name":"stderr","time":21.733799224,"data":"PTBTokenizer tokenized 8 tokens at 151.77 tokens per second.\n"}
+,{"stream_name":"stderr","time":21.73381725,"data":"\n"}
+,{"stream_name":"stderr","time":21.733821681,"data":"PTBTokenizer tokenized 8 tokens at 151.77 tokens per second.\n"}
+,{"stream_name":"stderr","time":47.370992497,"data":"PTBTokenizer tokenized 5894 tokens at 65060.54 tokens per second.\n"}
+,{"stream_name":"stderr","time":47.567952179,"data":"PTBTokenizer tokenized PTBTokenizer tokenized 5894 tokens at 65060.54 tokens per second.\n"}
+,{"stream_name":"stderr","time":47.567985659,"data":"PTBTokenizer tokenized \n"}
+,{"stream_name":"stderr","time":47.568187189,"data":"PTBTokenizer tokenized 5894 tokens at 65060.54 tokens per second.\n"}
+,{"stream_name":"stderr","time":47.570325336,"data":"PTBTokenizer tokenized 5413 tokens at 53475.32 tokens per second.\n"}
+,{"stream_name":"stderr","time":47.773852911,"data":"5413 tokens at 53475.32 tokens per second.\n"}
+,{"stream_name":"stderr","time":47.773879587,"data":"\n"}
+,{"stream_name":"stderr","time":47.773885245,"data":"5413 tokens at 53475.32 tokens per second.\n"}
+,{"stream_name":"stdout","time":47.820198973,"data":"{'testlen': 4818, 'reflen': 5245, 'guess': [4818, 4747, 4676, 4605], 'correct': [3723, 3006, 2527, 2144]}\n"}
+,{"stream_name":"stdout","time":47.820230337,"data":"ratio: 0.9185891325069745\n"}
+,{"stream_name":"stderr","time":49.705630377,"data":"PTBTokenizer tokenized 5894 tokens at 62476.83 tokens per second.\n"}
+,{"stream_name":"stderr","time":49.895137034,"data":"PTBTokenizer tokenized 5413 tokens at 66432.18 tokens per second.\n"}
+,{"stream_name":"stderr","time":49.896487631,"data":"PTBTokenizer tokenized 5894 tokens at 62476.83 tokens per second.\n"}
+,{"stream_name":"stderr","time":49.896519159,"data":"PTBTokenizer tokenized \n"}
+,{"stream_name":"stderr","time":49.896525077,"data":"PTBTokenizer tokenized 5894 tokens at 62476.83 tokens per second.\n"}
+,{"stream_name":"stderr","time":50.098022053,"data":"PTBTokenizer tokenized 5413 tokens at 66432.18 tokens per second.\n"}
+,{"stream_name":"stderr","time":50.098052089,"data":"\n"}
+,{"stream_name":"stderr","time":50.098056269,"data":"5413 tokens at 66432.18 tokens per second.\n"}
+,{"stream_name":"stdout","time":50.143257862,"data":"{'testlen': 4818, 'reflen': 5245, 'guess': [4818, 4747, 4676, 4605], 'correct': [3723, 3006, 2527, 2144]}\n"}
+,{"stream_name":"stdout","time":50.143288445,"data":"ratio: 0.9185891325069745\n"}
+,{"stream_name":"stdout","time":50.143291582,"data":"Measured epoch90 recovery baseline: 54.21140850351637\n"}
+,{"stream_name":"stdout","time":50.143294077,"data":"Original epoch90 recorded score (comparison only): 54.21140850351637\n"}
+,{"stream_name":"stdout","time":50.143296525,"data":"Original selected85 score remains: 56.44423922571333\n"}
+,{"stream_name":"stdout","time":56.414826289,"data":"Recovery state verified: {'epoch': 90, 'next_epoch': 91, 'best_epoch': 85, 'best_validation_bleu4': 56.44423922571333, 'epochs_without_improvement': 5, 'momentum_buffers': 112, 'nonzero_momentum_buffers': 112, 'parameter_count': 57399152, 'legacy_rng_missing': False, 'scheduler': 'none', 'compatibility': 'PASS', 'recovery_best_epoch': 90, 'recovery_best_validation_bleu4': 54.21140850351637, 'recovery_non_improvement_counter': 0, 'historical_rng_missing': True, 'stop': False}\n"}
+,{"stream_name":"stdout","time":56.414855451,"data":"Historical stopping: {'best_epoch': 85, 'best_validation_bleu4': 56.44423922571333, 'epochs_without_improvement': 5, 'patience': 50}\n"}
+,{"stream_name":"stdout","time":67.902759391,"data":"Export prepared; durability UNVERIFIED until independently retrieved: /kaggle/working/zeromrg_gate3_6c746254c8bb/recovery_export_epoch_090_54468b70.zip\n"}
+,{"stream_name":"stdout","time":67.922272767,"data":"BASELINE/RESTORATION ONLY: no decoder updates; no images or held-out test scoring.\n"}
+,{"stream_name":"stderr","time":73.587735661,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":73.5877679,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":73.750872788,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":73.75091093,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":74.466456118,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n"}
+,{"stream_name":"stderr","time":74.548801979,"data":"[NbConvertApp] Writing 179920 bytes to __notebook__.ipynb\n"}
+,{"stream_name":"stderr","time":76.975897452,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to html\n"}
+,{"stream_name":"stderr","time":77.752748028,"data":"[NbConvertApp] Writing 695808 bytes to __results__.html\n"}
+]

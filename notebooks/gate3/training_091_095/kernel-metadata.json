@@ -1,0 +1,20 @@
+{
+  "id": "inshasadaf114/zeromrg-covctr-gate3-recovery-epochs-91-95",
+  "title": "ZeroMRG COVCTR Gate3 Recovery Epochs 91 95",
+  "code_file": "ZeroMRG_COV_CTR_Recovery_Epochs_091_095_Kaggle.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_tpu": false,
+  "enable_internet": true,
+  "dataset_sources": [
+    "inshasadaf114/dataset",
+    "inshasadaf114/zeromrg-checkpoint-backup5-zip"
+  ],
+  "kernel_sources": [
+    "inshasadaf114/zeromrg-covctr-gate3-recovery-baseline"
+  ],
+  "competition_sources": [],
+  "model_sources": []
+}
