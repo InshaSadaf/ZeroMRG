@@ -1,0 +1,947 @@
+{
+  "status": "BLOCKED_RUNTIME_DATA_RESOLUTION_V3",
+  "stamp": "2026-10-12T13:28:35.305903+00:00",
+  "authority": "D-025",
+  "event": "EV-111",
+  "run_id": "ZM-010_GATE4B_FINAL_INSTRUMENTED_ATTEMPT",
+  "previous_identity": {
+    "observed_utc": "2026-10-12T12:00:56.465520+00:00",
+    "id": 138214712,
+    "current_version": 2,
+    "private": true,
+    "submitted_v2_resources_released": null,
+    "active_execution_listing_available_in_installed_public_SDK": false
+  },
+  "previous_status": {
+    "observed_utc": "2026-10-12T12:00:54.655673+00:00",
+    "status": "KernelWorkerStatus.CANCEL_ACKNOWLEDGED",
+    "failure_message": "",
+    "status_request_count": 1
+  },
+  "public_SDK": {
+    "service": "kagglesdk/kernels/services/kernels_api_service.py",
+    "active_execution_listing": false,
+    "status_response_fields": [
+      "status",
+      "failure_message"
+    ],
+    "resource_release_fields": false,
+    "version_specific_status_request": false
+  },
+  "browser": {
+    "observation": "cua.getState returned apps=[],browsers=[]; cua.getBrowser for exact Kaggle URL returned No browser is available",
+    "active_execution_listing_inspected": false,
+    "no_tab_or_editor_opened": true,
+    "no_UI_mutation": true
+  },
+  "previous_execution_inactive": null,
+  "previous_resources_released": null,
+  "interactive_session_activity": null,
+  "new_submission_count": 1,
+  "conditional_one_submission_authority_consumed": true,
+  "fresh_prechecks": {
+    "status": "PASS_LOCAL_FRESH_PRECHECKS",
+    "observed_utc": "2026-10-12T13:08:33.998055+00:00",
+    "checks": [
+      "prepared_hash:scripts\\gate4b_diagnostic_worker.py",
+      "prepared_hash:scripts\\zeromrg_gate4b_runtime.py",
+      "prepared_hash:scripts\\zeromrg_cov_data_resolver.py",
+      "prepared_hash:scripts\\zeromrg_gate4b_progress.py",
+      "prepared_hash:scripts\\build_gate4b_notebook.py",
+      "prepared_hash:tests\\test_gate4b_progress.py",
+      "prepared_hash:tests\\test_gate4b_inference.py",
+      "prepared_hash:notebooks\\gate4b\\image_conditioning\\configuration.json",
+      "prepared_hash:notebooks\\gate4b\\image_conditioning\\dataset-contract.json",
+      "prepared_hash:notebooks\\gate4b\\image_conditioning\\kernel-metadata.json",
+      "prepared_hash:notebooks\\gate4b\\image_conditioning\\selection.json",
+      "prepared_hash:notebooks\\gate4b\\image_conditioning\\ZeroMRG_COV_CTR_Gate4B_Image_Conditioning_Diagnostic.ipynb",
+      "private_gpu_target",
+      "exact_attachments",
+      "unexecuted_notebook:gate4b-01",
+      "unexecuted_notebook:gate4b-02",
+      "actual_config_contract",
+      "actual_source:zeromrg_gate1_runtime.py",
+      "actual_source:zeromrg_gate4_runtime.py",
+      "actual_source:gate4_diagnostic_worker.py",
+      "actual_source:zeromrg_gate4b_runtime.py",
+      "actual_source:gate4b_diagnostic_worker.py",
+      "actual_source:zeromrg_cov_data_resolver.py",
+      "actual_source:zeromrg_gate4b_progress.py",
+      "seven_sources",
+      "content_and_order_contract",
+      "actual_selected_image_CRC_SHA_dimensions_membership",
+      "five_fixed_train_nonprompt",
+      "repeat_and_six_bound",
+      "actual_epoch90_file_hash",
+      "historical_vocab_greedy160",
+      "no_training_or_test_target_load",
+      "no_update_calls:zeromrg_gate4_runtime.py",
+      "no_update_calls:zeromrg_gate4b_runtime.py",
+      "no_update_calls:gate4b_diagnostic_worker.py",
+      "no_update_calls:zeromrg_cov_data_resolver.py",
+      "unbuffered_supervision_cleanup_heartbeat",
+      "timeout_record_before_groupkill",
+      "worker1800_dependency300",
+      "early_worker_import_stage",
+      "flushed_progress_and_latest_stage",
+      "six_partial_generation_exports",
+      "stage_wall_clock_timestamps_required_by_Task_C",
+      "fresh_focused_tests",
+      "post_test_hash:scripts\\gate4b_diagnostic_worker.py",
+      "post_test_hash:scripts\\zeromrg_gate4b_runtime.py",
+      "post_test_hash:scripts\\zeromrg_cov_data_resolver.py",
+      "post_test_hash:scripts\\zeromrg_gate4b_progress.py",
+      "post_test_hash:scripts\\build_gate4b_notebook.py",
+      "post_test_hash:tests\\test_gate4b_progress.py",
+      "post_test_hash:tests\\test_gate4b_inference.py",
+      "post_test_hash:notebooks\\gate4b\\image_conditioning\\configuration.json",
+      "post_test_hash:notebooks\\gate4b\\image_conditioning\\dataset-contract.json",
+      "post_test_hash:notebooks\\gate4b\\image_conditioning\\kernel-metadata.json",
+      "post_test_hash:notebooks\\gate4b\\image_conditioning\\selection.json",
+      "post_test_hash:notebooks\\gate4b\\image_conditioning\\ZeroMRG_COV_CTR_Gate4B_Image_Conditioning_Diagnostic.ipynb"
+    ],
+    "failures": [],
+    "prepared_artifact_hashes": {
+      "scripts\\gate4b_diagnostic_worker.py": "4c3116e0ba8251e59b5ecf8afb72266cf8124264b7f76fd117a6ef41e6b69701",
+      "scripts\\zeromrg_gate4b_runtime.py": "6c5a86d875c1f4ccd4d88d6760b08902333ba9c3ab4c57246e027c1cf346e2a3",
+      "scripts\\zeromrg_cov_data_resolver.py": "4083bfbe93f9b725f223bee2cc211f0770974be5b3ddcb42fb1b661123f4d2fe",
+      "scripts\\zeromrg_gate4b_progress.py": "e7c163583cf07a69ded4bf45e43a5ae8e09a154508dc7895a9b17b81ab3f0e3e",
+      "scripts\\build_gate4b_notebook.py": "f92d116e5ae3f4b150aa5c396d1102d2f3985ae18cd7b1e61b22b4cc0c4c5ad2",
+      "tests\\test_gate4b_progress.py": "7599cc77ae3a591fae5f4d078fb7e2eaffaf8efd487c5c3aa9930c82b546d88d",
+      "tests\\test_gate4b_inference.py": "3e2b09cc284baebdb387e92fcb0088788dc606aba89a7df59d5cb849b439a53a",
+      "notebooks\\gate4b\\image_conditioning\\configuration.json": "72ea8ef4c8e571411a2f808f8e2032e74959aad014be6ca89e54e985cf0b74b1",
+      "notebooks\\gate4b\\image_conditioning\\dataset-contract.json": "0efeac6636bb971f27580cbe89eb792620feffeb13b42900c625b8309b277772",
+      "notebooks\\gate4b\\image_conditioning\\kernel-metadata.json": "259321f6dda48c7477a7ff719ab0c009d0fe6b001363fb775b5272933613c77b",
+      "notebooks\\gate4b\\image_conditioning\\selection.json": "82122fba65bc4fe488f97a31a9c85286c80e0700b0f104ec83dd1b311f3b48ce",
+      "notebooks\\gate4b\\image_conditioning\\ZeroMRG_COV_CTR_Gate4B_Image_Conditioning_Diagnostic.ipynb": "81d50bbae7b6e43f302ad13bb0b50664ed91617bf82be6b9496dede61d4962d9"
+    },
+    "source_sha256": {
+      "zeromrg_gate1_runtime.py": "e897aa5e800ce18911744cc13e16b75b239477a4edb8bc1df0f8e9ab3f9e038a",
+      "zeromrg_gate4_runtime.py": "c9117e4106168a907da3c52e7c99c0ca34655abf88b98e60842b241908c679d8",
+      "gate4_diagnostic_worker.py": "e1ba00f6dd02a1ddfccd85c158283857d210b7bdee6148c4b528ffcf8dcc0812",
+      "zeromrg_gate4b_runtime.py": "6c5a86d875c1f4ccd4d88d6760b08902333ba9c3ab4c57246e027c1cf346e2a3",
+      "gate4b_diagnostic_worker.py": "4c3116e0ba8251e59b5ecf8afb72266cf8124264b7f76fd117a6ef41e6b69701",
+      "zeromrg_cov_data_resolver.py": "4083bfbe93f9b725f223bee2cc211f0770974be5b3ddcb42fb1b661123f4d2fe",
+      "zeromrg_gate4b_progress.py": "e7c163583cf07a69ded4bf45e43a5ae8e09a154508dc7895a9b17b81ab3f0e3e"
+    },
+    "notebook_sha256": "81d50bbae7b6e43f302ad13bb0b50664ed91617bf82be6b9496dede61d4962d9",
+    "image_ids": [
+      "25%2.jpg",
+      "PIIS0140673620303603%5.png",
+      "1094.png",
+      "2%0.jpg",
+      "1868.png"
+    ],
+    "max_generations": 6,
+    "tests_exit_code": 0,
+    "heldout_reports_parsed": false,
+    "model_forward": false,
+    "submission_allowed": true
+  },
+  "focused_tests_run": true,
+  "instrumentation_reverified": true,
+  "last_verified_v2_worker_stage": null,
+  "diagnostic_outputs_available": false,
+  "cosine_matrices": null,
+  "reports": null,
+  "determinism": null,
+  "runtime_or_gpu_resource_observations": null,
+  "gate4b": "BLOCKED",
+  "gate5_ready": false,
+  "no_cancellation": true,
+  "no_model_changes": true,
+  "no_training_or_test_evaluation": true,
+  "next": "Local diagnosis of approved attachment file names/layout against the preserved annotation/archive hash contract; use retrieved exact failure and obtain file inventory without clinical report parsing or dataset substitution. No automatic resubmission; any further GPU execution needs new scoped authorization because the ONE final submission is consumed.",
+  "owner_browser_observation": {
+    "recorded_utc": "2026-10-12T12:28:41.898640+00:00",
+    "source": "Owner authenticated browser observation in current message",
+    "observed_utc": null,
+    "target": "inshasadaf114/zeromrg-covctr-gate4b-image-conditioning",
+    "id": 138214712,
+    "version": 2,
+    "visible_as_active": false,
+    "backend_resource_release_confirmed": false,
+    "exact_statement": "The previously cancelled Gate 4B version 2 is NOT listed under active sessions.",
+    "independent_browser_inspection_by_agent": false,
+    "other_active_sessions_not_yet_confirmed": true
+  },
+  "previous_execution_visible_as_active": false,
+  "authority_amendment": "D-023",
+  "focused_tests_passed": 43,
+  "focused_tests_duration_seconds": 33.978,
+  "instrumentation_acceptance": true,
+  "remote_precheck_failure": {
+    "status": "BLOCKED_REMOTE_PRECHECK",
+    "observed_utc": "2026-10-12T12:53:36.898939+00:00",
+    "operation": "kernels_status:inshasadaf114/datatset-preprocessing-zeromrg",
+    "error_type": "HTTPError",
+    "http_status": 404,
+    "classification": "HTTP_OR_OTHER_FAILURE_UNCLASSIFIED",
+    "response_received": true,
+    "meaningful_parsed_precheck_response": false,
+    "http_records": [
+      {
+        "observed_utc": "2026-10-12T12:53:35.424177+00:00",
+        "operation": "kernels_list(mine=True,page=1,page_size=100)",
+        "method": "GET",
+        "endpoint_path": "/api/v1/kernels/list",
+        "http_status": 200,
+        "response_received": true,
+        "content_type": "application/json",
+        "response_bytes": 9645
+      },
+      {
+        "observed_utc": "2026-10-12T12:53:36.297845+00:00",
+        "operation": "kernels_status:inshasadaf114/datatset-preprocessing-zeromrg",
+        "method": "GET",
+        "endpoint_path": "/api/v1/kernels/status",
+        "http_status": 404,
+        "response_received": true,
+        "content_type": "application/json",
+        "response_bytes": 55
+      }
+    ],
+    "historical_error_code_unrecoverable": true,
+    "retry_count": 1,
+    "retry_limit": 1,
+    "no_more_retries": true,
+    "submission_allowed": false,
+    "safe_assertion": null
+  },
+  "relevant_execution_conflicts_confirmed_absent": false,
+  "other_interactive_session_activity": null,
+  "timestamp_recovery": {
+    "status": "BLOCKED_REMOTE_CONFLICT_AND_ATTACHMENT_VERIFICATION_INCOMPLETE",
+    "observed_utc": "2026-10-12T12:57:18.680919+00:00",
+    "local_prechecks_passed": true,
+    "local_assertions_passed": 56,
+    "tests_passed": 44,
+    "test_body_seconds": 34.045,
+    "notebook_sha256": "81d50bbae7b6e43f302ad13bb0b50664ed91617bf82be6b9496dede61d4962d9",
+    "changed_files": [
+      "notebooks\\gate4b\\image_conditioning\\ZeroMRG_COV_CTR_Gate4B_Image_Conditioning_Diagnostic.ipynb",
+      "scripts\\build_gate4b_notebook.py",
+      "scripts\\gate4b_diagnostic_worker.py",
+      "scripts\\zeromrg_gate4b_progress.py",
+      "tests\\test_gate4b_progress.py"
+    ],
+    "source_sha256": {
+      "zeromrg_gate1_runtime.py": "e897aa5e800ce18911744cc13e16b75b239477a4edb8bc1df0f8e9ab3f9e038a",
+      "zeromrg_gate4_runtime.py": "c9117e4106168a907da3c52e7c99c0ca34655abf88b98e60842b241908c679d8",
+      "gate4_diagnostic_worker.py": "e1ba00f6dd02a1ddfccd85c158283857d210b7bdee6148c4b528ffcf8dcc0812",
+      "zeromrg_gate4b_runtime.py": "6c5a86d875c1f4ccd4d88d6760b08902333ba9c3ab4c57246e027c1cf346e2a3",
+      "gate4b_diagnostic_worker.py": "4c3116e0ba8251e59b5ecf8afb72266cf8124264b7f76fd117a6ef41e6b69701",
+      "zeromrg_cov_data_resolver.py": "4083bfbe93f9b725f223bee2cc211f0770974be5b3ddcb42fb1b661123f4d2fe",
+      "zeromrg_gate4b_progress.py": "e7c163583cf07a69ded4bf45e43a5ae8e09a154508dc7895a9b17b81ab3f0e3e"
+    },
+    "prepared_artifact_hashes": {
+      "scripts\\gate4b_diagnostic_worker.py": "4c3116e0ba8251e59b5ecf8afb72266cf8124264b7f76fd117a6ef41e6b69701",
+      "scripts\\zeromrg_gate4b_runtime.py": "6c5a86d875c1f4ccd4d88d6760b08902333ba9c3ab4c57246e027c1cf346e2a3",
+      "scripts\\zeromrg_cov_data_resolver.py": "4083bfbe93f9b725f223bee2cc211f0770974be5b3ddcb42fb1b661123f4d2fe",
+      "scripts\\zeromrg_gate4b_progress.py": "e7c163583cf07a69ded4bf45e43a5ae8e09a154508dc7895a9b17b81ab3f0e3e",
+      "scripts\\build_gate4b_notebook.py": "f92d116e5ae3f4b150aa5c396d1102d2f3985ae18cd7b1e61b22b4cc0c4c5ad2",
+      "tests\\test_gate4b_progress.py": "7599cc77ae3a591fae5f4d078fb7e2eaffaf8efd487c5c3aa9930c82b546d88d",
+      "tests\\test_gate4b_inference.py": "3e2b09cc284baebdb387e92fcb0088788dc606aba89a7df59d5cb849b439a53a",
+      "notebooks\\gate4b\\image_conditioning\\configuration.json": "72ea8ef4c8e571411a2f808f8e2032e74959aad014be6ca89e54e985cf0b74b1",
+      "notebooks\\gate4b\\image_conditioning\\dataset-contract.json": "0efeac6636bb971f27580cbe89eb792620feffeb13b42900c625b8309b277772",
+      "notebooks\\gate4b\\image_conditioning\\kernel-metadata.json": "259321f6dda48c7477a7ff719ab0c009d0fe6b001363fb775b5272933613c77b",
+      "notebooks\\gate4b\\image_conditioning\\selection.json": "82122fba65bc4fe488f97a31a9c85286c80e0700b0f104ec83dd1b311f3b48ce",
+      "notebooks\\gate4b\\image_conditioning\\ZeroMRG_COV_CTR_Gate4B_Image_Conditioning_Diagnostic.ipynb": "81d50bbae7b6e43f302ad13bb0b50664ed91617bf82be6b9496dede61d4962d9"
+    },
+    "current_http_status": 404,
+    "current_failing_operation": "kernels_status:inshasadaf114/datatset-preprocessing-zeromrg",
+    "current_endpoint": "GET /api/v1/kernels/status",
+    "catalog_HTTP_status": 200,
+    "meaningful_owned_catalog_response": true,
+    "usable_status_response": false,
+    "prior_exact_status_or_operation_unrecoverable": true,
+    "cause": "404 status lookup for legacy preprocessing notebook; exact server reason not captured. No credential-expiry, timeout, rate-limit or backend-resource claim.",
+    "remote_verification_retry_count": 1,
+    "remote_verification_retry_limit": 1,
+    "no_more_remote_requests": true,
+    "target": "inshasadaf114/zeromrg-covctr-gate4b-image-conditioning",
+    "id": 138214712,
+    "new_submission_count": 0,
+    "new_version": null,
+    "conditional_submission_authority_consumed": false,
+    "owner_browser_v2_absent_active_sessions": true,
+    "backend_release_proof_not_required": true,
+    "fresh_conflict_check_complete": false,
+    "fresh_remote_dataset_privacy_checks_complete": false,
+    "diagnostic_outputs_available": false,
+    "last_worker_stage": null,
+    "gate4b": "BLOCKED",
+    "gate5_ready": false,
+    "no_cancellation": true,
+    "no_training_or_heldout_evaluation": true
+  },
+  "submission": {
+    "observed_utc": "2026-10-12T13:09:26.185384+00:00",
+    "exit_code": 0,
+    "stdout": "Kernel version 3 successfully pushed.  Please check progress at https://www.kaggle.com/code/inshasadaf114/zeromrg-covctr-gate4b-image-conditioning\n",
+    "stderr": ""
+  },
+  "identity": {
+    "observed_utc": "2026-10-12T13:10:24.024632+00:00",
+    "target": "inshasadaf114/zeromrg-covctr-gate4b-image-conditioning",
+    "id": 138214712,
+    "version": 3,
+    "private": true,
+    "gpu": true,
+    "source_cells_match": true,
+    "prepared_source_sha256": "81d50bbae7b6e43f302ad13bb0b50664ed91617bf82be6b9496dede61d4962d9",
+    "server_serialized_source_sha256": "c7a1166d91363d0156a499d828634445d694d379fd1b4e582cfe3cde4e156a30",
+    "datasets": [
+      "inshasadaf114/dataset",
+      "inshasadaf114/zeromrg-checkpoint-backup5-zip"
+    ],
+    "kernel_sources": [
+      "inshasadaf114/zeromrg-covctr-gate3-recovery-baseline"
+    ]
+  },
+  "remote_prechecks": {
+    "status": "PASS_RELEVANT_REMOTE_PRECHECKS",
+    "observed_utc": "2026-10-12T13:09:09.648886+00:00",
+    "target": "inshasadaf114/zeromrg-covctr-gate4b-image-conditioning",
+    "id": 138214712,
+    "current_version": 2,
+    "private": true,
+    "gpu": true,
+    "datasets": [
+      {
+        "ref": "inshasadaf114/dataset",
+        "id": 11916862,
+        "private": true
+      },
+      {
+        "ref": "inshasadaf114/zeromrg-checkpoint-backup5-zip",
+        "id": 12409131,
+        "private": true
+      }
+    ],
+    "kernel_sources": [
+      "inshasadaf114/zeromrg-covctr-gate3-recovery-baseline"
+    ],
+    "baseline": {
+      "id": 138127332,
+      "version": 1,
+      "private": true,
+      "source_matches": true,
+      "verified_zip_listed": true
+    },
+    "statuses": [
+      {
+        "target": "inshasadaf114/zeromrg-covctr-gate4b-image-conditioning",
+        "status": "KernelWorkerStatus.CANCEL_ACKNOWLEDGED",
+        "failure_message": "",
+        "observed_utc": "2026-10-12T13:09:02.946977+00:00"
+      },
+      {
+        "target": "inshasadaf114/zeromrg-covctr-gate3-recovery-baseline",
+        "status": "KernelWorkerStatus.COMPLETE",
+        "failure_message": "",
+        "observed_utc": "2026-10-12T13:09:03.552339+00:00"
+      },
+      {
+        "target": "inshasadaf114/zeromrg-covctr-gate4-single-image-diagnostic",
+        "status": "KernelWorkerStatus.COMPLETE",
+        "failure_message": "",
+        "observed_utc": "2026-10-12T13:09:04.064184+00:00"
+      },
+      {
+        "target": "inshasadaf114/zeromrg-covctr-gate3-recovery-epochs-91-95",
+        "status": "KernelWorkerStatus.CANCEL_ACKNOWLEDGED",
+        "failure_message": "",
+        "observed_utc": "2026-10-12T13:09:04.680267+00:00"
+      }
+    ],
+    "legacy_excluded": true,
+    "legacy_requeried": false,
+    "active_conflict_indicated": false,
+    "owner_authenticated_v2_absent_active": true,
+    "backend_release_not_required": true,
+    "interactive_sessions_not_exposed_by_SDK": true,
+    "notebook_sha256": "81d50bbae7b6e43f302ad13bb0b50664ed91617bf82be6b9496dede61d4962d9"
+  },
+  "latest_platform_status": {
+    "observed_utc": "2026-10-12T13:15:21.039881+00:00",
+    "target": "inshasadaf114/zeromrg-covctr-gate4b-image-conditioning",
+    "status": "KernelWorkerStatus.ERROR",
+    "failure_message": ""
+  },
+  "final_execution": {
+    "status": "BLOCKED_RUNTIME_DATA_RESOLUTION_V3",
+    "stamp": "2026-10-12T13:28:35.305903+00:00",
+    "authority": "D-025 / consumed existing ONE final conditional submission",
+    "notebook": {
+      "observed_utc": "2026-10-12T13:10:24.024632+00:00",
+      "target": "inshasadaf114/zeromrg-covctr-gate4b-image-conditioning",
+      "id": 138214712,
+      "version": 3,
+      "private": true,
+      "gpu": true,
+      "source_cells_match": true,
+      "prepared_source_sha256": "81d50bbae7b6e43f302ad13bb0b50664ed91617bf82be6b9496dede61d4962d9",
+      "server_serialized_source_sha256": "c7a1166d91363d0156a499d828634445d694d379fd1b4e582cfe3cde4e156a30",
+      "datasets": [
+        "inshasadaf114/dataset",
+        "inshasadaf114/zeromrg-checkpoint-backup5-zip"
+      ],
+      "kernel_sources": [
+        "inshasadaf114/zeromrg-covctr-gate3-recovery-baseline"
+      ]
+    },
+    "submission_attempt": {
+      "observed_utc": "2026-10-12T13:09:22.266787+00:00",
+      "target": "inshasadaf114/zeromrg-covctr-gate4b-image-conditioning",
+      "expected_version": 3,
+      "attempt": 1,
+      "authority_consumed": true,
+      "notebook_sha256": "81d50bbae7b6e43f302ad13bb0b50664ed91617bf82be6b9496dede61d4962d9",
+      "no_retry": true
+    },
+    "submission_response": {
+      "observed_utc": "2026-10-12T13:09:26.185384+00:00",
+      "exit_code": 0,
+      "stdout": "Kernel version 3 successfully pushed.  Please check progress at https://www.kaggle.com/code/inshasadaf114/zeromrg-covctr-gate4b-image-conditioning\n",
+      "stderr": ""
+    },
+    "platform_status": {
+      "observed_utc": "2026-10-12T13:15:21.039881+00:00",
+      "target": "inshasadaf114/zeromrg-covctr-gate4b-image-conditioning",
+      "status": "KernelWorkerStatus.ERROR",
+      "failure_message": ""
+    },
+    "legacy": {
+      "ref": "inshasadaf114/datatset-preprocessing-zeromrg",
+      "origin": "Authenticated owned-notebook catalog; Gate0 title Datatset Preprocessing-ZeroMRg, lastRunTime2026-09-18",
+      "spelling_matches_catalog": true,
+      "spelling_intent_unknown": true,
+      "required_dependency": false,
+      "status_404_cause_unknown": true,
+      "no_active_execution_indicated": true,
+      "absence_cannot_block_required_inputs": true,
+      "excluded_from_mandatory_check": true,
+      "no_new_legacy_query": true
+    },
+    "local_prechecks": {
+      "status": "PASS_LOCAL_FRESH_PRECHECKS",
+      "observed_utc": "2026-10-12T13:08:33.998055+00:00",
+      "checks": [
+        "prepared_hash:scripts\\gate4b_diagnostic_worker.py",
+        "prepared_hash:scripts\\zeromrg_gate4b_runtime.py",
+        "prepared_hash:scripts\\zeromrg_cov_data_resolver.py",
+        "prepared_hash:scripts\\zeromrg_gate4b_progress.py",
+        "prepared_hash:scripts\\build_gate4b_notebook.py",
+        "prepared_hash:tests\\test_gate4b_progress.py",
+        "prepared_hash:tests\\test_gate4b_inference.py",
+        "prepared_hash:notebooks\\gate4b\\image_conditioning\\configuration.json",
+        "prepared_hash:notebooks\\gate4b\\image_conditioning\\dataset-contract.json",
+        "prepared_hash:notebooks\\gate4b\\image_conditioning\\kernel-metadata.json",
+        "prepared_hash:notebooks\\gate4b\\image_conditioning\\selection.json",
+        "prepared_hash:notebooks\\gate4b\\image_conditioning\\ZeroMRG_COV_CTR_Gate4B_Image_Conditioning_Diagnostic.ipynb",
+        "private_gpu_target",
+        "exact_attachments",
+        "unexecuted_notebook:gate4b-01",
+        "unexecuted_notebook:gate4b-02",
+        "actual_config_contract",
+        "actual_source:zeromrg_gate1_runtime.py",
+        "actual_source:zeromrg_gate4_runtime.py",
+        "actual_source:gate4_diagnostic_worker.py",
+        "actual_source:zeromrg_gate4b_runtime.py",
+        "actual_source:gate4b_diagnostic_worker.py",
+        "actual_source:zeromrg_cov_data_resolver.py",
+        "actual_source:zeromrg_gate4b_progress.py",
+        "seven_sources",
+        "content_and_order_contract",
+        "actual_selected_image_CRC_SHA_dimensions_membership",
+        "five_fixed_train_nonprompt",
+        "repeat_and_six_bound",
+        "actual_epoch90_file_hash",
+        "historical_vocab_greedy160",
+        "no_training_or_test_target_load",
+        "no_update_calls:zeromrg_gate4_runtime.py",
+        "no_update_calls:zeromrg_gate4b_runtime.py",
+        "no_update_calls:gate4b_diagnostic_worker.py",
+        "no_update_calls:zeromrg_cov_data_resolver.py",
+        "unbuffered_supervision_cleanup_heartbeat",
+        "timeout_record_before_groupkill",
+        "worker1800_dependency300",
+        "early_worker_import_stage",
+        "flushed_progress_and_latest_stage",
+        "six_partial_generation_exports",
+        "stage_wall_clock_timestamps_required_by_Task_C",
+        "fresh_focused_tests",
+        "post_test_hash:scripts\\gate4b_diagnostic_worker.py",
+        "post_test_hash:scripts\\zeromrg_gate4b_runtime.py",
+        "post_test_hash:scripts\\zeromrg_cov_data_resolver.py",
+        "post_test_hash:scripts\\zeromrg_gate4b_progress.py",
+        "post_test_hash:scripts\\build_gate4b_notebook.py",
+        "post_test_hash:tests\\test_gate4b_progress.py",
+        "post_test_hash:tests\\test_gate4b_inference.py",
+        "post_test_hash:notebooks\\gate4b\\image_conditioning\\configuration.json",
+        "post_test_hash:notebooks\\gate4b\\image_conditioning\\dataset-contract.json",
+        "post_test_hash:notebooks\\gate4b\\image_conditioning\\kernel-metadata.json",
+        "post_test_hash:notebooks\\gate4b\\image_conditioning\\selection.json",
+        "post_test_hash:notebooks\\gate4b\\image_conditioning\\ZeroMRG_COV_CTR_Gate4B_Image_Conditioning_Diagnostic.ipynb"
+      ],
+      "failures": [],
+      "prepared_artifact_hashes": {
+        "scripts\\gate4b_diagnostic_worker.py": "4c3116e0ba8251e59b5ecf8afb72266cf8124264b7f76fd117a6ef41e6b69701",
+        "scripts\\zeromrg_gate4b_runtime.py": "6c5a86d875c1f4ccd4d88d6760b08902333ba9c3ab4c57246e027c1cf346e2a3",
+        "scripts\\zeromrg_cov_data_resolver.py": "4083bfbe93f9b725f223bee2cc211f0770974be5b3ddcb42fb1b661123f4d2fe",
+        "scripts\\zeromrg_gate4b_progress.py": "e7c163583cf07a69ded4bf45e43a5ae8e09a154508dc7895a9b17b81ab3f0e3e",
+        "scripts\\build_gate4b_notebook.py": "f92d116e5ae3f4b150aa5c396d1102d2f3985ae18cd7b1e61b22b4cc0c4c5ad2",
+        "tests\\test_gate4b_progress.py": "7599cc77ae3a591fae5f4d078fb7e2eaffaf8efd487c5c3aa9930c82b546d88d",
+        "tests\\test_gate4b_inference.py": "3e2b09cc284baebdb387e92fcb0088788dc606aba89a7df59d5cb849b439a53a",
+        "notebooks\\gate4b\\image_conditioning\\configuration.json": "72ea8ef4c8e571411a2f808f8e2032e74959aad014be6ca89e54e985cf0b74b1",
+        "notebooks\\gate4b\\image_conditioning\\dataset-contract.json": "0efeac6636bb971f27580cbe89eb792620feffeb13b42900c625b8309b277772",
+        "notebooks\\gate4b\\image_conditioning\\kernel-metadata.json": "259321f6dda48c7477a7ff719ab0c009d0fe6b001363fb775b5272933613c77b",
+        "notebooks\\gate4b\\image_conditioning\\selection.json": "82122fba65bc4fe488f97a31a9c85286c80e0700b0f104ec83dd1b311f3b48ce",
+        "notebooks\\gate4b\\image_conditioning\\ZeroMRG_COV_CTR_Gate4B_Image_Conditioning_Diagnostic.ipynb": "81d50bbae7b6e43f302ad13bb0b50664ed91617bf82be6b9496dede61d4962d9"
+      },
+      "source_sha256": {
+        "zeromrg_gate1_runtime.py": "e897aa5e800ce18911744cc13e16b75b239477a4edb8bc1df0f8e9ab3f9e038a",
+        "zeromrg_gate4_runtime.py": "c9117e4106168a907da3c52e7c99c0ca34655abf88b98e60842b241908c679d8",
+        "gate4_diagnostic_worker.py": "e1ba00f6dd02a1ddfccd85c158283857d210b7bdee6148c4b528ffcf8dcc0812",
+        "zeromrg_gate4b_runtime.py": "6c5a86d875c1f4ccd4d88d6760b08902333ba9c3ab4c57246e027c1cf346e2a3",
+        "gate4b_diagnostic_worker.py": "4c3116e0ba8251e59b5ecf8afb72266cf8124264b7f76fd117a6ef41e6b69701",
+        "zeromrg_cov_data_resolver.py": "4083bfbe93f9b725f223bee2cc211f0770974be5b3ddcb42fb1b661123f4d2fe",
+        "zeromrg_gate4b_progress.py": "e7c163583cf07a69ded4bf45e43a5ae8e09a154508dc7895a9b17b81ab3f0e3e"
+      },
+      "notebook_sha256": "81d50bbae7b6e43f302ad13bb0b50664ed91617bf82be6b9496dede61d4962d9",
+      "image_ids": [
+        "25%2.jpg",
+        "PIIS0140673620303603%5.png",
+        "1094.png",
+        "2%0.jpg",
+        "1868.png"
+      ],
+      "max_generations": 6,
+      "tests_exit_code": 0,
+      "heldout_reports_parsed": false,
+      "model_forward": false,
+      "submission_allowed": true
+    },
+    "remote_prechecks": {
+      "status": "PASS_RELEVANT_REMOTE_PRECHECKS",
+      "observed_utc": "2026-10-12T13:09:09.648886+00:00",
+      "target": "inshasadaf114/zeromrg-covctr-gate4b-image-conditioning",
+      "id": 138214712,
+      "current_version": 2,
+      "private": true,
+      "gpu": true,
+      "datasets": [
+        {
+          "ref": "inshasadaf114/dataset",
+          "id": 11916862,
+          "private": true
+        },
+        {
+          "ref": "inshasadaf114/zeromrg-checkpoint-backup5-zip",
+          "id": 12409131,
+          "private": true
+        }
+      ],
+      "kernel_sources": [
+        "inshasadaf114/zeromrg-covctr-gate3-recovery-baseline"
+      ],
+      "baseline": {
+        "id": 138127332,
+        "version": 1,
+        "private": true,
+        "source_matches": true,
+        "verified_zip_listed": true
+      },
+      "statuses": [
+        {
+          "target": "inshasadaf114/zeromrg-covctr-gate4b-image-conditioning",
+          "status": "KernelWorkerStatus.CANCEL_ACKNOWLEDGED",
+          "failure_message": "",
+          "observed_utc": "2026-10-12T13:09:02.946977+00:00"
+        },
+        {
+          "target": "inshasadaf114/zeromrg-covctr-gate3-recovery-baseline",
+          "status": "KernelWorkerStatus.COMPLETE",
+          "failure_message": "",
+          "observed_utc": "2026-10-12T13:09:03.552339+00:00"
+        },
+        {
+          "target": "inshasadaf114/zeromrg-covctr-gate4-single-image-diagnostic",
+          "status": "KernelWorkerStatus.COMPLETE",
+          "failure_message": "",
+          "observed_utc": "2026-10-12T13:09:04.064184+00:00"
+        },
+        {
+          "target": "inshasadaf114/zeromrg-covctr-gate3-recovery-epochs-91-95",
+          "status": "KernelWorkerStatus.CANCEL_ACKNOWLEDGED",
+          "failure_message": "",
+          "observed_utc": "2026-10-12T13:09:04.680267+00:00"
+        }
+      ],
+      "legacy_excluded": true,
+      "legacy_requeried": false,
+      "active_conflict_indicated": false,
+      "owner_authenticated_v2_absent_active": true,
+      "backend_release_not_required": true,
+      "interactive_sessions_not_exposed_by_SDK": true,
+      "notebook_sha256": "81d50bbae7b6e43f302ad13bb0b50664ed91617bf82be6b9496dede61d4962d9"
+    },
+    "retrieval": {
+      "observed_utc": "2026-10-12T13:13:23.767946+00:00",
+      "target": "inshasadaf114/zeromrg-covctr-gate4b-image-conditioning",
+      "id": 138214712,
+      "version": 3,
+      "listed": [
+        "zeromrg_gate4b_f85c53a1132d/__pycache__/gate4_diagnostic_worker.cpython-313.pyc",
+        "zeromrg_gate4b_f85c53a1132d/__pycache__/zeromrg_cov_data_resolver.cpython-313.pyc",
+        "zeromrg_gate4b_f85c53a1132d/__pycache__/zeromrg_gate1_runtime.cpython-313.pyc",
+        "zeromrg_gate4b_f85c53a1132d/__pycache__/zeromrg_gate4_runtime.cpython-313.pyc",
+        "zeromrg_gate4b_f85c53a1132d/__pycache__/zeromrg_gate4b_progress.cpython-313.pyc",
+        "zeromrg_gate4b_f85c53a1132d/__pycache__/zeromrg_gate4b_runtime.cpython-313.pyc",
+        "zeromrg_gate4b_f85c53a1132d/configuration.json",
+        "zeromrg_gate4b_f85c53a1132d/data_resolution_failure.json",
+        "zeromrg_gate4b_f85c53a1132d/dataset-contract.json",
+        "zeromrg_gate4b_f85c53a1132d/execution.log",
+        "zeromrg_gate4b_f85c53a1132d/failure.json",
+        "zeromrg_gate4b_f85c53a1132d/gate4_diagnostic_worker.py",
+        "zeromrg_gate4b_f85c53a1132d/gate4b_diagnostic_worker.py",
+        "zeromrg_gate4b_f85c53a1132d/latest_progress.json",
+        "zeromrg_gate4b_f85c53a1132d/stage_progress.jsonl",
+        "zeromrg_gate4b_f85c53a1132d/supervisor_exception.json",
+        "zeromrg_gate4b_f85c53a1132d/supervisor_status.json",
+        "zeromrg_gate4b_f85c53a1132d/support.lock",
+        "zeromrg_gate4b_f85c53a1132d/zeromrg_cov_data_resolver.py",
+        "zeromrg_gate4b_f85c53a1132d/zeromrg_gate1_runtime.py",
+        "zeromrg_gate4b_f85c53a1132d/zeromrg_gate4_runtime.py",
+        "zeromrg_gate4b_f85c53a1132d/zeromrg_gate4b_progress.py",
+        "zeromrg_gate4b_f85c53a1132d/zeromrg_gate4b_runtime.py"
+      ],
+      "downloads": [
+        {
+          "file": "zeromrg_gate4b_f85c53a1132d/configuration.json",
+          "bytes": 3154,
+          "sha256": "8b78230153a3d48c3934c8d3e08bef4b833afc8116a52a585392dac8a0a103f4"
+        },
+        {
+          "file": "zeromrg_gate4b_f85c53a1132d/data_resolution_failure.json",
+          "bytes": 257,
+          "sha256": "6fb94450de48ca884c89127f0e30023d69abc1391dd97b5177c5f551d21a1c16"
+        },
+        {
+          "file": "zeromrg_gate4b_f85c53a1132d/dataset-contract.json",
+          "bytes": 168325,
+          "sha256": "0efeac6636bb971f27580cbe89eb792620feffeb13b42900c625b8309b277772"
+        },
+        {
+          "file": "zeromrg_gate4b_f85c53a1132d/execution.log",
+          "bytes": 12529,
+          "sha256": "5ae9b3ac1e3f0bb0c54a48c167980e26474459907aa71d29615377440d967530"
+        },
+        {
+          "file": "zeromrg_gate4b_f85c53a1132d/failure.json",
+          "bytes": 497,
+          "sha256": "92b2590cb79e7ab90ef6269beab66404c8302412b4a28b8d50beb63f348d13ac"
+        },
+        {
+          "file": "zeromrg_gate4b_f85c53a1132d/gate4_diagnostic_worker.py",
+          "bytes": 8837,
+          "sha256": "e1ba00f6dd02a1ddfccd85c158283857d210b7bdee6148c4b528ffcf8dcc0812"
+        },
+        {
+          "file": "zeromrg_gate4b_f85c53a1132d/gate4b_diagnostic_worker.py",
+          "bytes": 12777,
+          "sha256": "4c3116e0ba8251e59b5ecf8afb72266cf8124264b7f76fd117a6ef41e6b69701"
+        },
+        {
+          "file": "zeromrg_gate4b_f85c53a1132d/latest_progress.json",
+          "bytes": 177,
+          "sha256": "021d215288d8d8d32ec68d7f657e32520e42bc531739a11f0cfba8528e7d9881"
+        },
+        {
+          "file": "zeromrg_gate4b_f85c53a1132d/stage_progress.jsonl",
+          "bytes": 8007,
+          "sha256": "4255995a0b3e07f961fe26bcada1677cbe164f855b1507ef38c8a3128488cea8"
+        },
+        {
+          "file": "zeromrg_gate4b_f85c53a1132d/supervisor_exception.json",
+          "bytes": 196,
+          "sha256": "df988658799d2804cacfe5d91e98683786651d0f97d8e553d3b92c7f73088427"
+        },
+        {
+          "file": "zeromrg_gate4b_f85c53a1132d/supervisor_status.json",
+          "bytes": 161,
+          "sha256": "66771b01647f1d5281d30493b7fb9fd9544c466fdbcdfc7ef20deaa8410c3f1b"
+        },
+        {
+          "file": "zeromrg_gate4b_f85c53a1132d/support.lock",
+          "bytes": 277,
+          "sha256": "18e6bf33e7d8613ea7b2a3f3826e82a89a0c77cfc326f67e432ba8329e8e9fb1"
+        },
+        {
+          "file": "zeromrg_gate4b_f85c53a1132d/zeromrg_cov_data_resolver.py",
+          "bytes": 11821,
+          "sha256": "4083bfbe93f9b725f223bee2cc211f0770974be5b3ddcb42fb1b661123f4d2fe"
+        },
+        {
+          "file": "zeromrg_gate4b_f85c53a1132d/zeromrg_gate1_runtime.py",
+          "bytes": 19151,
+          "sha256": "e897aa5e800ce18911744cc13e16b75b239477a4edb8bc1df0f8e9ab3f9e038a"
+        },
+        {
+          "file": "zeromrg_gate4b_f85c53a1132d/zeromrg_gate4_runtime.py",
+          "bytes": 10285,
+          "sha256": "c9117e4106168a907da3c52e7c99c0ca34655abf88b98e60842b241908c679d8"
+        },
+        {
+          "file": "zeromrg_gate4b_f85c53a1132d/zeromrg_gate4b_progress.py",
+          "bytes": 2141,
+          "sha256": "e7c163583cf07a69ded4bf45e43a5ae8e09a154508dc7895a9b17b81ab3f0e3e"
+        },
+        {
+          "file": "zeromrg_gate4b_f85c53a1132d/zeromrg_gate4b_runtime.py",
+          "bytes": 7631,
+          "sha256": "6c5a86d875c1f4ccd4d88d6760b08902333ba9c3ab4c57246e027c1cf346e2a3"
+        }
+      ],
+      "phase": "initial",
+      "platform_log_sha256": "bebe5ffb11be18ea70fb598665a0c8c8d9075090d4b1cb0c756ba54731b79677",
+      "total_bytes_including_platform_log": 292573
+    },
+    "verification": {
+      "status": "PASS_VERIFIED_V3_PRE_GENERATION_DATA_RESOLUTION_FAILURE",
+      "verified_utc": "2026-10-12T13:25:38.528970+00:00",
+      "checks": [
+        "retrieval_bytes_sha:zeromrg_gate4b_f85c53a1132d/configuration.json",
+        "retrieval_bytes_sha:zeromrg_gate4b_f85c53a1132d/data_resolution_failure.json",
+        "retrieval_bytes_sha:zeromrg_gate4b_f85c53a1132d/dataset-contract.json",
+        "retrieval_bytes_sha:zeromrg_gate4b_f85c53a1132d/execution.log",
+        "retrieval_bytes_sha:zeromrg_gate4b_f85c53a1132d/failure.json",
+        "retrieval_bytes_sha:zeromrg_gate4b_f85c53a1132d/gate4_diagnostic_worker.py",
+        "retrieval_bytes_sha:zeromrg_gate4b_f85c53a1132d/gate4b_diagnostic_worker.py",
+        "retrieval_bytes_sha:zeromrg_gate4b_f85c53a1132d/latest_progress.json",
+        "retrieval_bytes_sha:zeromrg_gate4b_f85c53a1132d/stage_progress.jsonl",
+        "retrieval_bytes_sha:zeromrg_gate4b_f85c53a1132d/supervisor_exception.json",
+        "retrieval_bytes_sha:zeromrg_gate4b_f85c53a1132d/supervisor_status.json",
+        "retrieval_bytes_sha:zeromrg_gate4b_f85c53a1132d/support.lock",
+        "retrieval_bytes_sha:zeromrg_gate4b_f85c53a1132d/zeromrg_cov_data_resolver.py",
+        "retrieval_bytes_sha:zeromrg_gate4b_f85c53a1132d/zeromrg_gate1_runtime.py",
+        "retrieval_bytes_sha:zeromrg_gate4b_f85c53a1132d/zeromrg_gate4_runtime.py",
+        "retrieval_bytes_sha:zeromrg_gate4b_f85c53a1132d/zeromrg_gate4b_progress.py",
+        "retrieval_bytes_sha:zeromrg_gate4b_f85c53a1132d/zeromrg_gate4b_runtime.py",
+        "platform_log_sha",
+        "one_worker_failure",
+        "exact_private_submitted_v3_identity",
+        "prepared_notebook_hash",
+        "retrieved_server_source_hash",
+        "actual_worker_config",
+        "actual_contract_bytes",
+        "actual_source:zeromrg_gate1_runtime.py",
+        "actual_source:zeromrg_gate4_runtime.py",
+        "actual_source:gate4_diagnostic_worker.py",
+        "actual_source:zeromrg_gate4b_runtime.py",
+        "actual_source:gate4b_diagnostic_worker.py",
+        "actual_source:zeromrg_cov_data_resolver.py",
+        "actual_source:zeromrg_gate4b_progress.py",
+        "zero_root_candidates_failure",
+        "worker_failure_matches_resolution",
+        "journal_sequence_contiguous",
+        "UTC_elapsed_phase_state:worker_start:1",
+        "UTC_elapsed_phase_state:runtime_imports:2",
+        "UTC_elapsed_phase_state:runtime_imports:3",
+        "UTC_elapsed_phase_state:cuda_availability:4",
+        "UTC_elapsed_phase_state:cuda_availability:5",
+        "UTC_elapsed_phase_state:provided_environment_checks:6",
+        "UTC_elapsed_phase_state:vision_support_imports:7",
+        "UTC_elapsed_phase_state:vision_support_imports:8",
+        "UTC_elapsed_phase_state:support_package_setup:9",
+        "UTC_elapsed_phase_state:dependency_command:10",
+        "UTC_elapsed_phase_state:support_package_setup:11",
+        "UTC_elapsed_phase_state:clip_package_setup:12",
+        "UTC_elapsed_phase_state:dependency_command:13",
+        "UTC_elapsed_phase_state:clip_package_setup:14",
+        "UTC_elapsed_phase_state:verified_checkpoint_attachment:15",
+        "UTC_elapsed_phase_state:baseline_zip_sha256:16",
+        "UTC_elapsed_phase_state:baseline_zip_sha256:17",
+        "UTC_elapsed_phase_state:checkpoint_manifest_identity:18",
+        "UTC_elapsed_phase_state:checkpoint_manifest_identity:19",
+        "UTC_elapsed_phase_state:selected_input_extract_start:20",
+        "UTC_elapsed_phase_state:selected_input_sha256:21",
+        "UTC_elapsed_phase_state:selected_input_sha256:22",
+        "UTC_elapsed_phase_state:selected_input_extract_complete:23",
+        "UTC_elapsed_phase_state:selected_input_extract_start:24",
+        "UTC_elapsed_phase_state:selected_input_sha256:25",
+        "UTC_elapsed_phase_state:selected_input_sha256:26",
+        "UTC_elapsed_phase_state:selected_input_extract_complete:27",
+        "UTC_elapsed_phase_state:selected_input_extract_start:28",
+        "UTC_elapsed_phase_state:selected_input_sha256:29",
+        "UTC_elapsed_phase_state:selected_input_sha256:30",
+        "UTC_elapsed_phase_state:selected_input_extract_complete:31",
+        "UTC_elapsed_phase_state:selected_input_extract_start:32",
+        "UTC_elapsed_phase_state:selected_input_sha256:33",
+        "UTC_elapsed_phase_state:selected_input_sha256:34",
+        "UTC_elapsed_phase_state:selected_input_extract_complete:35",
+        "UTC_elapsed_phase_state:selected_input_extract_start:36",
+        "UTC_elapsed_phase_state:selected_input_sha256:37",
+        "UTC_elapsed_phase_state:selected_input_sha256:38",
+        "UTC_elapsed_phase_state:selected_input_extract_complete:39",
+        "UTC_elapsed_phase_state:train_artifacts_load:40",
+        "UTC_elapsed_phase_state:train_artifacts_load:41",
+        "UTC_elapsed_phase_state:cov_content_bound_data_resolution:42",
+        "UTC_elapsed_phase_state:dataset_resolution:43",
+        "UTC_elapsed_phase_state:dataset_resolution:44",
+        "UTC_elapsed_phase_state:failed_no_retry:45",
+        "UTC_elapsed_phase_state:worker_failure:other",
+        "UTC_elapsed_phase_state:supervisor_heartbeat:other",
+        "UTC_elapsed_phase_state:supervisor_exception:other",
+        "observed_journal_UTC_order",
+        "observed_monotonic_elapsed_order",
+        "latest_stage_matches_journal",
+        "last_completed_stage_train_artifacts_load",
+        "CUDA_availability_stage_completed",
+        "verified_baseline_hash_and_manifest_stages",
+        "all_selected_checkpoint_dependencies_hash_checked",
+        "dataset_resolution_failed_stage",
+        "no_model_restore_encoder_or_generation_stages",
+        "no_completed_generation_or_diagnostic_exports",
+        "verified_fail_before_generation_control_flow",
+        "heartbeat_file_log_consistent",
+        "terminal_traceback_exported",
+        "platform_terminal_ERROR",
+        "unchanged_prepared_artifact:scripts\\gate4b_diagnostic_worker.py",
+        "unchanged_prepared_artifact:scripts\\zeromrg_gate4b_runtime.py",
+        "unchanged_prepared_artifact:scripts\\zeromrg_cov_data_resolver.py",
+        "unchanged_prepared_artifact:scripts\\zeromrg_gate4b_progress.py",
+        "unchanged_prepared_artifact:scripts\\build_gate4b_notebook.py",
+        "unchanged_prepared_artifact:tests\\test_gate4b_progress.py",
+        "unchanged_prepared_artifact:tests\\test_gate4b_inference.py",
+        "unchanged_prepared_artifact:notebooks\\gate4b\\image_conditioning\\configuration.json",
+        "unchanged_prepared_artifact:notebooks\\gate4b\\image_conditioning\\dataset-contract.json",
+        "unchanged_prepared_artifact:notebooks\\gate4b\\image_conditioning\\kernel-metadata.json",
+        "unchanged_prepared_artifact:notebooks\\gate4b\\image_conditioning\\selection.json",
+        "unchanged_prepared_artifact:notebooks\\gate4b\\image_conditioning\\ZeroMRG_COV_CTR_Gate4B_Image_Conditioning_Diagnostic.ipynb"
+      ],
+      "check_count": 108,
+      "platform_status": {
+        "observed_utc": "2026-10-12T13:15:21.039881+00:00",
+        "target": "inshasadaf114/zeromrg-covctr-gate4b-image-conditioning",
+        "status": "KernelWorkerStatus.ERROR",
+        "failure_message": ""
+      },
+      "last_completed_stage": {
+        "phase": "train_artifacts_load",
+        "state": "complete",
+        "sequence": 41,
+        "timestamp_utc": "2026-10-12T13:10:17.684298+00:00",
+        "elapsed_seconds": 36.803372,
+        "duration_seconds": 0.1415756480000141
+      },
+      "failed_stage": {
+        "phase": "dataset_resolution",
+        "state": "failed",
+        "sequence": 44,
+        "timestamp_utc": "2026-10-12T13:10:17.829578+00:00",
+        "elapsed_seconds": 36.948648,
+        "duration_seconds": 0.12941059300001712,
+        "error_type": "CovDataError"
+      },
+      "worker_failure": {
+        "status": "FAILED",
+        "error_type": "CovDataError",
+        "phase": "worker_failure",
+        "state": "failed",
+        "timestamp_utc": "2026-10-12T13:10:17.833505+00:00",
+        "error": "{\"action\": \"Keep one original COV annotation tree OR its original archive inside the approved attachment; do not substitute data\", \"attachment\": \"inshasadaf114/dataset\", \"candidates\": [], \"code\": \"DATASET_ROOT_MISSING_OR_AMBIGUOUS\", \"count\": 0}",
+        "elapsed_seconds": 36.95257807799999,
+        "no_retry": true
+      },
+      "resolution_failure": {
+        "code": "DATASET_ROOT_MISSING_OR_AMBIGUOUS",
+        "count": 0,
+        "candidates": [],
+        "attachment": "inshasadaf114/dataset",
+        "action": "Keep one original COV annotation tree OR its original archive inside the approved attachment; do not substitute data"
+      },
+      "stage_record_count": 45,
+      "worker_seconds": 36.95257807799999,
+      "supervisor_seconds": 41.062544,
+      "generation_count": 0,
+      "CUDA_available_guard_passed": true,
+      "GPU_identity_or_memory_unavailable": true,
+      "scientific_results_available": false,
+      "mounted_filename_inventory_unavailable": true,
+      "actual_resolver_cause": "No exact configured annotation filename or archive filename found beneath a recognized approved mount; physical listing not exported, so exact layout/content cause remains unverified",
+      "output_directory": "artifacts\\gate4b\\final_relevant_execution_20261012\\output_initial\\retrieved\\zeromrg_gate4b_f85c53a1132d",
+      "checkpoint_sha256": "6166e36198737bfbe9e0c35f03f0b320c44e76f3e05068ef6299d74e9179c6b2"
+    },
+    "monitor": {
+      "status_requests": 2,
+      "output_checks": 1,
+      "observations": [
+        {
+          "observed_utc": "2026-10-12T13:10:24.997900+00:00",
+          "target": "inshasadaf114/zeromrg-covctr-gate4b-image-conditioning",
+          "status": "KernelWorkerStatus.RUNNING",
+          "failure_message": ""
+        },
+        {
+          "observed_utc": "2026-10-12T13:15:21.039881+00:00",
+          "target": "inshasadaf114/zeromrg-covctr-gate4b-image-conditioning",
+          "status": "KernelWorkerStatus.ERROR",
+          "failure_message": ""
+        }
+      ],
+      "monitoring_stopped": true,
+      "polling_loop_run": false,
+      "planned_polling_window_seconds": 150,
+      "initial_to_terminal_confirmation_seconds": 296.041981,
+      "deviation": "Final terminal-status confirmation followed exported failure retrieval, outside the planned polling window; no polling loop or patience reset was used.",
+      "no_further_status_output_requests": true,
+      "no_cancellation": true,
+      "no_retry": true
+    },
+    "new_submission_count": 1,
+    "conditional_submission_authority_consumed": true,
+    "generation_count": 0,
+    "last_completed_stage": {
+      "phase": "train_artifacts_load",
+      "state": "complete",
+      "sequence": 41,
+      "timestamp_utc": "2026-10-12T13:10:17.684298+00:00",
+      "elapsed_seconds": 36.803372,
+      "duration_seconds": 0.1415756480000141
+    },
+    "failed_stage": {
+      "phase": "dataset_resolution",
+      "state": "failed",
+      "sequence": 44,
+      "timestamp_utc": "2026-10-12T13:10:17.829578+00:00",
+      "elapsed_seconds": 36.948648,
+      "duration_seconds": 0.12941059300001712,
+      "error_type": "CovDataError"
+    },
+    "expected_mount_candidate_filenames": {
+      "annotation": "reports_ZH_EN.csv",
+      "archive": "COV-CTR with English reports.zip"
+    },
+    "scientific_results_available": false,
+    "cosine_matrices": null,
+    "reports": null,
+    "report_diversity": null,
+    "determinism": null,
+    "gate4b": "BLOCKED",
+    "gate5_ready": false,
+    "no_training_or_test_evaluation": true,
+    "no_cancellation": true,
+    "next": "Local diagnosis of approved attachment file names/layout against the preserved annotation/archive hash contract; use retrieved exact failure and obtain file inventory without clinical report parsing or dataset substitution. No automatic resubmission; any further GPU execution needs new scoped authorization because the ONE final submission is consumed."
+  },
+  "last_verified_v3_worker_stage": {
+    "phase": "train_artifacts_load",
+    "state": "complete",
+    "sequence": 41,
+    "timestamp_utc": "2026-10-12T13:10:17.684298+00:00",
+    "elapsed_seconds": 36.803372,
+    "duration_seconds": 0.1415756480000141
+  },
+  "verified_failure_outputs_available": true
+}

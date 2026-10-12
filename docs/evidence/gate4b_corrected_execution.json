@@ -1,0 +1,183 @@
+{
+  "status": "BLOCKED_OUTPUT_UNAVAILABLE_EXECUTION_UNRESOLVED",
+  "observed_utc": "2026-10-12T10:22:57.665666+00:00",
+  "run_id": "ZM-010_GATE4B_MOUNT_RECOVERY_V2",
+  "authority": "D-020",
+  "event": "EV-080",
+  "target": "inshasadaf114/zeromrg-covctr-gate4b-image-conditioning",
+  "id": 138214712,
+  "version": 2,
+  "private": true,
+  "submission_count_this_authorization": 1,
+  "total_known_submitted_gate4b_versions": 2,
+  "submission_authority_consumed": true,
+  "submission_accepted_utc": "2026-10-12T10:07:01.181160+00:00",
+  "prepared_artifact_hashes": {
+    "notebooks\\gate4b\\image_conditioning\\configuration.json": "e7f8622a31dceb9190694c25b28f80e456d38b90ee1e356659d4111fb3c5fa8a",
+    "notebooks\\gate4b\\image_conditioning\\dataset-contract.json": "0efeac6636bb971f27580cbe89eb792620feffeb13b42900c625b8309b277772",
+    "notebooks\\gate4b\\image_conditioning\\kernel-metadata.json": "259321f6dda48c7477a7ff719ab0c009d0fe6b001363fb775b5272933613c77b",
+    "notebooks\\gate4b\\image_conditioning\\selection.json": "82122fba65bc4fe488f97a31a9c85286c80e0700b0f104ec83dd1b311f3b48ce",
+    "notebooks\\gate4b\\image_conditioning\\ZeroMRG_COV_CTR_Gate4B_Image_Conditioning_Diagnostic.ipynb": "f329f2b1485af6f81b5c44727c6eb756c2d230eb4d70da2cb6fcaaf5c8a9d54b"
+  },
+  "source_sha256": {
+    "zeromrg_gate1_runtime.py": "e897aa5e800ce18911744cc13e16b75b239477a4edb8bc1df0f8e9ab3f9e038a",
+    "zeromrg_gate4_runtime.py": "c9117e4106168a907da3c52e7c99c0ca34655abf88b98e60842b241908c679d8",
+    "gate4_diagnostic_worker.py": "e1ba00f6dd02a1ddfccd85c158283857d210b7bdee6148c4b528ffcf8dcc0812",
+    "zeromrg_gate4b_runtime.py": "976c6f2e0ce7d5ebc5429a336e044bad8f70477316b7076b9747d2de4430a050",
+    "gate4b_diagnostic_worker.py": "2450b916ba6926c7bb81ef6abf3f31f5d5ab28ac0149b93f688808d36d5b6d48",
+    "zeromrg_cov_data_resolver.py": "25c06829ffcda795992fe8cc53233e7f4d8f25ebe583af009bb5d8c694bb18af"
+  },
+  "fresh_prechecks_passed": 14,
+  "precheck_path": "artifacts\\gate4b\\execution_corrected_20261012\\precheck.json",
+  "latest_platform_observation": {
+    "observed_utc": "2026-10-12T10:18:29.272069+00:00",
+    "target": "inshasadaf114/zeromrg-covctr-gate4b-image-conditioning",
+    "status": "KernelWorkerStatus.QUEUED",
+    "failure_message": ""
+  },
+  "terminal_status_verified": false,
+  "monitor": {
+    "identity": {
+      "observed_utc": "2026-10-12T10:09:55.889065+00:00",
+      "target": "inshasadaf114/zeromrg-covctr-gate4b-image-conditioning",
+      "id": 138214712,
+      "version": 2,
+      "private": true,
+      "enable_gpu": true,
+      "source_cells_match": true,
+      "datasets": [
+        "inshasadaf114/dataset",
+        "inshasadaf114/zeromrg-checkpoint-backup5-zip"
+      ],
+      "kernel_sources": [
+        "inshasadaf114/zeromrg-covctr-gate3-recovery-baseline"
+      ]
+    },
+    "monitor_start_utc": "2026-10-12T10:09:55.985331+00:00",
+    "limit_seconds": 600,
+    "max_status_requests": 12,
+    "spacing_seconds": 45,
+    "requests": [
+      {
+        "observed_utc": "2026-10-12T10:09:57.194837+00:00",
+        "target": "inshasadaf114/zeromrg-covctr-gate4b-image-conditioning",
+        "status": "KernelWorkerStatus.QUEUED",
+        "failure_message": ""
+      },
+      {
+        "observed_utc": "2026-10-12T10:10:43.743090+00:00",
+        "target": "inshasadaf114/zeromrg-covctr-gate4b-image-conditioning",
+        "status": "KernelWorkerStatus.QUEUED",
+        "failure_message": ""
+      },
+      {
+        "observed_utc": "2026-10-12T10:11:30.544654+00:00",
+        "target": "inshasadaf114/zeromrg-covctr-gate4b-image-conditioning",
+        "status": "KernelWorkerStatus.QUEUED",
+        "failure_message": ""
+      },
+      {
+        "observed_utc": "2026-10-12T10:12:17.028819+00:00",
+        "target": "inshasadaf114/zeromrg-covctr-gate4b-image-conditioning",
+        "status": "KernelWorkerStatus.QUEUED",
+        "failure_message": ""
+      },
+      {
+        "observed_utc": "2026-10-12T10:13:03.528426+00:00",
+        "target": "inshasadaf114/zeromrg-covctr-gate4b-image-conditioning",
+        "status": "KernelWorkerStatus.QUEUED",
+        "failure_message": ""
+      },
+      {
+        "observed_utc": "2026-10-12T10:13:49.926946+00:00",
+        "target": "inshasadaf114/zeromrg-covctr-gate4b-image-conditioning",
+        "status": "KernelWorkerStatus.QUEUED",
+        "failure_message": ""
+      },
+      {
+        "observed_utc": "2026-10-12T10:14:36.203337+00:00",
+        "target": "inshasadaf114/zeromrg-covctr-gate4b-image-conditioning",
+        "status": "KernelWorkerStatus.QUEUED",
+        "failure_message": ""
+      },
+      {
+        "observed_utc": "2026-10-12T10:15:22.690679+00:00",
+        "target": "inshasadaf114/zeromrg-covctr-gate4b-image-conditioning",
+        "status": "KernelWorkerStatus.QUEUED",
+        "failure_message": ""
+      },
+      {
+        "observed_utc": "2026-10-12T10:16:09.209236+00:00",
+        "target": "inshasadaf114/zeromrg-covctr-gate4b-image-conditioning",
+        "status": "KernelWorkerStatus.QUEUED",
+        "failure_message": ""
+      },
+      {
+        "observed_utc": "2026-10-12T10:16:56.057543+00:00",
+        "target": "inshasadaf114/zeromrg-covctr-gate4b-image-conditioning",
+        "status": "KernelWorkerStatus.QUEUED",
+        "failure_message": ""
+      },
+      {
+        "observed_utc": "2026-10-12T10:17:42.623051+00:00",
+        "target": "inshasadaf114/zeromrg-covctr-gate4b-image-conditioning",
+        "status": "KernelWorkerStatus.QUEUED",
+        "failure_message": ""
+      },
+      {
+        "observed_utc": "2026-10-12T10:18:29.272069+00:00",
+        "target": "inshasadaf114/zeromrg-covctr-gate4b-image-conditioning",
+        "status": "KernelWorkerStatus.QUEUED",
+        "failure_message": ""
+      }
+    ],
+    "outcome": "BOUND_REACHED",
+    "finished_utc": "2026-10-12T10:18:29.343870+00:00",
+    "elapsed_monitor_seconds": 513.3439999999828
+  },
+  "monitoring_stopped": true,
+  "final_retrieval": {
+    "observed_utc": "2026-10-12T10:19:11.697374+00:00",
+    "target": "inshasadaf114/zeromrg-covctr-gate4b-image-conditioning",
+    "listed": [],
+    "downloads": [],
+    "total_bytes_including_platform_log": 0
+  },
+  "final_identity": {
+    "observed_utc": "2026-10-12T10:19:10.977450+00:00",
+    "target": "inshasadaf114/zeromrg-covctr-gate4b-image-conditioning",
+    "id": 138214712,
+    "version": 2,
+    "private": true,
+    "enable_gpu": true,
+    "source_cells_match": true,
+    "datasets": [
+      "inshasadaf114/dataset",
+      "inshasadaf114/zeromrg-checkpoint-backup5-zip"
+    ],
+    "kernel_sources": [
+      "inshasadaf114/zeromrg-covctr-gate3-recovery-baseline"
+    ]
+  },
+  "actual_generation_count": null,
+  "actual_measurements": null,
+  "diagnostic_outputs_verified": false,
+  "verifier": {
+    "status": "PASS_SYNTAX_REUSED_VERIFIER",
+    "prior_sha256": "766fea093a82ac621840e79d22e5347652f07c808f371bebdf0caa3e81f6df10",
+    "current_sha256": "1218fbff05510c202c327cb824badd9de91fb1dfc0d5fd40270e5648e61f293a",
+    "new_checks": "V2 contract/resolution/population/clinical reference exclusion/runID",
+    "model_forward": false,
+    "run_on_outputs": false
+  },
+  "no_decoder_training": true,
+  "no_heldout_reference_parsing": true,
+  "reference_CSV_identity_hashing_only": true,
+  "no_reference_scoring": true,
+  "no_gate5": true,
+  "no_new_checkpoint": true,
+  "existing_v1_error_preserved": true,
+  "gate4b_decision": "BLOCKED_PENDING_EXISTING_VERSION2_OUTPUTS",
+  "gate5_ready": false,
+  "next": "Owner authorize ONE bounded read-only follow-up to existing private138214712/version2: status/available small-output retrieval and independent verification/analysis only. No new submission, training or Gate5."
+}

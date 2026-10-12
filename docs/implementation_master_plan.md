@@ -1,6 +1,10 @@
 # ZeroMRG master implementation plan
 
-Revision 1, 2026-10-11. Planning is authorized. **Execution awaits owner review and an action-specific instruction.** Stable roadmap namespace: ZM-001–ZM-024. Historical Gate numbers and research-plan steps retain their identities as evidence references.
+2026-10-12 D-019/EV-071 controlled amendment: owner prioritizes faithful full image-to-report pipeline/evaluation on existing modified/documented COV-CTR, without numerical equivalence to paper; decoder training deferred. Gate4B corrected local preparation PASS32tests/62auditchecks, GPU pending; priorv1 ERROR preserved. [Recovery](zeromrg_gate4b_mount_recovery.md), [dataset fidelity](zeromrg_covctr_dataset_fidelity.md). No current submission or held-out evaluation authority. Other roadmap targets retained, not newly authorized.
+
+2026-10-12 D-018/EV-060–061 amendment: Gate4B existing138214712/version1 terminal **ERROR**, mountguard failed before model load/generation; **BLOCKED_RUNTIME_DATA_MOUNT**, zero generations. [Current report](zeromrg_gate4b_followup.md). Original ZM-010 single-image mechanics remains COMPLETE; supplemental Gate4B acceptance unmet. ZM-008/009PARTIAL/ZM-011unstarted, no Gate5. Next approval local mount-resolution correction/tests/revised preparation only, no new submission. Historical amendments below retain dated context.
+
+Revision 1, amended 2026-10-11 by D-014/D-015/EV-035. **Gate4 single-training-image mechanics PASS; its execution authority consumed. Gate4B one authorized execution submitted (D-017/EV-054), latestRUNNING/results unavailable; bounded monitoring stopped.** Original protocol completion and final-experiment criteria remain unchanged. Stable roadmap namespace: ZM-001–ZM-024. Historical Gate numbers and research-plan steps retain their identities as evidence references.
 
 ## Objective and outcomes
 
@@ -93,7 +97,7 @@ All cards define A–M. **K on every card also requires:** append ledger evidenc
 | [ZM-007](#zm-007) | BLOCKED | ZM-006 |
 | [ZM-008](#zm-008) | PARTIAL | ZM-003, ZM-004 |
 | [ZM-009](#zm-009) | PARTIAL | ZM-003 |
-| [ZM-010](#zm-010) | NOT_STARTED | ZM-008 |
+| [ZM-010](#zm-010) | COMPLETE (single train-image diagnostic EV-035) | ZM-008 |
 | [ZM-011](#zm-011) | NOT_STARTED | ZM-007, ZM-009, ZM-010 |
 | [ZM-012](#zm-012) | BLOCKED | ZM-011 |
 | [ZM-013](#zm-013) | PARTIAL | ZM-012, ZM-003 |
@@ -131,7 +135,7 @@ All cards define A–M. **K on every card also requires:** append ledger evidenc
 
 ### ZM-002
 
-**Resolve existing private91–95 execution** — BLOCKED
+**Resolve existing private91–95 execution** — COMPLETE (bounded terminal disposition; EV-012, internal progress unresolved)
 
 | Field | Step contract |
 |---|---|
@@ -171,7 +175,7 @@ All cards define A–M. **K on every card also requires:** append ledger evidenc
 
 ### ZM-004
 
-**Ratify recovery and incident disposition** — BLOCKED
+**Ratify recovery and incident disposition** — COMPLETE (D-014: suspend training; diagnostic direction)
 
 | Field | Step contract |
 |---|---|
@@ -211,7 +215,7 @@ All cards define A–M. **K on every card also requires:** append ledger evidenc
 
 ### ZM-006
 
-**Complete controlled COV text continuation** — PARTIAL
+**Complete controlled COV text continuation** — PARTIAL (further training SUSPENDED by D-014)
 
 | Field | Step contract |
 |---|---|
@@ -251,12 +255,12 @@ All cards define A–M. **K on every card also requires:** append ledger evidenc
 
 ### ZM-008
 
-**Qualify frozen image environment and cache provenance** — PARTIAL
+**Qualify frozen image environment and cache provenance** — PARTIAL (actual companion runtime PASS EV-035; historical cache fidelity unresolved)
 
 | Field | Step contract |
 |---|---|
 | A. Purpose | Confirm paired visual/text space and executable frozen image path. |
-| B. Current evidence | Candidate pins/resolution exist; import/torchvision/image forward unexecuted; historical cache revisions unknown. |
+| B. Current evidence | EV-035 verifies pinned OpenAI ViT-L/14 weights/preprocessing/CUDA forward and original raw500 bank on one training image; historical cache revisions unknown. |
 | C. Prerequisites | 003/004 scope resolved; explicit required downloads/install/diagnostic permission. |
 | D. Dependencies | ZM-003,004; Gate 3 dependency audit/locks; D-007. |
 | E. Planned actions | Reverify official compatibility at execution; audit companion weights/preprocessing and separateM-CLIP/base/tokenizer pins. Inspect existing provenance first; approve bounded training-only live/cache diagnostic if necessary; never regenerate caches to hide mismatch. |
@@ -291,27 +295,29 @@ All cards define A–M. **K on every card also requires:** append ledger evidenc
 
 ### ZM-010
 
-**Verify frozen training-image COV path** — NOT_STARTED
+
+**Verify frozen training-image COV path** — COMPLETE (EV-035 single-image mechanics); supplemental Gate4B CLOSED BLOCKED / INCONCLUSIVE (EV-111; final version3 ERROR before generation)
 
 | Field | Step contract |
 |---|---|
 | A. Purpose | Expose integration failures before more multi-epoch expense/test. |
-| B. Current evidence | Gate 2 stopped before CLIP; verified90 may test mechanics, not final selection. |
+| B. Current evidence | EV-035: real frozen CLIP→raw500 enrichment→strict90 historical decoder verified;83 tokens/BOS/EOS, finite outputs, unchanged parameters,44 output checks PASS. Missing85/final selection/cache-fidelity limitations remain. |
 | C. Prerequisites | 008 qualified; traceable physical checkpoint; explicit bounded GPU diagnostic approval. |
 | D. Dependencies | ZM-008; historical runtime/raw500prompt/vocab/preprocessing. |
-| E. Planned actions | Use fixed train image only; freeze/eval all modules; image→Eq6/Eq5→greedy decoder; preserve input/condition/termination and unchanged weights. |
+| E. Planned actions | D-019 corrected resolver/notebook local preparation complete. Same five trainingnonprompt images plus one repeat/maxsix; next separately approved GPU diagnostic, no training/test scoring. |
 | F. Expected outputs | Training-only diagnostic with shapes/finite/termination/provenance/resource evidence. |
-| G. Verification | No backward/update/test;RGB224canonical transform;768condition; correct raw attention/unit residual;EOS or max160; no invented clinical threshold. |
+| G. Verification | EV-035 confirms no backward/update/test;RGB224canonical transform;768condition; correct raw attention/residual and unit enriched norm;EOS at83 tokens; no clinical threshold. GPU memory unmeasured. |
 | H. Completion criteria | Entire frozen path verified with traceable input/output; fluent report alone does not prove clinical correctness/alignment. |
 | I. Failure handling | Isolate encoder/enrichment/tokenizer/decoder; no test probe. |
 | J. Recovery | Unchanged verified checkpoint and train diagnostic inputs; no training rerun. |
 | K. Documentation | Ledger diagnostic/provenance; state/card;D-007 if changed. |
-| L. Authorisation | New inference separately authorized; current prompt prohibits it. |
-| M. Next dependency | New006 continuation;011 after 007/009. |
+| L. Authorisation | D-025 used existingONEconditional finalpush: private138214712/version3, terminalERROR/verifieddatasetresolutionfailure. Submissionauthority CONSUMED; noautomaticcancel/resubmit/train/test/Gate5. Nextlocalinventory/candidatehash diagnosis; anyadditionalGPUneedsnewscope. |
+| M. Next dependency | Owner next-scope review;011 only after007/009 and explicit approval. Further006 training suspended by D-014. |
+
 
 ### ZM-011
 
-**Produce COV0 held-out outcome** — NOT_STARTED
+**Produce COV0 held-out outcome** — NOT_STARTED (held-out evaluation has not been executed; later local preparation excluded from this publication)
 
 | Field | Step contract |
 |---|---|
@@ -642,3 +648,17 @@ Not required for this objective: reproduce every external baseline architecture,
 ## Revision1 consistency review
 
 The [machine-readable review](evidence/phase1_governance_review.json) records repository starting identity, inspected evidence hashes, split conflict, card/graph/link/source-boundary checks and limitations. Objective/fractions checked against local paper evidence; existing accomplishments mapped in ledger; all major outputs have cards; all cards define A–M; dependency graph checked for cycles; approvals distinct from method assumptions; architecture/provenance ownership explicit; next action reconstructable from state. No code, environment, data, notebook, checkpoint, remote state, Git staging/commit/push or implementation step changed/executed. Plan remains reviewable documentation, not implementation authorization.
+
+## Controlled amendment — D-014 / EV-012, 2026-10-11
+
+Owner authorizes Gate4 local integration/tests and one private training-image diagnostic notebook preparation; no submission/execution. CANCEL_ACKNOWLEDGED resolves the existing job disposition for this scope; internal post90 outcome remains unresolved and epoch90 is the latest verified physical input. ZM-006 further training suspended; original stopping/selection completion unmet. ZM-008/010 preparation may proceed with the named companion and declared historical revision limitation before ZM-006/007 completion. Existing cards retain their original final-experiment criteria; diagnostic readiness does not complete ZM-008 runtime qualification, ZM-010 GPU path or ZM-011 held-out outcome.
+
+D-015 / EV-023 amendment: one private Gate4 execution authorized after12 prechecks. Prepared source hashes pass; read-only metadata parser fails before remote attachment acceptance. Owner fail-stop invoked; submission count0. Local preparation remains PASS; fix parser and resume only after owner instruction. Original single-submission scope remains unused. No Gate5.
+
+D-015 / EV-035 execution amendment: resumed metadata parser accepted with7 tests,12 prechecks/all8 hashes PASS. ExactlyONE private138208733/version1 COMPLETE,44 independent output checks PASS. ZM-010 complete for single-training-image mechanics; ZM-008 actual named companion runtime works but historical cache fidelity unresolved. Diagnostic image overlaps training prompt bank; no generalization/clinical evaluation. GPU memory unknown. No Gate5/held-out scoring/new training or second version. Owner review/next-scope and checkpoint/metric-readiness approval required.
+
+D-016 / EV-041 scoped amendment: Gate4B local preparation PASS, first5 of71 canonical training IDs outside original500 prompts plus one repeat/six generations.11 lightweight tests pass; actual image sensitivity remains unmeasured. No training resumed, held-out metrics/encoder-cache fidelity/final selection criteria unchanged. One new private execution requires explicit approval; this supplemental preparation does not regress EV-035 mechanics or complete ZM-011.
+
+D-017 / EV-054 execution amendment: exactlyONE private138214712/version1; prechecks/11testsPASS. Boundedmonitorstopped, latestRUNNING19:16:41UTC/final0-file retrieval19:17:42UTC. Gate4B scientificresultBLOCKED_PENDING_OUTPUTS/runUNRESOLVED, no numericalconclusions or modeldefectinferred. OriginalZM-010mechanicscomplete; ZM-008/009PARTIAL/ZM-011unstarted. No Gate5transition or newtraining. Nextownerapproval is boundedread-only existingversion status-smalloutput verification/analysis, no resubmit.
+
+D-029 / EV-130 publication amendment: this snapshot publishes Gates0–4B only. Successful Gate4A mechanics and failed/inconclusive Gate4B remain separate. No held-out evaluation completion or scientific diagnostic PASS is claimed. Later local development remains outside this branch.

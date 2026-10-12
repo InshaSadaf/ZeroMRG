@@ -1,0 +1,253 @@
+{
+  "status": "PASS_LOCAL_PREPARATION_GPU_PENDING",
+  "observed_utc": "2026-10-11T18:46:10.917Z",
+  "run_id": "ZM-010_GATE4B_IMAGE_CONDITIONING_V1",
+  "decision": "D-016",
+  "event": "EV-041",
+  "scope": "Local selection/mocks/private notebook preparation only",
+  "submission_count": 0,
+  "kaggle_executed": false,
+  "remote_checks_performed": false,
+  "gate5_started": false,
+  "model_training": false,
+  "test_inference": false,
+  "test_references_accessed": false,
+  "dataset_publication": false,
+  "git_push": false,
+  "selection": {
+    "train_count": 571,
+    "prompt_count": 500,
+    "eligible_count": 71,
+    "selection_policy": "First up to five train-minus-prompts IDs in saved canonical training order; no report content selection",
+    "report_identifier_contract": "Canonical manifests/bank use image_id as the associated report-row identifier; no separate report_id field exists",
+    "images": [
+      {
+        "image_id": "25%2.jpg",
+        "report_id": "25%2.jpg",
+        "split": "checkpoint_train",
+        "in_prompt_bank": false,
+        "archive_member": "COV-CTR/25%2.jpg",
+        "bytes": 85114,
+        "image_format": "JPEG",
+        "crc32": 1389888814,
+        "sha256": "1495a7e9ed347b7f1773d6c2b144177abce0c742b1ecbd45ebfba176f1a8e0fa",
+        "width": 342,
+        "height": 256
+      },
+      {
+        "image_id": "PIIS0140673620303603%5.png",
+        "report_id": "PIIS0140673620303603%5.png",
+        "split": "checkpoint_train",
+        "in_prompt_bank": false,
+        "archive_member": "COV-CTR/PIIS0140673620303603%5.png",
+        "bytes": 66571,
+        "image_format": "PNG",
+        "crc32": 1105774600,
+        "sha256": "68a8a202e2559d2c1f4b3455672170dae3b01692542714193f29a08c3e01475f",
+        "width": 321,
+        "height": 208
+      },
+      {
+        "image_id": "1094.png",
+        "report_id": "1094.png",
+        "split": "checkpoint_train",
+        "in_prompt_bank": false,
+        "archive_member": "COV-CTR/1094.png",
+        "bytes": 184771,
+        "image_format": "PNG",
+        "crc32": 3768380760,
+        "sha256": "0ee58d47f00c4a7092ca140576b75a550ee94f702810bea318f1a5c4a714ea4b",
+        "width": 508,
+        "height": 353
+      },
+      {
+        "image_id": "2%0.jpg",
+        "report_id": "2%0.jpg",
+        "split": "checkpoint_train",
+        "in_prompt_bank": false,
+        "archive_member": "COV-CTR/2%0.jpg",
+        "bytes": 56660,
+        "image_format": "JPEG",
+        "crc32": 815105842,
+        "sha256": "415a614f360c8f7e350cda2ad23212add7e00d8e8d4236b9f6cefab930ba2b87",
+        "width": 384,
+        "height": 280
+      },
+      {
+        "image_id": "1868.png",
+        "report_id": "1868.png",
+        "split": "checkpoint_train",
+        "in_prompt_bank": false,
+        "archive_member": "COV-CTR/1868.png",
+        "bytes": 172478,
+        "image_format": "PNG",
+        "crc32": 4224594015,
+        "sha256": "0ca6766ae838f16eecfba0da8e5ecad7868cc50f9dd8291854793d17503ea0f7",
+        "width": 482,
+        "height": 338
+      }
+    ],
+    "prompt_ids_sha256": "2e1e001a0d2e45d35e8ee16522e4347bc9ee1bccb67ff9532d8c21cb9c2f65d0",
+    "dependency_hashes": {
+      "train_manifest.csv": "8902b8fea1163429aec6940a9744f7c792d1b7f9a00ca300a1fab17448ead973",
+      "prompt_manifest.csv": "f60c45a1dc9beecba16917d767f1cf6b0f67231141a9226efdb771a27f9281de",
+      "decoder_vocabulary.json": "c0e169c3558fe0cbf2e36431281aa223f64e2e4fb88f7361e23b33e12bcc3ad5",
+      "mclip_prompt_bank.pt": "3cb770a2a470c70d95952828cf23abc088250571897b960a2a39e9bae6c8e1ce"
+    },
+    "heldout_reports_accessed": false,
+    "report_text_used_for_selection": false,
+    "image_verification": "PNG/JPEG signature and dimensions plus ZIP CRC; actual PIL decoding remains Kaggle guard"
+  },
+  "config": {
+    "run_id": "ZM-010_GATE4B_IMAGE_CONDITIONING_V1",
+    "data_root": "/kaggle/input/datasets/inshasadaf114/dataset/COV-CTR with English reports",
+    "zip_name": "recovery_export_epoch_090_54468b70.zip",
+    "zip_sha256": "dec3cd3391e2c107a7c9ed6209997f00554cd47cb0940ca339a74446253680b1",
+    "selected_hashes": {
+      "recovery_best_epoch_090.pt": "6166e36198737bfbe9e0c35f03f0b320c44e76f3e05068ef6299d74e9179c6b2",
+      "dependencies/train_manifest.csv": "8902b8fea1163429aec6940a9744f7c792d1b7f9a00ca300a1fab17448ead973",
+      "dependencies/prompt_manifest.csv": "f60c45a1dc9beecba16917d767f1cf6b0f67231141a9226efdb771a27f9281de",
+      "dependencies/decoder_vocabulary.json": "c0e169c3558fe0cbf2e36431281aa223f64e2e4fb88f7361e23b33e12bcc3ad5",
+      "dependencies/mclip_prompt_bank.pt": "3cb770a2a470c70d95952828cf23abc088250571897b960a2a39e9bae6c8e1ce"
+    },
+    "dependency_hashes": {
+      "train_manifest.csv": "8902b8fea1163429aec6940a9744f7c792d1b7f9a00ca300a1fab17448ead973",
+      "prompt_manifest.csv": "f60c45a1dc9beecba16917d767f1cf6b0f67231141a9226efdb771a27f9281de",
+      "decoder_vocabulary.json": "c0e169c3558fe0cbf2e36431281aa223f64e2e4fb88f7361e23b33e12bcc3ad5",
+      "mclip_prompt_bank.pt": "3cb770a2a470c70d95952828cf23abc088250571897b960a2a39e9bae6c8e1ce"
+    },
+    "prompt_ids_sha256": "2e1e001a0d2e45d35e8ee16522e4347bc9ee1bccb67ff9532d8c21cb9c2f65d0",
+    "support_lock": "ftfy==6.3.1 --hash=sha256:7c70eb532015cd2f9adb53f101fb6c7945988d023a085d127d1573dc49dd0083\nregex==2025.11.3 --hash=sha256:4aecb6f461316adf9f1f0f6a4a1a3d79e045f9b71ec76055a791affa3b285850\ntqdm==4.67.1 --hash=sha256:26445eca388f82e72884e0d580d5464cd801a3ea01e63e5601bdff9ba6a48de2\nwcwidth==0.9.2 --hash=sha256:751bef0ab404b6a1dc028b56b4b85d46486be1c55833f80da533e42dc691f389\n",
+    "hard_timeout_seconds": 1800,
+    "max_images": 5,
+    "max_tokens": 160,
+    "training_enabled": false,
+    "test_inference_enabled": false,
+    "approval_scope": "Local preparation only; separate owner approval before one private Gate4B execution",
+    "image_ids": [
+      "25%2.jpg",
+      "PIIS0140673620303603%5.png",
+      "1094.png",
+      "2%0.jpg",
+      "1868.png"
+    ],
+    "repeat_image_id": "25%2.jpg",
+    "max_generations": 6,
+    "eligible_count": 71,
+    "image_sha256": {
+      "25%2.jpg": "1495a7e9ed347b7f1773d6c2b144177abce0c742b1ecbd45ebfba176f1a8e0fa",
+      "PIIS0140673620303603%5.png": "68a8a202e2559d2c1f4b3455672170dae3b01692542714193f29a08c3e01475f",
+      "1094.png": "0ee58d47f00c4a7092ca140576b75a550ee94f702810bea318f1a5c4a714ea4b",
+      "2%0.jpg": "415a614f360c8f7e350cda2ad23212add7e00d8e8d4236b9f6cefab930ba2b87",
+      "1868.png": "0ca6766ae838f16eecfba0da8e5ecad7868cc50f9dd8291854793d17503ea0f7"
+    },
+    "source_files": [
+      "zeromrg_gate1_runtime.py",
+      "zeromrg_gate4_runtime.py",
+      "gate4_diagnostic_worker.py",
+      "zeromrg_gate4b_runtime.py",
+      "gate4b_diagnostic_worker.py"
+    ]
+  },
+  "metadata": {
+    "id": "inshasadaf114/zeromrg-covctr-gate4b-image-conditioning",
+    "title": "ZeroMRG COVCTR Gate4B Image Conditioning",
+    "code_file": "ZeroMRG_COV_CTR_Gate4B_Image_Conditioning_Diagnostic.ipynb",
+    "language": "python",
+    "kernel_type": "notebook",
+    "is_private": true,
+    "enable_gpu": true,
+    "enable_tpu": false,
+    "enable_internet": true,
+    "dataset_sources": [
+      "inshasadaf114/dataset",
+      "inshasadaf114/zeromrg-checkpoint-backup5-zip"
+    ],
+    "kernel_sources": [
+      "inshasadaf114/zeromrg-covctr-gate3-recovery-baseline"
+    ],
+    "competition_sources": [],
+    "model_sources": []
+  },
+  "checkpoint": {
+    "epoch": 90,
+    "sha256": "6166e36198737bfbe9e0c35f03f0b320c44e76f3e05068ef6299d74e9179c6b2",
+    "zip_sha256": "dec3cd3391e2c107a7c9ed6209997f00554cd47cb0940ca339a74446253680b1",
+    "strict_restore_evidence": "EV-035/AP-007; unchanged historical six-layer decoder/vocab368/positions160; no new expensive restore"
+  },
+  "encoder": {
+    "model": "OpenAI CLIP ViT-L/14",
+    "commit": "d05afc436d78f1c48dc0dbf8e5980a9d471f35f6",
+    "weight_sha256": "b8cca3fd41ae0c99ba7e8951adf17d267cdb84cd88be6f7c2e0eca1737a03836",
+    "historical_cache_revision": "UNVERIFIED"
+  },
+  "source_identity": {
+    "scripts/zeromrg_gate4b_runtime.py": {
+      "sha256": "976c6f2e0ce7d5ebc5429a336e044bad8f70477316b7076b9747d2de4430a050",
+      "bytes": 7262
+    },
+    "scripts/gate4b_diagnostic_worker.py": {
+      "sha256": "57c5f01932ff73409bc56b9bb56da6d5648ed2e1265675f58fa6fdcbaa961890",
+      "bytes": 9711
+    },
+    "scripts/build_gate4b_notebook.py": {
+      "sha256": "b30215f08848331c43fc22cb3d6b3db3281a12d09df0300eef4db62db6a70f31",
+      "bytes": 8379
+    },
+    "tests/test_gate4b_inference.py": {
+      "sha256": "b04ecf9614d31f07888abcbd72bad4f6f56c3adf9c1a646d56ed57126da4ec0d",
+      "bytes": 12784
+    },
+    "notebooks/gate4b/image_conditioning/ZeroMRG_COV_CTR_Gate4B_Image_Conditioning_Diagnostic.ipynb": {
+      "sha256": "252cc13c022832a850beaf2c9de90745f819fe8cf005e942a044dc88ed10b2de",
+      "bytes": 68748
+    },
+    "notebooks/gate4b/image_conditioning/kernel-metadata.json": {
+      "sha256": "259321f6dda48c7477a7ff719ab0c009d0fe6b001363fb775b5272933613c77b",
+      "bytes": 614
+    },
+    "notebooks/gate4b/image_conditioning/configuration.json": {
+      "sha256": "3e76e979e192214475c9d3fedf40f1ee21f361c98a2ec704dc8c3d0aa044b4c2",
+      "bytes": 2898
+    },
+    "notebooks/gate4b/image_conditioning/selection.json": {
+      "sha256": "82122fba65bc4fe488f97a31a9c85286c80e0700b0f104ec83dd1b311f3b48ce",
+      "bytes": 3136
+    }
+  },
+  "reused_source_sha256": {
+    "zeromrg_gate1_runtime.py": "e897aa5e800ce18911744cc13e16b75b239477a4edb8bc1df0f8e9ab3f9e038a",
+    "zeromrg_gate4_runtime.py": "c9117e4106168a907da3c52e7c99c0ca34655abf88b98e60842b241908c679d8",
+    "gate4_diagnostic_worker.py": "e1ba00f6dd02a1ddfccd85c158283857d210b7bdee6148c4b528ffcf8dcc0812"
+  },
+  "all8_original_prepared_artifacts_unchanged": true,
+  "last_verified_git_head_from_EV035": "dd0f7d98248b138b9c3734b68e3defbc573aa2ab",
+  "tests": {
+    "count": 11,
+    "status": "PASS",
+    "test_body_seconds": 0.92,
+    "environment": {
+      "python": "3.10.0",
+      "torch": "2.14.0+cpu",
+      "device": "CPU",
+      "threads_used_in_tests": 2
+    },
+    "evidence": "artifacts/gate4b/preparation_20261011T183808561Z/final_local_tests.json",
+    "scope": "CPU synthetic/mocked outputs, actual train-only IDs/bank/hash/ZIP checks, source and bounded supervisor"
+  },
+  "local_build": "artifacts/gate4b/preparation_20261011T183808561Z/build_corrected.json",
+  "prior_build_failure": "artifacts/gate4b/preparation_20261011T183808561Z/build_result.json",
+  "measurements": {
+    "actual_image_sensitivity": null,
+    "actual_report_differences": null,
+    "actual_repeat_determinism": null
+  },
+  "limitations": [
+    "Five training images outside prompt IDs; reports used in decoder text reconstruction",
+    "Report-row identifier is canonical image_id; text/content/patient independence not demonstrated",
+    "Local PNG/JPEG header/dimensions/CRC verified; actual PIL decoding/real CUDA comparisons pending",
+    "Original epoch85 missing/stopping incomplete; historical encoder/cache revision unverified",
+    "Exact repeat equality reports the observed run only; no clinical correctness or statistical generalization claim"
+  ],
+  "next": "Approve exactly one private Gate4B Kaggle submission/execution for five selected training images plus one repeat (six generations), pinned necessary setup,1800s worker and bounded read-only status/small-output verification; no training/heldout/test metrics/Gate5/publication/Git push."
+}

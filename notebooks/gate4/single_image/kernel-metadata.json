@@ -1,0 +1,20 @@
+{
+  "id": "inshasadaf114/zeromrg-covctr-gate4-single-image-diagnostic",
+  "title": "ZeroMRG COVCTR Gate4 Single Image Diagnostic",
+  "code_file": "ZeroMRG_COV_CTR_Gate4_Single_Image_Diagnostic.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_tpu": false,
+  "enable_internet": true,
+  "dataset_sources": [
+    "inshasadaf114/dataset",
+    "inshasadaf114/zeromrg-checkpoint-backup5-zip"
+  ],
+  "kernel_sources": [
+    "inshasadaf114/zeromrg-covctr-gate3-recovery-baseline"
+  ],
+  "competition_sources": [],
+  "model_sources": []
+}

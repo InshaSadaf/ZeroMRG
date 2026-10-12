@@ -1,0 +1,84 @@
+{
+  "train_count": 571,
+  "prompt_count": 500,
+  "eligible_count": 71,
+  "selection_policy": "First up to five train-minus-prompts IDs in saved canonical training order; no report content selection",
+  "report_identifier_contract": "Canonical manifests/bank use image_id as the associated report-row identifier; no separate report_id field exists",
+  "images": [
+    {
+      "image_id": "25%2.jpg",
+      "report_id": "25%2.jpg",
+      "split": "checkpoint_train",
+      "in_prompt_bank": false,
+      "archive_member": "COV-CTR/25%2.jpg",
+      "bytes": 85114,
+      "image_format": "JPEG",
+      "crc32": 1389888814,
+      "sha256": "1495a7e9ed347b7f1773d6c2b144177abce0c742b1ecbd45ebfba176f1a8e0fa",
+      "width": 342,
+      "height": 256
+    },
+    {
+      "image_id": "PIIS0140673620303603%5.png",
+      "report_id": "PIIS0140673620303603%5.png",
+      "split": "checkpoint_train",
+      "in_prompt_bank": false,
+      "archive_member": "COV-CTR/PIIS0140673620303603%5.png",
+      "bytes": 66571,
+      "image_format": "PNG",
+      "crc32": 1105774600,
+      "sha256": "68a8a202e2559d2c1f4b3455672170dae3b01692542714193f29a08c3e01475f",
+      "width": 321,
+      "height": 208
+    },
+    {
+      "image_id": "1094.png",
+      "report_id": "1094.png",
+      "split": "checkpoint_train",
+      "in_prompt_bank": false,
+      "archive_member": "COV-CTR/1094.png",
+      "bytes": 184771,
+      "image_format": "PNG",
+      "crc32": 3768380760,
+      "sha256": "0ee58d47f00c4a7092ca140576b75a550ee94f702810bea318f1a5c4a714ea4b",
+      "width": 508,
+      "height": 353
+    },
+    {
+      "image_id": "2%0.jpg",
+      "report_id": "2%0.jpg",
+      "split": "checkpoint_train",
+      "in_prompt_bank": false,
+      "archive_member": "COV-CTR/2%0.jpg",
+      "bytes": 56660,
+      "image_format": "JPEG",
+      "crc32": 815105842,
+      "sha256": "415a614f360c8f7e350cda2ad23212add7e00d8e8d4236b9f6cefab930ba2b87",
+      "width": 384,
+      "height": 280
+    },
+    {
+      "image_id": "1868.png",
+      "report_id": "1868.png",
+      "split": "checkpoint_train",
+      "in_prompt_bank": false,
+      "archive_member": "COV-CTR/1868.png",
+      "bytes": 172478,
+      "image_format": "PNG",
+      "crc32": 4224594015,
+      "sha256": "0ca6766ae838f16eecfba0da8e5ecad7868cc50f9dd8291854793d17503ea0f7",
+      "width": 482,
+      "height": 338
+    }
+  ],
+  "prompt_ids_sha256": "2e1e001a0d2e45d35e8ee16522e4347bc9ee1bccb67ff9532d8c21cb9c2f65d0",
+  "dependency_hashes": {
+    "train_manifest.csv": "8902b8fea1163429aec6940a9744f7c792d1b7f9a00ca300a1fab17448ead973",
+    "prompt_manifest.csv": "f60c45a1dc9beecba16917d767f1cf6b0f67231141a9226efdb771a27f9281de",
+    "decoder_vocabulary.json": "c0e169c3558fe0cbf2e36431281aa223f64e2e4fb88f7361e23b33e12bcc3ad5",
+    "mclip_prompt_bank.pt": "3cb770a2a470c70d95952828cf23abc088250571897b960a2a39e9bae6c8e1ce"
+  },
+  "heldout_reports_accessed": false,
+  "report_text_used_for_selection": false,
+  "image_verification": "PNG/JPEG signature and dimensions plus ZIP CRC; actual PIL decoding remains Kaggle guard"
+}
